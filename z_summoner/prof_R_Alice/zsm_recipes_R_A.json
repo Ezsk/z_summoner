@@ -1,0 +1,295 @@
+[
+  {
+    "result": "zsm_head_ribbon_blue",
+     "//": "■レシピ：ヘッドリボン（青）",
+    "copy-from": "base_zsm_R_Alice_r",
+    "type": "recipe",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "difficulty": 2,
+    "time": 5000,
+
+    "using": [ [ "filament", 2 ] ],
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "components": [ [ [ "rag", 2 ] ] ]
+  },
+  {
+    "result": "zsm_head_ribbon_black",
+     "//": "■レシピ：ヘッドリボン（黒）",
+    "copy-from": "zsm_head_ribbon_blue",
+    "type": "recipe",
+
+    "using": [ [ "filament", 2 ] ],
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "components": [ [ [ "rag", 2 ] ] ]
+  },
+  {
+    "result": "zsm_head_ribbon_white",
+     "//": "■レシピ：ヘッドリボン（白）",
+    "copy-from": "zsm_head_ribbon_blue",
+    "type": "recipe",
+
+    "using": [ [ "filament", 2 ] ],
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "components": [ [ [ "rag", 2 ] ] ]
+  },
+  {
+    "result": "zsm_suspenders_skirt",
+     "//": "■レシピ：吊りスカート",
+    "copy-from": "base_zsm_R_Alice_r",
+    "type": "recipe",
+    "subcategory": "CSC_ARMOR_LEGS",
+    "difficulty": 2,
+    "time": 35000,
+
+    "using": [ [ "filament", 10 ] ],
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "components": [ [ [ "rag", 6 ] ] ]
+  },
+  {
+    "result": "zsm_dress_blue",
+     "//": "■レシピ：青色のワンピース",
+    "copy-from": "base_zsm_R_Alice_r",
+    "type": "recipe",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "difficulty": 3,
+    "time": 80000,
+
+    "using": [ [ "filament", 12 ] ],
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "components": [ [ [ "rag", 8 ] ] ]
+  },
+  {
+    "result": "zsm_white_apron",
+     "//": "■レシピ：白いエプロン",
+    "copy-from": "base_zsm_R_Alice_r",
+    "type": "recipe",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "time": 8000,
+
+    "using": [ [ "filament", 5 ] ],
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "components": [ [ [ "rag", 5 ] ] ]
+  },
+  {
+    "result": "zsm_waist_ribbon_w",
+     "//": "■レシピ：リボン帯",
+    "copy-from": "base_zsm_R_Alice_r",
+    "type": "recipe",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "time": 1000,
+
+    "using": [ [ "filament", 5 ] ],
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "components": [ [ [ "rag", 4 ] ] ]
+  },
+  {
+    "result": "zsm_stockings_stripe_black",
+     "//": "■レシピ：ストライプニーソックス(黒)",
+    "copy-from": "base_zsm_R_Alice_r",
+    "type": "recipe",
+    "subcategory": "CSC_ARMOR_FEET",
+    "difficulty": 1,
+    "time": 10000,
+
+    "using": [ [ "filament", 6 ] ],
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "components": [ [ [ "rag", 8 ] ] ]
+  },
+  {
+    "result": "zsm_stockings_stripe_blue",
+     "//": "■レシピ：ストライプニーソックス(水色)",
+    "type": "recipe",
+    "copy-from": "zsm_stockings_stripe_black"
+  },
+  {
+    "result": "zsm_half_tanktop_cyan",
+     "//": "■レシピ：ハーフトップ(水色)",
+    "copy-from": "base_zsm_R_Alice_r",
+    "type": "recipe",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "difficulty": 2,
+    "time": 30000,
+
+    "using": [ [ "filament", 15 ] ],
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "components": [
+      [ [ "rag", 2 ] ],
+      [ [ "wire", 1 ] ]
+    ]
+  },
+  {
+    "result": "zsm_bra_cyan",
+     "//": "■レシピ：ブラジャー(水色)",
+    "type": "recipe",
+    "copy-from": "zsm_half_tanktop_cyan",
+    "time": 35000
+  },
+  {
+    "result": "zsm_panties_cyan",
+     "//": "■レシピ：パンティー(水色)",
+    "copy-from": "base_zsm_R_Alice_r",
+    "type": "recipe",
+    "subcategory": "CSC_ARMOR_LEGS",
+    "difficulty": 2,
+    "time": 35000,
+
+    "using": [ [ "filament", 15 ] ],
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "components": [ [ [ "rag", 2 ] ] ]
+  },
+  {
+    "result": "zsm_strap_shoes",
+     "//": "■レシピ：ストラップシューズのレシピ（東方MODから拝借）",
+    "copy-from": "base_zsm_R_Alice_r",
+    "type": "recipe",
+    "subcategory": "CSC_ARMOR_FEET",
+    "difficulty": 3,
+    "time": 62000,
+
+    "using": [ [ "filament", 10 ] ],
+    "qualities": [
+      { "id": "CUT", "level": 1 },
+      { "id": "SEW", "level": 1 }
+    ],
+    "components": [ [ [ "leather", 8 ], [ "tanned_hide", 1 ] ] ]
+  }
+
+
+
+	,{
+		"abstract": "base_zsm_puppet_r",
+		"type": "recipe",
+		"//": "■ 召喚人形レシピ_共通事項",
+		"category": "CC_WEAPON",
+		"subcategory": "CSC_WEAPON_OTHER",
+
+		"skill_used": "speech",
+		"book_learn": [ [ "zsm_Alice_in_Deadmans_Land", 0 ] ],
+
+		"autolearn" : false,
+		"reversible": false
+	}
+	,{
+		"//": "■レシピ：燃えるトンボ",
+		"type": "recipe",
+		"result": "zsm_sleep_dragonfly",
+		"copy-from": "base_zsm_puppet_r",
+
+		"difficulty": 1,
+		"time": 10000,
+
+		"using": [ [ "filament", 5 ] ],
+		"qualities": [
+			{ "id": "SEW", "level": 1 },
+			{ "id": "SUMMONING", "level": 3 }
+		],
+		"components": [
+			[ [ "rag", 5 ] ],
+			[ [ "human_flesh", 10 ] ],
+			[ [ "bone_human", 3 ] ]
+		]
+	}
+	,{
+		"//": "■レシピ：きらきらコウモリ",
+		"type": "recipe",
+		"result": "zsm_sleep_bat",
+		"copy-from": "base_zsm_puppet_r",
+
+		"difficulty": 0,
+		"time": 8000,
+
+		"using": [ [ "filament", 5 ] ],
+		"qualities": [
+			{ "id": "SEW", "level": 1 },
+			{ "id": "SUMMONING", "level": 3 }
+		],
+		"components": [
+			[ [ "rag", 5 ] ],
+			[ [ "human_flesh", 5 ] ],
+			[ [ "bone_human", 1 ] ]
+		]
+	}
+	,{
+		"//": "■レシピ：長尾のネズミ",
+		"type": "recipe",
+		"result": "zsm_sleep_rat",
+		"copy-from": "base_zsm_puppet_r",
+
+		"difficulty": 0,
+		"time": 8000,
+
+		"using": [ [ "filament", 5 ] ],
+		"qualities": [
+			{ "id": "SEW", "level": 1 },
+			{ "id": "SUMMONING", "level": 3 }
+		],
+		"components": [
+			[ [ "rag", 5 ] ],
+			[ [ "human_flesh", 5 ] ],
+			[ [ "bone_human", 1 ] ]
+		]
+	}
+	,{
+		"//": "■レシピ：ポーンの駒",
+		"type": "recipe",
+		"result": "zsm_sleep_pawn",
+		"copy-from": "base_zsm_puppet_r",
+
+		"difficulty": 3,
+		"time": 12000,
+
+		"using": [ [ "filament", 10 ] ],
+		"qualities": [
+			{ "id": "SEW", "level": 1 },
+			{ "id": "SUMMONING", "level": 3 }
+		],
+		"components": [
+			[ [ "rag", 10 ] ],
+			[ [ "human_flesh", 20 ] ],
+			[ [ "bone_human", 5 ] ]
+		]
+	}
+	,{
+		"//": "■レシピ：ナイトの駒",
+		"type": "recipe",
+		"result": "zsm_sleep_knight",
+		"copy-from": "base_zsm_puppet_r",
+
+		"difficulty": 4,
+		"time": 15000,
+
+		"using": [ [ "filament", 10 ] ],
+		"qualities": [
+			{ "id": "SEW", "level": 1 },
+			{ "id": "SUMMONING", "level": 3 }
+		],
+		"components": [
+			[ [ "rag", 10 ] ],
+			[ [ "human_flesh", 64 ] ],
+			[ [ "bone_human", 8 ] ]
+		]
+	}
+	,{
+		"//": "■レシピ：クイーンの駒",
+		"type": "recipe",
+		"result": "zsm_sleep_queen",
+		"copy-from": "base_zsm_puppet_r",
+
+		"difficulty": 5,
+		"time": 20000,
+
+		"using": [ [ "filament", 10 ] ],
+		"qualities": [
+			{ "id": "SEW", "level": 1 },
+			{ "id": "SUMMONING", "level": 3 }
+		],
+		"components": [
+			[ [ "rag", 10 ] ],
+			[ [ "human_flesh", 160 ] ],
+			[ [ "bone_human", 12 ] ]
+		]
+	}
+
+
+
+]

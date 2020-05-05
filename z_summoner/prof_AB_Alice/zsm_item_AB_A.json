@@ -1,0 +1,187 @@
+[
+  {
+    "//": "■本：魔術書・契約の書 Int:12 以上必要だがパラメータは優秀。",
+    "id": "zsm_Book_of_The_Engage",
+    "type": "BOOK",
+    "name": "契約の書<color_green>[z_summon]</color>",
+    "description": "魔法の力で死者を縛り、隷属させる方法云々などと書かれたかなり怪しげな内容の本です。",
+
+    "looks_like": "jewelry_book",
+
+    "weight": 410,
+    "volume": 3,
+    "price": 100,
+    "material": [ "paper", "leather", "flesh" ],
+    "symbol": "?",
+    "color": "light_blue",
+
+	"min_intelligence": 12,
+
+	"gun_data": {
+	    "skill": "speech",
+
+	    "reload_noise_volume": 5,
+	    "reload": 150,
+	    "reload_noise": "シュオッ…",
+	    "clip_size": 10,
+	    "durability": 9,
+
+	    "ammo": "zsm_ammo_magi",
+	    "range": 10,
+	    "ranged_damage": 10,
+	    "dispersion": -50,
+	    "recoil": 50,
+
+	    "ammo_effects": [ "NEVER_MISFIRES" ],
+
+	    "modes": [
+	      [ "DEFAULT", "ボルト", 1 ],
+	      [ "AUTO", "ジャベリン", 3 ],
+	      [ "BURST", "ストーム", 10 ]
+	    ],
+	    "flags": [ "NEVER_JAMS" ]
+	},
+
+    "artifact_data" : {
+        "effects_wielded": ["AEP_PSYSHIELD" ]
+    },
+    "qualities": [ [ "SUMMONING", 3 ] ]
+  }
+
+
+
+  ,{
+    "//": "■魔法力・メテオスカル　射程：長い、威力：高い、分散：高い、カスタム爆発 distance_factor 中心点からマス毎の威力減衰倍率？",
+    "id": "zsm_ammo_meteo_skull",
+    "type": "AMMO",
+    "name": "メテオスカル（弾薬）<color_green>[z_summon]</color>",
+    "description": "何らかの対価によって得た魔法を行使するためのエネルギーです。 \n召喚した巨大な頭蓋骨が炸裂します。",
+
+    "copy-from": "zsm_ammo_magi_base",
+    "looks_like": "etched_skull",
+
+    "range": 10,
+    "damage": 20,
+    "pierce": 10,
+    "dispersion": 150,
+
+	"explosion" : {
+	   "power": 900,
+	   "distance_factor": 0.3,
+	   "shrapnel": {
+	       "count": 10,
+	       "mass": 1,
+	       "recovery": 50,
+	       "drop": "bone_tainted"
+	   }
+	},
+    "effects": [ "CUSTOM_EXPLOSION" ]
+  }
+
+
+  ,{
+    "//": "■アイテム：スカルアッパー召喚、5ターン消費（30秒）",
+    "id" : "zsm_charm_skull_upper_cut",
+    "type": "GENERIC",
+    "name": "■ 召喚スカルアッパー<color_green>[z_summon]</color>",
+    "description": "使用する事でスカルアッパーを召喚します。 \n（約30秒後に完了）",
+
+    "symbol": ",",
+    "color": "black",
+    "price": 0,
+    "material": "paper",
+    "weight": 5,
+    "volume": "40 ml",
+
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_skull_upper",
+        "difficulty": 0,
+        "skill2": "speech",
+        "hostile_msg": "召喚・スカルアッパー！………？",
+        "friendly_msg": "召喚・スカルアッパー！",
+        "place_randomly": false,
+        "moves": 500
+    }
+  }
+
+
+  ,{
+    "//": "■アイテム：ハロースカル召喚、8ターン消費（48秒）",
+    "id" : "zsm_charm_hello_skull",
+    "type": "GENERIC",
+    "name": "■ 召喚ハロースカル<color_green>[z_summon]</color>",
+    "description": "使用する事でハロースカルを召喚します。 \n（約48秒後に完了）",
+
+    "copy-from": "zsm_charm_skull_upper_cut",
+
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_hello_skull",
+        "difficulty": 0,
+        "skill2": "speech",
+        "hostile_msg": "召喚・ハロースカル！………？",
+        "friendly_msg": "召喚・ハロースカル！",
+        "place_randomly": false,
+        "moves": 800
+    }
+  }
+  ,{
+    "//": "■銃・ハロースカル用、つぶて投擲、朦朧付加",
+    "id": "zsm_gun_HSkull",
+    "type": "GUN",
+    "name": "頭蓋骨",
+    "description": "※ハロースカル用射撃機、通常のプレイでは出現しないはず……？",
+
+    "material": [ "bone" ],
+    "symbol": "?",
+    "color": "white",
+
+    "skill": "throw",
+    "durability": 10,
+
+    "range": 6,
+    "ranged_damage": 1,
+    "dispersion": 200,
+
+    "flags": [ "NEVER_JAMS" ],
+    "ammo_effects": [ "NEVER_MISFIRES", "BEANBAG", "NO_DAMAGE_SCALING" ]
+  }
+
+
+
+  ,{
+    "//": "■トラップ・マキビシの改変",
+        "type" : "trap",
+        "id": "tr_zsm_skull_field",
+        "name" : "スカルフィールド",
+        "color" : "dark_gray",
+        "symbol" : "_",
+
+        "visibility" : 2,
+        "avoidance" : 4,
+        "difficulty" : 0,
+        "action" : "caltrops",
+        "drops" : ["bone_tainted"]
+  }
+  ,{
+    "//": "■スカルフィールド（効果はマキビシ）トラップ 3x3 範囲配置、15ターンぐらい消費",
+    "id": "zsm_charm_skull_field",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚スカルフィールド<color_green>[z_summon]</color>",
+    "description": "使用する事で骨のマキビシ地帯を召喚します。 \n（約90秒後に完了）",
+
+    "use_action": {
+      "type": "place_trap",
+      "outer_layer_trap": "tr_zsm_skull_field",
+      "trap": "tr_zsm_skull_field",
+      "moves": 1500,
+      "practice": 1,
+      "done_message": "召喚完了！"
+    }
+  }
+
+
+
+]

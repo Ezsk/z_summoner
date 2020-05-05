@@ -1,0 +1,196 @@
+[
+
+  {
+    "//": "■素材：魔法（参考元・アルカナMODのエッセンス）",
+    "type": "material",
+    "ident": "zsm_magi",
+    "name": "魔法力",
+    "density": 1,
+    "bash_resist": 20,
+    "cut_resist": 20,
+    "acid_resist": 99,
+    "fire_resist": 99,
+    "elec_resist": 99,
+    "chip_resist": 99,
+    "dmg_adj": [ "lightly damaged", "damaged", "very damaged", "thoroughly damaged" ],
+    "bash_dmg_verb": "damaged",
+    "cut_dmg_verb": "damaged"
+  }
+
+  ,{
+    "//": "■弾薬タイプ：魔法",
+    "type": "ammunition_type",
+    "id": "zsm_ammo_magi",
+    "name": "魔法力",
+    "default": "zsm_ammo_magi_base"
+  }
+
+
+
+
+
+  ,{
+    "//": "■弾薬：魔法力・弱　射程：短い、威力：低い、分散：無し",
+    "id": "zsm_ammo_magi_base",
+    "type": "AMMO",
+    "name": "魔法力（弾薬）<color_green>[z_summon]</color>",
+    "description": "何らかの対価によって得た魔法を行使するためのエネルギーです。 \n純粋な力を帯びています。",
+
+    "weight": 0,
+    "volume": 0,
+    "price": 0,
+    "material": [ "zsm_magi" ],
+    "symbol": "=",
+    "color": "pink",
+
+    "count": 10,
+    "stack_size": 10,
+    "ammo_type": "zsm_ammo_magi",
+
+    "range": 5,
+    "damage": 5,
+    "dispersion": 0,
+
+    "pierce": 0,
+    "recoil": 0,
+
+    "effects": [ "NEVER_MISFIRES" ]
+  }
+
+  ,{
+    "//": "■弾薬：魔法力・強　射程：長い、威力：高い、分散：高い",
+    "id": "zsm_ammo_magi_high",
+    "type": "AMMO",
+    "name": "魔法力・強（弾薬）<color_green>[z_summon]</color>",
+    "description": "何らかの対価によって得た魔法を行使するためのエネルギーです。 \n強い力を帯びています。",
+
+    "copy-from": "zsm_ammo_magi_base",
+
+    "range": 10,
+    "damage": 20,
+    "pierce": 2,
+    "dispersion": 150,
+
+    "effects": [ "WIDE" ]
+  }
+
+
+  ,{
+    "//": "■弾薬：魔法力・雷　射程：短い、威力：中、分散：中、音そこそこ",
+    "id": "zsm_ammo_magi_lightning",
+    "type": "AMMO",
+    "name": "魔法力・雷（弾薬）<color_green>[z_summon]</color>",
+    "description": "何らかの対価によって得た魔法を行使するためのエネルギーです。 \n怖ろしい雷の力を帯びています。",
+
+    "copy-from": "zsm_ammo_magi_base",
+
+    "range": 5,
+    "damage": 10,
+    "pierce": 5,
+    "dispersion": 100,
+    "loudness": 50,
+
+    "effects": [ "LIGHTNING" ]
+  }
+  ,{
+    "//": "■弾薬：魔法力・光　射程：長い、威力：少々、分散：低い",
+    "id": "zsm_ammo_magi_flash",
+    "type": "AMMO",
+    "name": "魔法力・閃光（弾薬）<color_green>[z_summon]</color>",
+    "description": "何らかの対価によって得た魔法を行使するためのエネルギーです。 \n眩い光の力を帯びています。",
+
+    "copy-from": "zsm_ammo_magi_base",
+
+    "range": 10,
+    "damage": 2,
+    "dispersion": 50,
+
+    "effects": [ "FLASHBANG", "LASER", "NO_EMBED", "INCENDIARY" ]
+  }
+
+
+  ,{
+    "//": "■弾薬：魔法力・炎　射程：短い、威力：中、分散：中",
+    "id": "zsm_ammo_magi_flare",
+    "type": "AMMO",
+    "name": "魔法力・炎（弾薬）<color_green>[z_summon]</color>",
+    "description": "何らかの対価によって得た魔法を行使するためのエネルギーです。 \n危険な炎の力を帯びています。",
+
+    "copy-from": "zsm_ammo_magi_base",
+
+    "range": 5,
+    "damage": 10,
+
+    "dispersion": 100,
+    "effects": [ "INCENDIARY" ]
+  }
+  ,{
+    "//": "■弾薬：魔法力・灰　射程：長い、威力：少々、分散：低い",
+    "id": "zsm_ammo_magi_ash",
+    "type": "AMMO",
+    "name": "魔法力・灰（弾薬）<color_green>[z_summon]</color>",
+    "description": "何らかの対価によって得た魔法を行使するためのエネルギーです。 \n燃え尽きた灰の力を帯びています。",
+
+    "copy-from": "zsm_ammo_magi_base",
+
+    "range": 10,
+    "damage": 2,
+    "dispersion": 50,
+
+    "effects": [ "SMOKE", "BLINDS_EYES", "NO_EMBED" ]
+  }
+  ,{
+    "//": "■弾薬：魔法力・爆　射程：短い、威力：低い、分散：中",
+    "id": "zsm_ammo_magi_bomb",
+    "type": "AMMO",
+    "name": "魔法力・爆裂（弾薬）<color_green>[z_summon]</color>",
+    "description": "何らかの対価によって得た魔法を行使するためのエネルギーです。 \轟く爆裂の力を帯びています。",
+
+    "copy-from": "zsm_ammo_magi_base",
+
+    "range": 5,
+    "damage": 5,
+    "pierce": 2,
+    "dispersion": 100,
+
+    "effects": [ "EXPLOSIVE_SMALL", "NO_EMBED" ]
+  }
+
+
+  ,{
+    "//": "■弾薬：魔法力・衰　射程：短い、威力：少々、分散：低い",
+    "id": "zsm_ammo_magi_sterile",
+    "type": "AMMO",
+    "name": "魔法力・衰（弾薬）<color_green>[z_summon]</color>",
+    "description": "何らかの対価によって得た魔法を行使するためのエネルギーです。 \n真菌殺しの力を帯びています。",
+
+    "copy-from": "zsm_ammo_magi_base",
+
+    "range": 5,
+    "damage": 2,
+    "dispersion": 50,
+
+    "effects": [ "GAS_FUNGICIDAL", "NO_EMBED" ]
+  }
+  ,{
+    "//": "■弾薬：魔法力・毒　射程：短い、威力：少々、分散：低い",
+    "id": "zsm_ammo_magi_poison",
+    "type": "AMMO",
+    "name": "魔法力・毒（弾薬）<color_green>[z_summon]</color>",
+    "description": "何らかの対価によって得た魔法を行使するためのエネルギーです。 \n蝕む毒の力を帯びています。",
+
+    "copy-from": "zsm_ammo_magi_base",
+
+    "range": 5,
+    "damage": 2,
+    "dispersion": 50,
+
+    "effects": [ "TOXICGAS", "NO_EMBED" ]
+  }
+
+
+
+
+
+
+]

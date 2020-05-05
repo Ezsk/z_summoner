@@ -1,0 +1,146 @@
+[
+
+  {
+    "type": "recipe",
+    "result": "zsm_book_of_desecration",
+    "//": "■冒涜の書",
+    "copy-from": "base_zsm_item_r",
+
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "fabrication",
+    "difficulty" : 1,
+    "time": 1000,
+
+    "reversible": true,
+    
+    "book_learn": [ [ "zsm_eerie_book_fragment_3", 0 ] ],
+    
+    "components": [
+      [ [ "zsm_eerie_book_fragment_1", 1 ] ],
+      [ [ "zsm_eerie_book_fragment_2", 1 ] ],
+      [ [ "zsm_eerie_book_fragment_3", 1 ] ],
+      [ [ "duct_tape", 20 ], [ "string_6", 1 ], [ "superglue", 1 ] ]
+    ],
+    "flags": [ "BLIND_EASY" ]
+  },
+
+
+
+   {
+      "type" : "recipe",
+      "result" : "zsm_bone_arrow_curse",
+      "//": "■呪いの骨矢",
+      "copy-from": "base_zsm_item_r",
+      "category" : "CC_AMMO",
+      "subcategory": "CSC_AMMO_ARROWS",
+      "skill_used" : "fabrication",
+      "skills_required": [[ "archery", 5 ], [ "survival", 1 ]],
+      "difficulty" : 5,
+      "time" : 24000,
+      
+      "book_learn" : [[ "zsm_book_of_desecration", 0 ]],
+      
+      "qualities" : [
+        {"id":"SUMMONING","level":1},
+        {"id":"CUT","level":1},
+        {"id":"HAMMER","level":1},
+        {"id":"SAW_M","level":1}
+      ], "components" : [
+        [
+          [ "adhesive", 1, "LIST" ],
+          [ "filament", 20, "LIST" ]
+        ],
+        [
+          [ "scrap", 3 ],
+          [ "steel_chunk", 1 ]
+        ],
+        [
+          [ "bone_human", 10 ]
+        ],
+        [
+          [ "human_flesh", 10 ]
+        ],
+        [
+          [ "fletching", 1, "LIST" ]
+        ]
+      ]
+   }
+
+
+
+  ,{
+    "result": "bone_tainted",
+     "//": "■汚染肉→汚染骨　変換（低効率）",
+    "copy-from": "base_zsm_charm_r",
+    "id_suffix": "z_meat_to_bone_zsm",
+
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+
+    "skill_used": "speech",
+    "difficulty": 1,
+    "time": 600,
+    "reversible": false,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ], [ "zsm_eerie_book_fragment_1", 0 ] ],
+
+    "qualities": [ { "id": "SUMMONING", "level": 1 } ],
+    "components": [
+      [ [ "cmp_zsm_z_meat", 5, "LIST" ] ]
+    ]
+  }
+
+
+
+    ,{
+        "//": "■ゾンビ召喚士の杖",
+        "type" : "uncraft",
+        "result": "zsm_summoner_staff",
+        
+        "time": 30000,
+        
+        "qualities" : [
+            {"id":"CUT","level":1},
+            {"id":"CUT_FINE","level":2},
+            {"id":"SCREW", "level": 1}
+        ],
+        "components": [
+          [ [ "splinter", 3 ] ],
+          [ [ "e_scrap", 1 ] ],
+          [ [ "transponder", 1 ] ],
+          [ [ "receiver", 1 ] ],
+          [ [ "antenna", 1 ] ],
+          [ [ "portal", 1 ] ],
+          [ [ "plut_cell", 1 ] ],
+          [ [ "plastic_chunk", 2 ] ]
+        ]
+    }
+    ,{
+        "//": "■ゾンビ召喚師の杖",
+        "type" : "uncraft",
+        "result": "zsm_d_summoner_staff",
+
+        "time": 30000,
+        
+        "qualities" : [
+            {"id":"CUT","level":1},
+            {"id":"CUT_FINE","level":2},
+            {"id":"SCREW", "level": 1}
+        ],
+        "components": [
+          [ [ "splinter", 3 ] ],
+          [ [ "slime_scrap", 1 ] ],
+          [ [ "e_scrap", 1 ] ],
+          [ [ "transponder", 1 ] ],
+          [ [ "receiver", 1 ] ],
+          [ [ "antenna", 1 ] ],
+          [ [ "portal", 1 ] ],
+          [ [ "plut_cell", 1 ] ],
+          [ [ "plastic_chunk", 2 ] ]
+        ]
+    }
+
+
+]

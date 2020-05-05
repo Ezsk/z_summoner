@@ -1,0 +1,39 @@
+[
+    {
+        "type": "profession",
+        "ident": "replica_alice",
+        "name": {
+            "male": "(※女性想定の職業です。)",
+            "female": "迷子の少女"
+        },
+        "description": "先ほどまで誰かに手を引かれてここまで来た……ような気がします。 \n頭がボンヤリとしていてよく思い出せません。",
+        "points": 2,
+        "traits": [
+            "PRETTY"
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                  "zsm_strap_shoes",
+                  "zsm_stockings_stripe_black",
+                  "dress_shirt",
+                  "zsm_head_ribbon_blue",
+                  "zsm_waist_ribbon_w",
+                  "zsm_suspenders_skirt",
+                  "sewing_kit",
+                  "zsm_sleep_rabbit_bot_LV1"
+                ],
+                "entries": [
+                    { "item": "zsm_Alice_in_Deadmans_Land"}
+                ]
+            },
+            "male": [
+                "boy_shorts"
+            ],
+            "female": [
+                "zsm_half_tanktop_cyan",
+                "zsm_panties_cyan"
+            ]
+        }
+    }
+]

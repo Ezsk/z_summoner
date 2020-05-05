@@ -1,0 +1,42 @@
+[
+    {
+        "id" : "cnst_f_zsm_bone_carpet",
+        "type" : "construction",
+        "description" : "召喚・粗骨の絨毯",
+        "category" : "OTHER",
+        "required_skills" : [ [ "speech", 0 ] ],
+        "time" : 1,
+        "components" : [
+            [ [ "zsm_charm_bone_carpet", 1 ] ]
+        ],
+        "pre_special" : "check_empty",
+        "post_terrain" : "f_zsm_bone_carpet"
+    },
+    {
+        "id" : "cnst_f_zsm_bone_fence",
+        "type" : "construction",
+        "description" : "召喚・骨の障壁",
+        "category" : "OTHER",
+        "required_skills" : [ [ "speech", 0 ] ],
+        "time" : 1,
+        "components" : [
+            [ [ "zsm_charm_bone_wall", 1 ] ]
+        ],
+        "pre_special" : "check_empty",
+        "post_terrain" : "f_zsm_bone_fence"
+    },
+    {
+        "id" : "cnst_f_zsm_flesh_wall",
+        "type" : "construction",
+        "description" : "召喚・肉の壁",
+        "category" : "OTHER",
+        "required_skills" : [ [ "speech", 0 ] ],
+        "time" : 1,
+        "components" : [
+            [ [ "zsm_charm_flesh_wall", 1 ] ]
+        ],
+        "pre_special" : "check_empty",
+        "post_terrain" : "f_zsm_flesh_wall"
+    }
+
+]

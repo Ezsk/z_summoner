@@ -1,0 +1,22 @@
+[
+  {
+    "id": "mon_zsm_bomber_z_runner",
+    "type": "MONSTER",
+    "copy-from" : "mon_zombie_runner",
+    "name": "(召喚)爆弾ランナー",
+    "description": "ピンが抜かれた手榴弾を握って走るゾンビです。 \nゴールはもうすぐです。",
+    
+    "special_attacks": [
+        [ "scratch", 15 ]
+    ],
+    
+    "revert_to_itype": "zsm_charm_bomber_z_runner",
+    "death_drops": "zsm_mon_b_runner_drops",
+    "death_function": [ "DISAPPEAR" ]
+  }
+
+
+
+
+
+]

@@ -1,0 +1,15 @@
+[
+    {
+        "type" : "overlay_order",
+        "overlay_ordering" : [
+        {
+            "id" : [ "PURPLE_EYE" ],
+            "order" : 1150
+        },
+        {
+            "id" : [ "PURPLE_HAIR" ],
+            "order" : 1400
+        }
+        ]
+    }
+]

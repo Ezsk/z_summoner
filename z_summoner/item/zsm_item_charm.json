@@ -1,0 +1,972 @@
+[
+  {
+    "id" : "zsm_charm_blank",
+    "type": "TOOL",
+    "symbol": ",",
+    "color": "white",
+    "name": "□ 空白の召喚符<color_green>[z_summon]</color>",
+    "description": "特別な力が込められていない空の召喚符、 \nこの状態ではただの紙切れと同じですね。",
+    "price": 0,
+    "material": "paper",
+    "weight": 5,
+    "volume": "40 ml"
+  },
+
+
+  {
+    "id" : "zsm_charm_bone_carpet",
+    "type": "TOOL",
+    "symbol": ",",
+    "color": "brown",
+    "name": "□ 建築符（粗骨の絨毯）<color_green>[z_summon]</color>",
+    "description": "この符を触媒とし粗骨の絨毯を召喚します。 \n危険なので踏まないようにしましょう。",
+    "price": 0,
+    "material": "paper",
+    "weight": 5,
+    "volume": "40 ml"
+  },
+  {
+    "id" : "zsm_charm_bone_wall",
+    "copy-from": "zsm_charm_bone_carpet",
+    "type": "TOOL",
+    "name": "□ 建築符（骨の障壁）<color_green>[z_summon]</color>",
+    "description": "この符を触媒とし骨の障壁を召喚します。 \n隙間の空いた即席のフェンスになります。"
+  },
+  {
+    "id" : "zsm_charm_flesh_wall",
+    "copy-from": "zsm_charm_bone_carpet",
+    "type": "TOOL",
+    "name": "□ 建築符（肉の壁）<color_green>[z_summon]</color>",
+    "description": "この符を触媒とし肉の壁を召喚します。 \n不気味な肉の壁です。"
+  },
+
+
+  {
+    "id" : "zsm_charm_zombie",
+    "type": "TOOL",
+    "symbol": ",",
+    "color": "black",
+    "name": "■ 召喚符（ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事でゾンビを呼び出す召喚符です。（難易度：1）",
+    "price": 0,
+    "material": "paper",
+    "weight": 5,
+    "volume": "40 ml",
+    "//": "※アクション・モンスター配置　difficulty：難易度、skill1:成功判定用スキル（レベルの半分）、skill2:成功判定用スキル、hostile_msg:失敗メッセージ、friendly_msg：成功メッセージ、place_randomly:ランダムな位置への配置フラグ、move:使用時間",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie",
+        "difficulty": 1,
+        "skill2": "speech",
+        "hostile_msg": "失敗！このゾンビとはお友達になれそうにありません！",
+        "friendly_msg": "召喚されたゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_child",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（子供ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で子供ゾンビを呼び出す召喚符です。（難易度：2）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_child",
+        "difficulty": 2,
+        "skill2": "speech",
+        "hostile_msg": "失敗！この子供ゾンビはあなたの事が嫌いなようです！",
+        "friendly_msg": "召喚された子供ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_tough",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（頑強ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で頑強ゾンビを呼び出す召喚符です。（難易度：2）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_tough",
+        "difficulty": 2,
+        "skill2": "speech",
+        "hostile_msg": "失敗！この頑強ゾンビは肩を怒らせています！",
+        "friendly_msg": "召喚された頑強ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_fat",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（肥満ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で肥満ゾンビを呼び出す召喚符です。（難易度：2）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_fat",
+        "difficulty": 2,
+        "skill2": "speech",
+        "hostile_msg": "失敗！この肥満ゾンビはのっそりと反抗してきました！",
+        "friendly_msg": "召喚された肥満ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_dog",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（ゾンビ犬）<color_green>[z_summon]</color>",
+    "description": "使用する事でゾンビ犬を呼び出す召喚符です。（難易度：3）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_dog",
+        "difficulty": 3,
+        "skill2": "speech",
+        "hostile_msg": "失敗！ゾンビ犬は唸り声を上げ咬みついてきそうです。躾がなっていませんね！",
+        "friendly_msg": "召喚されたゾンビ犬はあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_dog_cop",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（ゾンビ警察犬）<color_green>[z_summon]</color>",
+    "description": "使用する事でゾンビ警察犬を呼び出す召喚符です。（難易度：4）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_dog_zombie_cop",
+        "difficulty": 4,
+        "skill2": "speech",
+        "hostile_msg": "失敗！ゾンビ警察犬は唸り声を上げ咬みついてきそうです。存外迫力がありますね！",
+        "friendly_msg": "召喚されたゾンビ警察犬はあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_dog_rot",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（ロットワイラー）<color_green>[z_summon]</color>",
+    "description": "使用する事でロットワイラーを呼び出す召喚符です。（難易度：3）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_dog_zombie_rot",
+        "difficulty": 3,
+        "skill2": "speech",
+        "hostile_msg": "失敗！ロットワイラーは異臭を放ちながらあなたを求めています！",
+        "friendly_msg": "召喚されたロットワイラーはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_zolf",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（ゾンビオオカミ）<color_green>[z_summon]</color>",
+    "description": "使用する事でゾンビオオカミを呼び出す召喚符です。（難易度：4）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zolf",
+        "difficulty": 4,
+        "skill2": "speech",
+        "hostile_msg": "失敗！ゾンビオオカミは唸り声を上げ今にもこちらに飛び掛かってきそうです！",
+        "friendly_msg": "召喚されたゾンビオオカミはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_s_dog",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（痩身犬）<color_green>[z_summon]</color>",
+    "description": "使用する事で痩身犬を呼び出す召喚符です。（難易度：4）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_dog_skeleton",
+        "difficulty": 4,
+        "skill2": "speech",
+        "hostile_msg": "失敗！痩身犬は体を震わせ今にも咬みついてきそうです！",
+        "friendly_msg": "召喚された痩身犬はあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_zombear",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（ゾンビ熊）<color_green>[z_summon]</color>",
+    "description": "使用する事でゾンビ熊を呼び出す召喚符です。（難易度：5）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombear",
+        "difficulty": 5,
+        "skill2": "speech",
+        "hostile_msg": "失敗！ゾンビ熊はその大きな体で威嚇してきました！怖い！",
+        "friendly_msg": "召喚されたゾンビ熊はあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_zougar",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（ゾンビピューマ）<color_green>[z_summon]</color>",
+    "description": "使用する事でゾンビピューマを呼び出す召喚符です。（難易度：5）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zougar",
+        "difficulty": 5,
+        "skill2": "speech",
+        "hostile_msg": "失敗！ゾンビピューマは静かに起き上がり獲物を探し始めました！",
+        "friendly_msg": "召喚されたゾンビピューマはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_zoose",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（ゾンビヘラジカ）<color_green>[z_summon]</color>",
+    "description": "使用する事でゾンビヘラジカを呼び出す召喚符です。（難易度：7）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zoose",
+        "difficulty": 7,
+        "skill2": "speech",
+        "hostile_msg": "失敗！ゾンビヘラジカはその巨体を震わせこちらを睨んできました！",
+        "friendly_msg": "召喚されたゾンビヘラジカはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_skeleton",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（スケルトン）<color_green>[z_summon]</color>",
+    "description": "使用する事でスケルトンを呼び出す召喚符です。（難易度：3）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_skeleton",
+        "difficulty": 3,
+        "skill2": "speech",
+        "hostile_msg": "失敗！スケルトンは予想外に激しく動き始めました！……怒っているのかな？",
+        "friendly_msg": "召喚されたスケルトンはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_acidic",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（弱酸ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で弱酸ゾンビを呼び出す召喚符です。（難易度：2）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_acidic",
+        "difficulty": 2,
+        "skill2": "speech",
+        "hostile_msg": "失敗！弱酸ゾンビは溶けあえる相手を探し始めたようです！",
+        "friendly_msg": "召喚された弱酸ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_spitter",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（強酸ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で強酸ゾンビを呼び出す召喚符です。（難易度：6）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_spitter",
+        "difficulty": 6,
+        "skill2": "speech",
+        "hostile_msg": "失敗！強酸ゾンビは今にも吐いてしまいそうです！",
+        "friendly_msg": "召喚された強酸ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_corrosive",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（腐食ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で腐食ゾンビを呼び出す召喚符です。（難易度：7）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_corrosive",
+        "difficulty": 7,
+        "skill2": "speech",
+        "hostile_msg": "失敗！腐食ゾンビの酸が飛び散ってきそうです！触りたくないですね！",
+        "friendly_msg": "召喚された腐食ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_electric",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（放電ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で放電ゾンビを呼び出す召喚符です。（難易度：6）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_electric",
+        "difficulty": 6,
+        "skill2": "speech",
+        "hostile_msg": "失敗！電撃で黒コゲになる前に放電ゾンビをどうにかしましょう！",
+        "friendly_msg": "召喚された放電ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_boomer",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（ブーマー）<color_green>[z_summon]</color>",
+    "description": "使用する事でブーマーを呼び出す召喚符です。（難易度：3）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_boomer",
+        "difficulty": 3,
+        "skill2": "speech",
+        "hostile_msg": "失敗！ブーマーは汚い液体を垂らしながらにじり寄ってきました！",
+        "friendly_msg": "召喚されたブーマーはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_boomer_huge",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（巨体ブーマー）<color_green>[z_summon]</color>",
+    "description": "使用する事で巨体ブーマーを呼び出す召喚符です。（難易度：4）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_boomer_huge",
+        "difficulty": 4,
+        "skill2": "speech",
+        "hostile_msg": "失敗！ブーマーは汚い液体を垂らしながらこちらを見ました！",
+        "friendly_msg": "召喚された巨体ブーマーはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_gasbag",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（膨張ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で膨張ゾンビを呼び出す召喚符です。（難易度：3）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_gasbag",
+        "difficulty": 3,
+        "skill2": "speech",
+        "hostile_msg": "失敗！膨張ゾンビから悪臭が漏れています！酷い臭いだ！",
+        "friendly_msg": "召喚された膨張ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_smoker",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（煙幕ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で煙幕ゾンビを呼び出す召喚符です。（難易度：3）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_smoker",
+        "difficulty": 3,
+        "skill2": "speech",
+        "hostile_msg": "失敗！煙幕ゾンビが煙を吹き出しながらこっちに向かってきました！",
+        "friendly_msg": "召喚された煙幕ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_grabber",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（長腕ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で長腕ゾンビを呼び出す召喚符です。（難易度：2）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_grabber",
+        "difficulty": 2,
+        "skill2": "speech",
+        "hostile_msg": "失敗！長腕ゾンビがこちらに手を向けています……握手ではないようですね！",
+        "friendly_msg": "召喚された長腕ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_grappler",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（組手ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で組手ゾンビを呼び出す召喚符です。（難易度：3）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_grappler",
+        "difficulty": 3,
+        "skill2": "speech",
+        "hostile_msg": "失敗！組手ゾンビの腕がこちらに伸びてきそうです！",
+        "friendly_msg": "召喚された組手ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_hunter",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（フェラルハンター）<color_green>[z_summon]</color>",
+    "description": "使用する事でフェラルハンターを呼び出す召喚符です。（難易度：4）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_hunter",
+        "difficulty": 4,
+        "skill2": "speech",
+        "hostile_msg": "失敗！フェラルハンターは激しく飛び跳ねています！",
+        "friendly_msg": "召喚されたフェラルハンターはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_predator",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（フェラルプレデター）<color_green>[z_summon]</color>",
+    "description": "使用する事でフェラルプレデターを呼び出す召喚符です。（難易度：6）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_predator",
+        "difficulty": 6,
+        "skill2": "speech",
+        "hostile_msg": "失敗！フェラルプレデターは激しく飛び跳ねています！元気いっぱいですね！",
+        "friendly_msg": "召喚されたフェラルプレデターはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_runner",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（フェラルランナー）<color_green>[z_summon]</color>",
+    "description": "使用する事でフェラルランナーを呼び出す召喚符です。（難易度：4）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_runner",
+        "difficulty": 4,
+        "skill2": "speech",
+        "hostile_msg": "失敗！フェラルランナーは既にスタート体勢！ゴールはあなたです！",
+        "friendly_msg": "召喚されたフェラルランナーはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_shrieker",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（絶叫ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で絶叫ゾンビを呼び出す召喚符です。（難易度：2）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_shrieker",
+        "difficulty": 2,
+        "skill2": "speech",
+        "hostile_msg": "失敗！絶叫ゾンビはあなたに何か言いたい事があるようです……",
+        "friendly_msg": "召喚された絶叫ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_screecher",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（悲鳴ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で悲鳴ゾンビを呼び出す召喚符です。（難易度：3）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_screecher",
+        "difficulty": 3,
+        "skill2": "speech",
+        "hostile_msg": "失敗！悲鳴ゾンビと目が合いました。告白でもしてくれるのでしょうか？",
+        "friendly_msg": "召喚された悲鳴ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_shady",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（冥暗ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で冥暗ゾンビを呼び出す召喚符です。（難易度：2）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_shady",
+        "difficulty": 2,
+        "skill2": "speech",
+        "hostile_msg": "失敗！冥暗ゾンビはあなたに向かってふらふらと歩き始めました！",
+        "friendly_msg": "召喚された冥暗ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_swimmer",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（水泳ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で水泳ゾンビを呼び出す召喚符です。（難易度：3）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_swimmer",
+        "difficulty": 3,
+        "skill2": "speech",
+        "hostile_msg": "失敗！この水泳ゾンビと一緒に泳ぐのは無理でしょう！",
+        "friendly_msg": "召喚された水泳ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_cop",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（警官ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で警官ゾンビを呼び出す召喚符です。（難易度：3）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_cop",
+        "difficulty": 3,
+        "skill2": "speech",
+        "hostile_msg": "失敗！この警官ゾンビはあなたを処罰したいようです！",
+        "friendly_msg": "召喚された警官ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_technician",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（技術者ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で技術者ゾンビを呼び出す召喚符です。（難易度：5）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_technician",
+        "difficulty": 5,
+        "skill2": "speech",
+        "hostile_msg": "失敗！この技術者ゾンビは気難しい頑固職人のようです！",
+        "friendly_msg": "召喚された技術者ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_crawler",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（爬行ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で爬行ゾンビを呼び出す召喚符です。（難易度：1）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_crawler",
+        "difficulty": 1,
+        "skill2": "speech",
+        "hostile_msg": "失敗！爬行ゾンビが動き始めました！あなたに抱き着きたいようです！",
+        "friendly_msg": "召喚された爬行ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_biter",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（涎垂ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で涎垂ゾンビを呼び出す召喚符です。（難易度：3）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_biter",
+        "difficulty": 3,
+        "skill2": "speech",
+        "hostile_msg": "失敗！涎垂ゾンビは涎を垂らしています！あなたを食べたいようです！",
+        "friendly_msg": "召喚された涎垂ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_mancroc",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（大顎ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で大顎ゾンビを呼び出す召喚符です。（難易度：4）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_mancroc",
+        "difficulty": 4,
+        "skill2": "speech",
+        "hostile_msg": "失敗！大顎ゾンビは大きく口を開きました！「オレサマ　オマエ　マルカジリ」",
+        "friendly_msg": "召喚された大顎ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_hollow",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（空洞ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で空洞ゾンビを呼び出す召喚符です。（難易度：5）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_hollow",
+        "difficulty": 5,
+        "skill2": "speech",
+        "hostile_msg": "失敗！空洞ゾンビはゆらゆらと揺れています……こちらの言う事を聞く気はないようです！",
+        "friendly_msg": "召喚された空洞ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_hazmat",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（化学防護ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で化学防護ゾンビを呼び出す召喚符です。（難易度：3）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_hazmat",
+        "difficulty": 3,
+        "skill2": "speech",
+        "hostile_msg": "失敗！化学防護ゾンビは防護服にもたつきながら生者を探し始めました！",
+        "friendly_msg": "召喚された化学防護ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_survivor",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（サバイバーゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事でサバイバーゾンビを呼び出す召喚符です。（難易度：5）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_survivor",
+        "difficulty": 5,
+        "skill2": "speech",
+        "hostile_msg": "失敗！サバイバーゾンビが起き上がりあなたを仲間にしたそうにこちらを見ています！",
+        "friendly_msg": "召喚されたサバイバーゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_necro",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（ゾンビマンサー）<color_green>[z_summon]</color>",
+    "description": "使用する事でゾンビマンサーを呼び出す召喚符です。（難易度：9）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_necro",
+        "difficulty": 9,
+        "skill2": "speech",
+        "hostile_msg": "失敗！ゾンビマンサーは怪しげな動きを始めました！創作ダンスってやつかな？",
+        "friendly_msg": "召喚されたゾンビマンサーはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_master",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（ゾンビマスター）<color_green>[z_summon]</color>",
+    "description": "使用する事でゾンビマスターを呼び出す召喚符です。（難易度：9）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_master",
+        "difficulty": 9,
+        "skill2": "speech",
+        "hostile_msg": "失敗！ゾンビマスターはあなたを目にすると顔を歪ませました……笑っているのでしょうか？",
+        "friendly_msg": "召喚されたゾンビマスターはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_soldier",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（兵士ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で兵士ゾンビを呼び出す召喚符です。（難易度：4）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_soldier",
+        "difficulty": 4,
+        "skill2": "speech",
+        "hostile_msg": "失敗！兵士ゾンビは戦争ごっこがしたいのかもしれませんね！",
+        "friendly_msg": "召喚された兵士ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_bio_op",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（改造兵士ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で改造兵士ゾンビを呼び出す召喚符です。（難易度：5）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_bio_op",
+        "difficulty": 5,
+        "skill2": "speech",
+        "hostile_msg": "失敗！改造兵士ゾンビは火花を放ち動き始めました！",
+        "friendly_msg": "召喚された改造兵士ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_armored",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（装甲ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で装甲ゾンビを呼び出す召喚符です。（難易度：4）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_armored",
+        "difficulty": 4,
+        "skill2": "speech",
+        "hostile_msg": "失敗！装甲ゾンビはとても硬そうです！言わなくても分かりますね！",
+        "friendly_msg": "召喚された装甲ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_fireman",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（消防士ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で消防士ゾンビを呼び出す召喚符です。（難易度：4）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_fireman",
+        "difficulty": 4,
+        "skill2": "speech",
+        "hostile_msg": "失敗！消防士ゾンビは命の灯を消化したいようです！",
+        "friendly_msg": "召喚された消防士ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_fiend",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（悪鬼）<color_green>[z_summon]</color>",
+    "description": "使用する事で悪鬼を呼び出す召喚符です。（難易度：5）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_fiend",
+        "difficulty": 5,
+        "skill2": "speech",
+        "hostile_msg": "失敗！悪鬼は何を考えているのか分かりません！",
+        "friendly_msg": "召喚された悪鬼はあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_brute",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（凶暴ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で凶暴ゾンビを呼び出す召喚符です。（難易度：6）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_brute",
+        "difficulty": 6,
+        "skill2": "speech",
+        "hostile_msg": "失敗！凶暴ゾンビは今にも暴れだしそうです！",
+        "friendly_msg": "召喚された凶暴ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_brute_grappler",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（格闘ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で格闘ゾンビを呼び出す召喚符です。（難易度：7）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_brute_grappler",
+        "difficulty": 7,
+        "skill2": "speech",
+        "hostile_msg": "失敗！格闘ゾンビが掴みかかってきそうです！逃げましょうか？",
+        "friendly_msg": "召喚された格闘ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_brute_ninja",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（夜行ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で夜行ゾンビを呼び出す召喚符です。（難易度：7）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_brute_ninja",
+        "difficulty": 7,
+        "skill2": "speech",
+        "hostile_msg": "失敗！夜行ゾンビの鋭い爪があなたを狙っているように見えます！",
+        "friendly_msg": "召喚された夜行ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_brute_shocker",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（放電凶獣）<color_green>[z_summon]</color>",
+    "description": "使用する事で放電凶獣を呼び出す召喚符です。（難易度：8）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_brute_shocker",
+        "difficulty": 8,
+        "skill2": "speech",
+        "hostile_msg": "失敗！放電凶獣の電撃が今にも放たれそうです！",
+        "friendly_msg": "召喚された放電凶獣はあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_z_hulk",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（巨体ゾンビ）<color_green>[z_summon]</color>",
+    "description": "使用する事で巨体ゾンビを呼び出す召喚符です。（難易度：9）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_zombie_hulk",
+        "difficulty": 9,
+        "skill2": "speech",
+        "hostile_msg": "失敗！巨体ゾンビは動き出しました……がこりゃダメですね！諦めましょう！",
+        "friendly_msg": "召喚された巨体ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  },
+  {
+    "id" : "zsm_charm_s_hulk",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（巨体スケルトン）<color_green>[z_summon]</color>",
+    "description": "使用する事で巨体スケルトンを呼び出す召喚符です。（難易度：10）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_skeleton_hulk",
+        "difficulty": 10,
+        "skill2": "speech",
+        "hostile_msg": "失敗！巨体スケルトンはガシャガシャと動き出しました……犠牲者を求めて！",
+        "friendly_msg": "召喚された巨体スケルトンはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  }
+  ,{
+    "id" : "zsm_charm_bomber_z_runner",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+    "name": "■ 召喚符（爆弾ランナー）<color_green>[z_summon]</color>",
+    "description": "使用する事で爆弾ランナーを呼び出す召喚符です。（難易度：6）",
+    "use_action": {
+        "type": "place_monster",
+        "monster_id": "mon_zsm_bomber_z_runner",
+        "difficulty": 6,
+        "skill2": "speech",
+        "hostile_msg": "失敗！爆弾ランナーは手元の手榴弾を渡したいようです！",
+        "friendly_msg": "召喚された爆弾ランナーはあなたの命令を受けヨロヨロと動き始めました。",
+        "place_randomly": true,
+        "moves": 60
+    }
+  }
+
+
+
+  ,{
+    "//": "■深い穴トラップの改変、解除可能な難易度に（これ自体に移動コスト値は無い模様）",
+        "type" : "trap",
+        "id": "tr_zsm_trap_hole",
+        "name" : "地獄穴",
+        "color" : "brown",
+        "symbol" : "0",
+        "visibility" : 0,
+        "avoidance" : 8,
+        "difficulty" : 6,
+        "action" : "pit"
+  }
+  ,{
+    "//": "■深い穴トラップ 3x3 範囲配置",
+    "id": "zsm_charm_trap_hole",
+    "copy-from": "zsm_charm_zombie",
+    "type": "TOOL",
+
+    "name": "□ 召喚符（地獄穴）<color_green>[z_summon]</color>",
+    "description": "使用する事で目の前の地形に大きな穴を出現させる召喚符です。",
+
+    "use_action": {
+      "type": "place_trap",
+      "outer_layer_trap": "tr_zsm_trap_hole",
+      "trap": "tr_zsm_trap_hole",
+      "moves": 60,
+      "practice": 6,
+      "done_message": "召喚完了！"
+    }
+  }
+
+
+
+
+
+]

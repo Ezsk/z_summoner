@@ -1,0 +1,636 @@
+[
+  {
+    "type": "recipe",
+    "result": "zsm_charm_zombie",
+    "//": "■ 召喚符（ゾンビ）",
+    "copy-from": "base_zsm_charm_r",
+    "difficulty": 0,
+    "time": 5000,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ], [ "zsm_eerie_book_fragment_1", 2 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 1 } ],
+    "components": [
+      [
+        [ "cmp_zsm_meat", 10, "LIST" ]
+      ],
+      [ [ "cmp_zsm_bone", 10, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_z_child",
+    "//": "■ 召喚符（子供ゾンビ）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 1,
+    "time": 5000,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ], [ "zsm_eerie_book_fragment_1", 2 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 1 } ],
+    "components": [
+      [
+        [ "cmp_zsm_meat", 8, "LIST" ]
+      ],
+      [ [ "cmp_zsm_bone", 8, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_z_dog",
+    "//": "■ 召喚符（ゾンビ犬）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 2,
+    "time": 7500,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ], [ "zsm_eerie_book_fragment_2", 2 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 1 } ],
+    "components": [
+      [
+        [ "cmp_zsm_meat", 8, "LIST" ]
+      ],
+      [ [ "cmp_zsm_bone", 8, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_z_dog_cop",
+    "//": "■ 召喚符（ゾンビ警察犬）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 3,
+    "time": 7500,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 2 } ],
+    "components": [
+      [
+        [ "cmp_zsm_meat", 8, "LIST" ]
+      ],
+      [ [ "cmp_zsm_bone", 8, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ],
+      [ [ "kevlar_harness", 1 ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_s_dog",
+    "//": "■ 召喚符（痩身犬）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 2,
+    "time": 7500,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ], [ "zsm_eerie_book_fragment_2", 2 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 1 } ],
+    "components": [
+      [ [ "cmp_zsm_bone", 6, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_zougar",
+    "//": "■ 召喚符（ゾンビピューマ）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 4,
+    "time": 10000,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 2 } ],
+    "components": [
+      [
+        [ "cmp_zsm_meat", 10, "LIST" ]
+      ],
+      [ [ "cmp_zsm_bone", 10, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_zoose",
+    "//": "■ 召喚符（ゾンビヘラジカ）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 6,
+    "time": 15000,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 2 } ],
+    "components": [
+      [
+        [ "cmp_zsm_meat", 50, "LIST" ]
+      ],
+      [ [ "cmp_zsm_bone", 50, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_skeleton",
+    "//": "■ 召喚符（スケルトン）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 3,
+    "time": 5000,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ], [ "zsm_eerie_book_fragment_1", 2 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 1 } ],
+    "components": [
+      [ [ "cmp_zsm_bone", 10, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_z_spitter",
+    "//": "■ 召喚符（強酸ゾンビ）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 5,
+    "time": 15000,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ], [ "zsm_eerie_book_fragment_3", 2 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 1 } ],
+    "components": [
+      [
+        [ "cmp_zsm_meat", 10, "LIST" ]
+      ],
+      [ [ "cmp_zsm_bone", 10, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ],
+      [ [ "water_acid", 2], [ "acid", 2], [ "acidbomb", 1] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_z_corrosive",
+    "//": "■ 召喚符（腐食ゾンビ）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 6,
+    "time": 20000,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 2 } ],
+    "components": [
+      [
+        [ "cmp_zsm_meat", 10, "LIST" ]
+      ],
+      [ [ "cmp_zsm_bone", 10, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ],
+      [ [ "water_acid", 4], [ "acid", 4], [ "acidbomb", 2] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_z_electric",
+    "//": "■ 召喚符（放電ゾンビ）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 5,
+    "time": 10000,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 2 } ],
+    "components": [
+      [
+        [ "cmp_zsm_meat", 10, "LIST" ]
+      ],
+      [ [ "cmp_zsm_bone", 10, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ],
+      [ [ "bio_chain_lightning", 1 ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_boomer_huge",
+    "//": "■ 召喚符（巨体ブーマー）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 3,
+    "time": 7500,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ], [ "zsm_eerie_book_fragment_3", 2 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 1 } ],
+    "components": [
+      [
+        [ "cmp_zsm_meat", 20, "LIST" ]
+      ],
+      [ [ "cmp_zsm_bone", 10, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ],
+      [ [ "water", 20], [ "water_clean", 20] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_z_gasbag",
+    "//": "■ 召喚符（膨張ゾンビ）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 2,
+    "time": 7500,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ], [ "zsm_eerie_book_fragment_3", 2 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 1 } ],
+    "components": [
+      [
+        [ "cmp_zsm_meat", 14, "LIST" ]
+      ],
+      [ [ "cmp_zsm_bone", 10, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ],
+      [ [ "water", 10], [ "water_clean", 10] ],
+      [ [ "fungicide", 10], [ "mushroom", 10] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_z_smoker",
+    "//": "■ 召喚符（煙幕ゾンビ）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 2,
+    "time": 7500,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ], [ "zsm_eerie_book_fragment_3", 2 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 1 } ],
+    "components": [
+      [
+        [ "cmp_zsm_meat", 10, "LIST" ]
+      ],
+      [ [ "cmp_zsm_bone", 10, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ],
+      [ [ "smokebomb", 1 ], [ "cig", 10 ], [ "cig_butt", 50 ], [ "cigar_butt", 50 ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_z_grappler",
+    "//": "■ 召喚符（組手ゾンビ）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 2,
+    "time": 5000,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ], [ "zsm_eerie_book_fragment_1", 2 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 1 } ],
+    "components": [
+      [
+        [ "cmp_zsm_meat", 12, "LIST" ]
+      ],
+      [ [ "cmp_zsm_bone", 12, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_z_predator",
+    "//": "■ 召喚符（フェラルプレデター）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 5,
+    "time": 10000,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 2 } ],
+    "components": [
+      [
+        [ "cmp_zsm_meat", 10, "LIST" ]
+      ],
+      [ [ "cmp_zsm_bone", 10, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ],
+      [ [ "spring", 2 ] ],
+      [ [ "spike", 5 ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_z_screecher",
+    "//": "■ 召喚符（悲鳴ゾンビ）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 2,
+    "time": 5000,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 2 } ],
+    "components": [
+      [
+        [ "cmp_zsm_meat", 10, "LIST" ]
+      ],
+      [ [ "cmp_zsm_bone", 10, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ],
+      [ [ "muffler", 1 ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_z_shady",
+    "//": "■ 召喚符（冥暗ゾンビ）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 1,
+    "time": 5000,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 2 } ],
+    "components": [
+      [
+        [ "cmp_zsm_meat", 10, "LIST" ]
+      ],
+      [ [ "cmp_zsm_bone", 10, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ],
+      [ [ "blindfold", 1 ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_z_swimmer",
+    "//": "■ 召喚符（水泳ゾンビ）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 2,
+    "time": 5000,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 2 } ],
+    "components": [
+      [
+        [ "cmp_zsm_meat", 10, "LIST" ]
+      ],
+      [ [ "cmp_zsm_bone", 10, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ],
+      [ [ "bikini_top", 1 ] ],
+      [ [ "bikini_bottom", 1 ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_z_technician",
+    "//": "■ 召喚符（技術者ゾンビ）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 4,
+    "time": 5000,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 2 } ],
+    "components": [
+      [
+        [ "cmp_zsm_meat", 10, "LIST" ]
+      ],
+      [ [ "cmp_zsm_bone", 10, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ],
+      [ [ "bio_magnet", 1 ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_z_mancroc",
+    "//": "■ 召喚符（大顎ゾンビ）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 3,
+    "time": 5000,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 2 } ],
+    "components": [
+      [
+        [ "cmp_zsm_meat", 10, "LIST" ]
+      ],
+      [ [ "cmp_zsm_bone", 10, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ],
+      [ [ "spike", 8 ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_z_hollow",
+    "//": "■ 召喚符（空洞ゾンビ）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 4,
+    "time": 10000,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 2 } ],
+    "components": [
+      [
+        [ "cmp_zsm_meat", 10, "LIST" ]
+      ],
+      [ [ "cmp_zsm_bone", 10, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ],
+      [ [ "slime_scrap", 1 ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_z_brute",
+    "//": "■ 召喚符（凶暴ゾンビ）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 5,
+    "time": 10000,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 2 } ],
+    "components": [
+      [
+        [ "cmp_zsm_meat", 20, "LIST" ]
+      ],
+      [ [ "cmp_zsm_bone", 20, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_z_brute_grappler",
+    "//": "■ 召喚符（格闘ゾンビ）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 6,
+    "time": 10000,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 2 } ],
+    "components": [
+      [
+        [ "cmp_zsm_meat", 20, "LIST" ]
+      ],
+      [ [ "cmp_zsm_bone", 20, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ],
+      [ [ "bio_str_enhancer", 1 ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_z_brute_ninja",
+    "//": "■ 召喚符（夜行ゾンビ）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 6,
+    "time": 10000,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 2 } ],
+    "components": [
+      [
+        [ "cmp_zsm_meat", 20, "LIST" ]
+      ],
+      [ [ "cmp_zsm_bone", 20, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ],
+      [ [ "bio_infrared", 1 ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_z_brute_shocker",
+    "//": "■ 召喚符（放電凶獣）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 7,
+    "time": 15000,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 2 } ],
+    "components": [
+      [
+        [ "cmp_zsm_meat", 20, "LIST" ]
+      ],
+      [ [ "cmp_zsm_bone", 20, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ],
+      [ [ "bio_chain_lightning", 1 ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_z_hulk",
+    "//": "■ 召喚符（巨体ゾンビ）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 8,
+    "time": 25000,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 2 } ],
+    "components": [
+      [
+        [ "cmp_zsm_meat", 50, "LIST" ]
+      ],
+      [ [ "cmp_zsm_bone", 50, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_s_hulk",
+    "//": "■ 召喚符（巨体スケルトン）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 9,
+    "time": 25000,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 2 } ],
+    "components": [
+      [ [ "cmp_zsm_bone", 100, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_bomber_z_runner",
+    "//": "■ 召喚符（爆弾ランナー）",
+    "copy-from": "base_zsm_charm_r",
+    "type": "recipe",
+    "difficulty": 5,
+    "time": 6000,
+
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ] ],
+
+    "qualities": [ { "id": "SUMMONING", "level": 2 } ],
+    "components": [
+      [ [ "cmp_zsm_meat", 10, "LIST" ] ],
+      [ [ "cmp_zsm_bone", 10, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ],
+      [ [ "grenade", 1 ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_bone_carpet",
+    "//": "□ 建築符（粗骨の絨毯）",
+    "type": "recipe",
+    "copy-from": "base_zsm_charm_r",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TRAPS",
+    "difficulty": 2,
+    "time": 10000,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ], [ "zsm_eerie_book_fragment_1", 2 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 1 } ],
+    "components": [
+      [ [ "cmp_zsm_bone", 10, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_bone_wall",
+    "//": "□ 建築符（骨の障壁）",
+    "type": "recipe",
+    "copy-from": "zsm_charm_bone_carpet",
+    "difficulty": 3,
+    "time": 10000,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ], [ "zsm_eerie_book_fragment_2", 2 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 1 } ],
+    "components": [
+      [ [ "cmp_zsm_bone", 10, "LIST" ] ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ]
+    ]
+  },
+  {
+    "result" : "zsm_charm_flesh_wall",
+    "//": "□ 建築符（肉の壁）",
+    "type": "recipe",
+     "copy-from": "zsm_charm_bone_carpet",
+    "difficulty": 4,
+    "time": 10000,
+    
+    "book_learn": [ [ "zsm_book_of_desecration", 0 ], [ "zsm_eerie_book_fragment_3", 2 ] ],
+    
+    "qualities": [ { "id": "SUMMONING", "level": 1 } ],
+    "components": [
+      [
+        [ "cmp_zsm_meat", 20, "LIST" ]
+      ],
+      [ [ "cmp_zsm_paper", 1, "LIST" ] ]
+    ]
+  }
+	,{
+		"//": "■レシピ：召喚符（地獄穴）",
+		"type": "recipe",
+		"result": "zsm_charm_trap_hole",
+		"copy-from": "zsm_charm_bone_carpet",
+
+		"difficulty": 5,
+		"time": 50000,
+		"book_learn": [ [ "zsm_book_of_desecration", 0 ] ],
+
+		"qualities": [ { "id": "SUMMONING", "level": 1 } ],
+		"components": [
+			[
+				[ "cmp_zsm_meat", 300, "LIST" ]
+			]
+		]
+	}
+
+
+
+
+]

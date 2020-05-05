@@ -1,0 +1,10 @@
+[
+  {
+    "//": "■ more_classes_scenarios ＭＯＤのシナリオ「籠城」(大邸宅)への追加職業",
+    "type" : "scenario",
+    "ident" : "mansion_scen",
+    "copy-from" : "mansion_scen",
+    
+    "extend": { "professions" : [ "AB_Alice" ] }
+  }
+]

@@ -1,0 +1,282 @@
+{
+  "type": "mod_tileset",
+  "compatibility": [ "MShock32Modded", "MshockXottoplus", "MshockXottoplus11J", "MshockXottoplus12", "MSX++DEAD_PEOPLE", "MSX++ZaragaTiles", "Custom Tileset", "UNDEAD_PEOPLE" ],
+  "tile_info": [
+    {
+      "height": 32,
+      "width": 32
+    }
+  ],
+  "tiles-new": [
+    {
+      "file": "zsm_gfx/tiles_zsm_32x32.png",
+      "tiles": [
+
+
+        {
+          "id": "zsm_sleep_rat",
+          "fg": 27
+        },
+        {
+          "id": "zsm_sleep_bat",
+          "fg": 28
+        },
+        {
+          "id": "zsm_sleep_dragonfly",
+          "fg": 29
+        },
+        {
+          "id": [ "zsm_sleep_rabbit_bot_LV1", "zsm_sleep_rabbit_bot_LV2", "zsm_sleep_rabbit_bot_LV3",
+          		"zsm_repair_rabbit_bot_LV1", "zsm_repair_rabbit_bot_LV2", "zsm_repair_rabbit_bot_LV3" ],
+          "fg": 30
+        },
+
+
+        {
+          "id": [ "mon_zsm_jiangshi_LV1", "mon_zsm_jiangshi_LV2", "mon_zsm_jiangshi_LV3", "mon_zsm_jiangshi_LV4"],
+          "fg": 113,
+          "bg": 0
+        },
+        {
+          "id": [ "zsm_sleeping_jiangshi_LV1", "zsm_sleeping_jiangshi_LV2", "zsm_sleeping_jiangshi_LV3", "zsm_sleeping_jiangshi_LV4"],
+          "fg": 114
+        },
+        {
+          "id": [ "zsm_repair_jiangshi_LV1", "zsm_repair_jiangshi_LV2", "zsm_repair_jiangshi_LV3", "zsm_repair_jiangshi_LV4"],
+          "fg": 114
+        },
+        {
+          "id": "mon_zsm_zombie_summoner",
+          "fg": 128,
+          "bg": 0
+        },
+        {
+          "id": "mon_zsm_zombie_summoner_elite",
+          "fg": 129,
+          "bg": 0
+        },
+        {
+          "id": "mon_zsm_dead_summoner",
+          "fg": 130,
+          "bg": 0
+        },
+        {
+          "id": "f_zsm_bone_carpet",
+          "fg": 160
+        },
+        {
+          "id": "f_zsm_bone_fence",
+          "fg": 161
+        },
+        {
+          "id": "f_zsm_flesh_wall",
+          "fg": 162
+        },
+
+        {
+          "id": [ "zsm_charm_blank", "zsm_charm_bone_carpet", "zsm_charm_bone_wall", "zsm_charm_flesh_wall", "zsm_charm_trap_hole", "zsm_charm_skull_field" ],
+          "fg": 208
+        },
+        {
+          "id": [ "zsm_charm_zombie", "zsm_charm_z_child", "zsm_charm_z_tough", "zsm_charm_z_fat", "zsm_charm_z_dog", "zsm_charm_z_dog_rot", "zsm_charm_z_acidic", "zsm_charm_boomer", "zsm_charm_z_gasbag", "zsm_charm_z_smoker", "zsm_charm_z_grabber", "zsm_charm_z_grappler", "zsm_charm_z_shrieker", "zsm_charm_z_screecher", "zsm_charm_z_shady", "zsm_charm_z_swimmer", "zsm_charm_z_cop", "zsm_charm_z_crawler", "zsm_charm_z_biter", "zsm_charm_z_hazmat"],
+          "fg": 209
+        },
+        {
+          "id": [ "zsm_charm_z_dog_cop", "zsm_charm_zolf", "zsm_charm_s_dog", "zsm_charm_zombear", "zsm_charm_zougar", "zsm_charm_skeleton", "zsm_charm_z_spitter", "zsm_charm_z_electric", "zsm_charm_boomer_huge", "zsm_charm_z_hunter", "zsm_charm_z_predator", "zsm_charm_z_runner", "zsm_charm_z_technician", "zsm_charm_z_mancroc", "zsm_charm_z_hollow", "zsm_charm_z_survivor", "zsm_charm_z_soldier", "zsm_charm_z_bio_op", "zsm_charm_z_armored", "zsm_charm_z_fireman", "zsm_charm_z_fiend", "zsm_charm_z_brute"],
+          "fg": 210
+        },
+        {
+          "id": [ "zsm_charm_zoose", "zsm_charm_z_corrosive", "zsm_charm_z_necro", "zsm_charm_z_master", "zsm_charm_z_brute_grappler", "zsm_charm_z_brute_ninja", "zsm_charm_z_brute_shocker", "zsm_charm_z_hulk", "zsm_charm_s_hulk"],
+          "fg": 211
+        },
+
+        {
+          "id": "overlay_worn_zsm_head_ribbon_blue",
+          "fg": 288
+        },
+        {
+          "id": "overlay_worn_zsm_head_ribbon_black",
+          "fg": 300
+        },
+        {
+          "id": "overlay_worn_zsm_head_ribbon_white",
+          "fg": 301
+        },
+        {
+          "id": "zsm_dress_blue",
+          "fg": 302
+        },
+        {
+          "id": "overlay_worn_zsm_dress_blue",
+          "fg": 302
+        },
+        {
+          "id": "overlay_worn_zsm_white_apron",
+          "fg": 303
+        },
+        {
+          "id": "overlay_worn_zsm_suspenders_skirt",
+          "fg": 289
+        },
+        {
+          "id": "overlay_worn_zsm_waist_ribbon_w",
+          "fg": 290
+        },
+        {
+          "id": "overlay_worn_zsm_stockings_stripe_black",
+          "fg": 291
+        },
+        {
+          "id": "overlay_worn_zsm_stockings_stripe_blue",
+          "fg": 292
+        },
+        {
+          "id": "overlay_worn_zsm_half_tanktop_cyan",
+          "fg": 293
+        },
+        {
+          "id": "overlay_worn_zsm_bra_cyan",
+          "fg": 294
+        },
+        {
+          "id": "overlay_worn_zsm_panties_cyan",
+          "fg": 295
+        },
+        {
+          "id": "overlay_wielded_zsm_Alice_in_Deadmans_Land",
+          "fg": 304
+        },
+        {
+          "id": "overlay_wielded_zsm_Book_of_The_Engage",
+          "fg": 304
+        },
+        {
+          "id": "overlay_worn_zsm_brooch_tie_red",
+          "fg": 307
+        },
+        {
+          "id": "overlay_worn_zsm_dress_shirt_violet",
+          "fg": 308
+        },
+        {
+          "id": "overlay_worn_zsm_ankle_strap_shoes_red",
+          "fg": 309
+        },
+        {
+          "id": "overlay_worn_zsm_skirt_purple",
+          "fg": 310
+        },
+        {
+          "id": "overlay_worn_zsm_tights_violet",
+          "fg": 311
+        },
+        {
+          "id": "overlay_worn_zsm_vest_purple",
+          "fg": 312
+        },
+        {
+          "id": "overlay_worn_zsm_half_tanktop_violet",
+          "fg": 313
+        },
+        {
+          "id": "overlay_worn_zsm_bra_violet",
+          "fg": 314
+        },
+        {
+          "id": "overlay_worn_zsm_panties_violet",
+          "fg": 315
+        }
+        ,{
+          "id": [ "zsm_sealed_coffin_zsummoner", "zsm_sealed_coffin_zsummoner_e", "zsm_sealed_coffin_jiangshi", "zsm_sealed_coffin_salmon",
+                  "zsm_sealed_coffin_amigara", "zsm_sealed_coffin_b_ninja"
+          ],
+          "fg": 163,
+          "bg": 164
+        }
+        ,{
+          "id": "zsm_sealed_coffin_d_summoner",
+          "fg": 164,
+          "bg": 163
+        }
+
+        ,{
+          "id": "tr_zsm_skull_field",
+          "fg": 160
+        }
+        ,{
+          "id": "tr_zsm_trap_hole",
+          "fg": 165
+        }
+        ,{
+          "id": "mon_zsm_skull_upper",
+          "fg": 132
+        }
+        ,{
+          "id": "mon_zsm_hello_skull",
+          "fg": 133
+        }
+        ,{
+          "id": [ "zsm_charm_skull_upper_cut", "zsm_charm_hello_skull"],
+          "fg": 209
+        }
+
+        ,{
+          "id": "zsm_sleep_pawn",
+          "fg": 223
+        }
+        ,{
+          "id": "zsm_sleep_knight",
+          "fg": 222
+        }
+        ,{
+          "id": "zsm_sleep_queen",
+          "fg": 221
+        }
+		,{
+			"id": "mon_zsm_piece_of_pawn",
+			"fg": [
+				{ "weight":20, "sprite":143},
+				{ "weight":9, "sprite":159},
+				{ "weight":1, "sprite":127}
+			],
+			"bg": 0
+		}
+		,{
+			"id": "mon_zsm_piece_of_knight",
+			"fg": [
+				{ "weight":20, "sprite":142},
+				{ "weight":9, "sprite":158},
+				{ "weight":1, "sprite":126}
+			],
+			"bg": 0
+		}
+		,{
+			"id": "mon_zsm_piece_of_queen",
+			"fg": [
+				{ "weight":20, "sprite":141},
+				{ "weight":9, "sprite":157},
+				{ "weight":1, "sprite":125}
+			],
+			"bg": 0
+		}
+
+      ]
+    },
+    {
+      "file": "./zsm_gfx/zsm_mut_32x32.png",
+      "tiles": [
+        {
+          "id": "overlay_mutation_PURPLE_EYE",
+          "fg": 320
+        },
+        {
+          "id": "overlay_mutation_PURPLE_HAIR",
+          "fg": 321
+        }
+	  ]
+	}
+
+
+
+  ]
+}

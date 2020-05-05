@@ -1,0 +1,298 @@
+[
+  {
+    "//": "■召喚モンスターの基本ドロップアイテム",
+    "type" : "item_group",
+    "subtype": "collection",
+    "id" : "summoning_monster_drops",
+    "entries":
+    [
+          { "item": "zsm_charm_blank", "prob": 50}
+    ]
+  },
+  {
+    "//": "■召喚・ゾンビ警察犬のドロップアイテム",
+    "type" : "item_group",
+    "subtype": "collection",
+    "id" : "zsm_mon_copdog_drops",
+    "entries":
+    [
+        { "item": "zsm_charm_blank"},
+        { "item": "kevlar_harness"}
+    ]
+  },
+  {
+    "//": "■召喚・放電ゾンビ、放電凶獣のドロップアイテム",
+    "type" : "item_group",
+    "subtype": "collection",
+    "id" : "zsm_mon_z_electric_drops",
+    "entries":
+    [
+        { "item": "zsm_charm_blank"},
+        { "item": "bio_chain_lightning"}
+    ]
+  },
+  {
+    "//": "■召喚・フェラルハンター、プレデターのドロップアイテム",
+    "type" : "item_group",
+    "subtype": "collection",
+    "id" : "zsm_mon_z_hunter_drops",
+    "entries":
+    [
+        { "item": "zsm_charm_blank"},
+        { "item": "spring"}
+    ]
+  },
+  {
+    "//": "■召喚・技術者ゾンビのドロップアイテム",
+    "type" : "item_group",
+    "subtype": "collection",
+    "id" : "zsm_mon_z_technician_drops",
+    "entries":
+    [
+        { "item": "zsm_charm_blank"},
+        { "item": "bio_magnet"}
+    ]
+  },
+  {
+    "//": "■召喚・サバイバーゾンビのドロップアイテム",
+    "type" : "item_group",
+    "subtype": "collection",
+    "id" : "zsm_mon_z_survivor_drops",
+    "entries":
+    [
+        { "item": "zsm_charm_blank"},
+        { "item": "makeshift_machete"}
+    ]
+  },
+  {
+    "//": "■召喚・装甲ゾンビのドロップアイテム",
+    "type" : "item_group",
+    "subtype": "collection",
+    "id" : "zsm_mon_z_armor_drops",
+    "entries":
+    [
+        { "item": "zsm_charm_blank"},
+        { "item": "mil_plate"}
+    ]
+  },
+  {
+    "//": "■召喚・格闘ゾンビのドロップアイテム",
+    "type" : "item_group",
+    "subtype": "collection",
+    "id" : "zsm_mon_z_grappler_drops",
+    "entries":
+    [
+        { "item": "zsm_charm_blank"},
+        { "item": "bio_str_enhancer"}
+    ]
+  },
+  {
+    "//": "■召喚・夜行ゾンビのドロップアイテム",
+    "type" : "item_group",
+    "subtype": "collection",
+    "id" : "zsm_mon_z_ninja_drops",
+    "entries":
+    [
+        { "item": "zsm_charm_blank"},
+        { "item": "bio_infrared"}
+    ]
+  },
+  {
+    "//": "■召喚・爆弾ランナーのドロップアイテム",
+    "type" : "item_group",
+    "subtype": "collection",
+    "id" : "zsm_mon_b_runner_drops",
+    "entries":
+    [
+        { "item": "zsm_charm_blank"},
+        { "item": "zsm_active_grenade"}
+    ]
+  },
+
+
+
+  {
+    "//": "■ゾンビ召喚士系の特殊ドロップアイテム",
+    "type" : "item_group",
+    "id" : "zsm_zombie_summner_drops",
+    "items": [
+      [ "zsm_book_of_desecration", 5 ],
+      [ "zsm_Book_of_Electric", 10 ],
+      [ "zsm_Book_of_Fire", 10 ],
+      [ "zsm_Book_of_Failed", 10 ],
+
+      [ "zsm_Book_of_Lightning", 1 ],
+      [ "zsm_Book_of_Flare", 1 ],
+      [ "zsm_Book_of_Poison", 1 ],
+
+      [ "zsm_rifle_magic_musket", 5 ],
+
+      [ "zsm_summoner_staff", 1 ]
+    ]
+  },
+  {
+    "//": "■上級ゾンビ召喚士系の特殊ドロップアイテム",
+    "type" : "item_group",
+    "id" : "zsm_zombie_summner_e_drops",
+    "items": [
+      [ "zsm_book_of_desecration", 4 ],
+      [ "zsm_Book_of_Electric", 6 ],
+      [ "zsm_Book_of_Fire", 6 ],
+      [ "zsm_Book_of_Failed", 6 ],
+
+      [ "zsm_Book_of_Lightning", 1 ],
+      [ "zsm_Book_of_Flare", 1 ],
+      [ "zsm_Book_of_Poison", 1 ],
+
+      [ "zsm_rifle_magic_musket", 6 ],
+
+      [ "zsm_summoner_staff", 4 ]
+    ]
+  },
+  {
+    "//": "■屍召喚師の特殊ドロップアイテム",
+    "type" : "item_group",
+    "id" : "zsm_dead_summner_book_drops",
+    "items": [
+      [ "zsm_book_of_desecration", 2 ],
+      [ "zsm_Book_of_Lightning", 10 ],
+      [ "zsm_Book_of_Flare", 10 ],
+      [ "zsm_Book_of_Poison", 10 ],
+
+      [ "zsm_Book_of_The_Engage", 1 ],
+      [ "zsm_Alice_in_Deadmans_Land", 1 ]
+    ]
+  },
+  {
+    "//": "■屍召喚師の特殊ドロップアイテム２",
+    "type" : "item_group",
+    "id" : "zsm_dead_summner_drops",
+    "items": [
+      [ "zsm_old_battleaxe", 10 ],
+      [ "zsm_to_BloodRing", 10 ],
+
+      [ "zsm_d_summoner_staff", 15 ]
+    ]
+  },
+  {
+    "type" : "item_group",
+    "subtype": "collection",
+    "id" : "zsm_mon_z_summoner_drops",
+    "//": "■ゾンビ召喚士のドロップアイテム count:ドロップ数の上限加減、prob:発生率(probability)？",
+    "entries":
+    [
+          { "group": "zsm_zombie_summner_drops", "prob": 100},
+          { "item": "zsm_bone_arrow_curse", "count": [0, 2], "prob": 20},
+          { "item": "zsm_charm_z_tough", "count": [0, 4], "prob": 40 },
+          { "item": "zsm_charm_z_fat", "count": [0, 2], "prob": 40},
+          { "item": "zsm_charm_z_dog_rot", "count": [0, 2], "prob": 40},
+          { "item": "zsm_charm_z_grabber", "count": [0, 2], "prob": 40},
+          { "item": "zsm_charm_z_runner", "prob": 50},
+          { "item": "zsm_relax_gas_ball", "prob": 30}
+    ]
+  },
+  {
+    "type" : "item_group",
+    "subtype": "collection",
+    "id": "zsm_mon_z_summoner_elite_drops",
+    "//": "■上級ゾンビ召喚士のドロップアイテム",
+    "entries":
+    [
+        { "group": "zsm_zombie_summner_e_drops", "prob": 100},
+        { "item": "zsm_bone_arrow_curse", "count": [0, 2], "prob": 30},
+        { "item": "zsm_charm_boomer", "count": [0, 4], "prob": 40 },
+        { "item": "zsm_charm_z_acidic", "count": [0, 2], "prob": 40},
+        { "item": "zsm_charm_z_fiend", "count": [0, 2], "prob": 40},
+        { "item": "zsm_charm_zombear", "count": [0, 2], "prob": 40},
+        { "item": "zsm_charm_z_survivor", "prob": 50},
+        { "item": "zsm_relax_gas_ball", "prob": 60}
+    ]
+  },
+  {
+    "type" : "item_group",
+    "subtype": "collection",
+    "id": "zsm_mon_dead_summoner_drops",
+    "//": "■屍召喚師のドロップアイテム",
+    "entries":
+    [
+        { "group": "zsm_dead_summner_book_drops", "prob": 100},
+        { "group": "zsm_dead_summner_drops", "prob": 100},
+        { "item": "zsm_charm_z_armored", "count": [0, 4], "prob": 40 },
+        { "item": "zsm_charm_z_bio_op", "prob": 50},
+        { "item": "zsm_charm_z_necro", "prob": 50},
+        { "item": "zsm_charm_zoose", "prob": 50},
+        { "item": "zsm_charm_s_hulk", "prob": 100},
+        { "item": "zsm_web_ball", "prob": 50}
+    ]
+  }
+
+
+
+
+  ,{
+    "//": "■ゾンビ召喚符レシピ本のアイテムグループ",
+    "type" : "item_group",
+    "id" : "zsm_zsummoner_book_drops",
+    "items":[
+      ["zsm_eerie_book_fragment_1", 10],
+      ["zsm_eerie_book_fragment_2", 10],
+      ["zsm_eerie_book_fragment_3", 10],
+      ["zsm_bone_arrow_curse", 1]
+    ]
+  }
+  ,{
+    "//": "■ゾンビ系の汎用ドロップアイテム枠に「召喚レシピ本」追加",
+    "id": "default_zombie_death_drops",
+    "type": "item_group",
+    "subtype": "collection",
+    
+    "entries": [
+      { "group": "zsm_zsummoner_book_drops", "damage": [ 0, 4 ], "prob": 1 }
+    ]
+  }
+
+
+  ,{
+    "//": "■封印された棺のアイテムグループ",
+    "type" : "item_group",
+    "id" : "zsm_sealed_coffin_drops",
+    "items":[
+      ["zsm_sealed_coffin_zsummoner", 16 ],
+      ["zsm_sealed_coffin_zsummoner_e", 8 ],
+      ["zsm_sealed_coffin_d_summoner", 2 ],
+
+      ["zsm_sealed_coffin_jiangshi", 1],
+      ["zsm_sealed_coffin_salmon", 1],
+
+      ["zsm_sealed_coffin_amigara", 1],
+      ["zsm_sealed_coffin_b_ninja", 1]
+    ]
+  }
+  ,{
+    "//": "■巨体ゾンビのアイテムドロップ枠に「封印された棺」追加　",
+    "id": "mon_zombie_hulk_death_drops",
+    "type": "item_group",
+    "subtype": "collection",
+    
+    "entries": [
+      { "group": "zsm_sealed_coffin_drops", "damage": [ 0, 1 ], "prob": 30 }
+    ]
+  }
+  ,{
+    "//": "■兵士ゾンビ系のアイテムドロップ枠に「封印された棺」追加（軍系の惨劇後でも落ちているのを確認。）",
+    "id": "mon_zombie_soldier_death_drops",
+    "type": "item_group",
+    "subtype": "collection",
+    
+    "entries": [
+      { "group": "zsm_sealed_coffin_drops", "damage": [ 0, 1 ], "prob": 10 }
+    ]
+  }
+
+
+
+
+
+
+
+]

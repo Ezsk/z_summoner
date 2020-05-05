@@ -1,0 +1,45 @@
+[
+    {
+        "type": "profession",
+        "ident": "AB_Alice",
+        "name": {
+            "male": "(※女性想定の職業です。)",
+            "female": "ネクロマンサーの少女"
+        },
+        "description": "気が付くと全く知らない場所にいました。 \n途方に暮れる？いいえ、いいえ……その娘は言いました \n「……面白いじゃない、征服して私の領土にしてあげるわ！」ってね。",
+        "points": 4,
+        "traits": [
+            "PSYCHOPATH",
+            "PRETTY",
+            "PURPLE_EYE",
+            "PURPLE_HAIR"
+        ],
+        "items": {
+            "both" : {
+                "items": [
+                  "zsm_ankle_strap_shoes_red",
+                  "zsm_tights_violet",
+                  "zsm_dress_shirt_violet",
+                  "zsm_skirt_purple",
+                  "zsm_vest_purple",
+                  "zsm_brooch_tie_red",
+                  "ear_plugs",
+                  "zsm_charm_skull_upper_cut",
+                  "zsm_charm_hello_skull",
+                  "zsm_charm_skull_field"
+                ],
+                "entries": [
+                    { "item": "zsm_Book_of_The_Engage"},
+                    { "item": "zsm_ammo_meteo_skull", "charges": 20 }
+                ]
+            },
+            "male": [
+                "boy_shorts"
+            ],
+            "female": [
+                "zsm_half_tanktop_violet",
+                "zsm_panties_violet"
+            ]
+        }
+    }
+]

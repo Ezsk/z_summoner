@@ -1,0 +1,229 @@
+[
+	{
+		"//": "■レシピ：魔法力（弾薬）",
+		"type": "recipe",
+		"result": "zsm_ammo_magi_base",
+		"category": "CC_AMMO",
+		"subcategory": "CSC_AMMO_OTHER",
+
+		"difficulty": 1,
+		"time": 5000,
+		"skill_used": "speech",
+
+		"autolearn" : false,
+		"reversible": false,
+		"book_learn": [ [ "zsm_Book_of_Electric", 0 ], [ "zsm_Book_of_Fire", 0 ] ],
+
+		"qualities": [ { "id": "SUMMONING", "level": 1 } ],
+		"components": [
+			[
+				[ "cmp_zsm_meat", 20, "LIST" ],
+				[ "bone_tainted", 2 ]
+			]
+		]
+	}
+	,{
+		"//": "■レシピ：魔法力・強（弾薬）",
+		"type": "recipe",
+		"result": "zsm_ammo_magi_high",
+		"copy-from": "zsm_ammo_magi_base",
+
+		"difficulty": 5,
+		"time": 5000,
+		"book_learn": [ [ "zsm_Book_of_Lightning", 0 ], [ "zsm_Book_of_Flare", 0 ] ],
+
+		"qualities": [ { "id": "SUMMONING", "level": 1 } ],
+		"components": [
+			[
+				[ "cmp_zsm_meat", 60, "LIST" ],
+				[ "bone_tainted", 6 ]
+			]
+		]
+	}
+	,{
+		"//": "■レシピ：魔法力・雷（弾薬）",
+		"type": "recipe",
+		"result": "zsm_ammo_magi_lightning",
+		"copy-from": "zsm_ammo_magi_base",
+
+		"difficulty": 1,
+		"time": 5000,
+		"book_learn": [ [ "zsm_Book_of_Electric", 0 ], [ "zsm_Book_of_Lightning", 0 ] ],
+
+		"qualities": [ { "id": "SUMMONING", "level": 1 } ],
+		"components": [
+			[
+				[ "cmp_zsm_meat", 40, "LIST" ],
+				[ "bone_tainted", 4 ]
+			]
+		]
+	}
+	,{
+		"//": "■レシピ：魔法力・光（弾薬）",
+		"type": "recipe",
+		"result": "zsm_ammo_magi_flash",
+		"copy-from": "zsm_ammo_magi_base",
+
+		"difficulty": 1,
+		"time": 5000,
+		"book_learn": [ [ "zsm_Book_of_Lightning", 0 ] ],
+
+		"qualities": [ { "id": "SUMMONING", "level": 1 } ],
+		"components": [
+			[
+				[ "cmp_zsm_meat", 40, "LIST" ],
+				[ "bone_tainted", 4 ]
+			]
+		]
+	}
+	,{
+		"//": "■レシピ：魔法力・炎（弾薬）",
+		"type": "recipe",
+		"result": "zsm_ammo_magi_flare",
+		"copy-from": "zsm_ammo_magi_base",
+
+		"difficulty": 1,
+		"time": 5000,
+		"book_learn": [ [ "zsm_Book_of_Fire", 0 ], [ "zsm_Book_of_Flare", 0 ] ],
+
+		"qualities": [ { "id": "SUMMONING", "level": 1 } ],
+		"components": [
+			[
+				[ "cmp_zsm_meat", 40, "LIST" ],
+				[ "bone_tainted", 4 ]
+			]
+		]
+	}
+	,{
+		"//": "■レシピ：魔法力・灰（弾薬）",
+		"type": "recipe",
+		"result": "zsm_ammo_magi_ash",
+		"copy-from": "zsm_ammo_magi_base",
+
+		"difficulty": 1,
+		"time": 5000,
+		"book_learn": [ [ "zsm_Book_of_Fire", 0 ], [ "zsm_Book_of_Flare", 0 ] ],
+
+		"qualities": [ { "id": "SUMMONING", "level": 1 } ],
+		"components": [
+			[
+				[ "cmp_zsm_meat", 40, "LIST" ],
+				[ "bone_tainted", 4 ]
+			]
+		]
+	}
+	,{
+		"//": "■レシピ：魔法力・爆（弾薬）",
+		"type": "recipe",
+		"result": "zsm_ammo_magi_bomb",
+		"copy-from": "zsm_ammo_magi_base",
+
+		"difficulty": 1,
+		"time": 5000,
+		"book_learn": [ [ "zsm_Book_of_Flare", 0 ] ],
+
+		"qualities": [ { "id": "SUMMONING", "level": 1 } ],
+		"components": [
+			[
+				[ "cmp_zsm_meat", 60, "LIST" ],
+				[ "bone_tainted", 6 ]
+			]
+		]
+	}
+	,{
+		"//": "■レシピ：魔法力・衰（弾薬）",
+		"type": "recipe",
+		"result": "zsm_ammo_magi_sterile",
+		"copy-from": "zsm_ammo_magi_base",
+
+		"difficulty": 1,
+		"time": 5000,
+		"book_learn": [ [ "zsm_Book_of_Poison", 0 ] ],
+
+		"qualities": [ { "id": "SUMMONING", "level": 1 } ],
+		"components": [
+			[
+				[ "cmp_zsm_meat", 40, "LIST" ],
+				[ "bone_tainted", 4 ]
+			]
+		]
+	}
+	,{
+		"//": "■レシピ：魔法力・毒（弾薬）",
+		"type": "recipe",
+		"result": "zsm_ammo_magi_poison",
+		"copy-from": "zsm_ammo_magi_base",
+
+		"difficulty": 1,
+		"time": 5000,
+		"book_learn": [ [ "zsm_Book_of_Poison", 0 ] ],
+
+		"qualities": [ { "id": "SUMMONING", "level": 1 } ],
+		"components": [
+			[
+				[ "cmp_zsm_meat", 40, "LIST" ],
+				[ "bone_tainted", 4 ]
+			]
+		]
+	}
+
+
+
+	,{
+		"//": "■レシピ：安らぎの玉",
+		"type": "recipe",
+		"result": "zsm_relax_gas_ball",
+		"copy-from": "zsm_ammo_magi_base",
+
+		"difficulty": 1,
+		"time": 5000,
+		"book_learn": [ [ "zsm_Book_of_Poison", 0 ] ],
+
+		"qualities": [ { "id": "SUMMONING", "level": 1 } ],
+		"components": [
+			[
+				[ "cmp_zsm_meat", 30, "LIST" ],
+				[ "bone_tainted", 3 ]
+			]
+		]
+	}
+	,{
+		"//": "■レシピ：クモの巣玉",
+		"type": "recipe",
+		"result": "zsm_web_ball",
+		"copy-from": "zsm_ammo_magi_base",
+
+		"difficulty": 1,
+		"time": 5000,
+		"book_learn": [ [ "zsm_Book_of_Failed", 0 ] ],
+
+		"qualities": [ { "id": "SUMMONING", "level": 1 } ],
+		"components": [
+			[
+				[ "cmp_zsm_meat", 30, "LIST" ],
+				[ "bone_tainted", 3 ]
+			]
+		]
+	}
+	,{
+		"//": "■レシピ：電気玉",
+		"type": "recipe",
+		"result": "zsm_elesmoke_ball",
+		"copy-from": "zsm_ammo_magi_base",
+
+		"difficulty": 1,
+		"time": 5000,
+		"book_learn": [ [ "zsm_Book_of_Electric", 0 ], [ "zsm_Book_of_Lightning", 0 ] ],
+
+		"qualities": [ { "id": "SUMMONING", "level": 1 } ],
+		"components": [
+			[
+				[ "cmp_zsm_meat", 90, "LIST" ],
+				[ "bone_tainted", 9 ]
+			]
+		]
+	}
+
+
+
+]

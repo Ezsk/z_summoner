@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "mod_type": "SUPPLEMENTAL",
+    "ident": "z_summoner",
+    "name": "ゾンビ召喚",
+    "authors": [ "dou_naga_ojisan" ],
+    "description": "ゾンビを仲間として召喚するアイテム、敵などを追加します。",
+    "dependencies": [ "more_classes_scenarios" ]
+  }
+]

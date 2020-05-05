@@ -1,0 +1,35 @@
+[
+  {
+    "//": "■ドロップアイテム：ウサギさんLV1（LV上昇）",
+    "type" : "item_group",
+    "subtype": "collection",
+    "id" : "zsm_mon_rabbot_LV1_drops",
+    "entries":
+    [
+        { "item": "zsm_repair_rabbit_bot_LV2"}
+    ]
+  }
+  ,{
+    "//": "■ドロップアイテム：ウサギさんLV2（LV上昇）",
+    "type" : "item_group",
+    "subtype": "collection",
+    "id" : "zsm_mon_rabbot_LV2_drops",
+    "entries":
+    [
+        { "item": "zsm_repair_rabbit_bot_LV3"}
+    ]
+  }
+  ,{
+    "//": "■ドロップアイテム：ウサギさんLV3",
+    "type" : "item_group",
+    "subtype": "collection",
+    "id" : "zsm_mon_rabbot_LV3_drops",
+    "entries":
+    [
+        { "item": "zsm_repair_rabbit_bot_LV3"}
+    ]
+  }
+
+
+
+]

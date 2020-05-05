@@ -1,0 +1,182 @@
+[
+    {
+        "type": "sound_effect",
+        "id" : "fire_gun",
+        "volume" : 90,
+        "variant" : "zsm_rifle_magic_musket",
+        "files" : [
+            "guns/boltrifle_generic/weapon_fire_flintlock.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "reload",
+        "volume" : 90,
+        "variant" : "zsm_rifle_magic_musket",
+        "files" : [
+            "guns/misc_generic/weapon_reload_flintlock.ogg"
+        ]
+    },
+
+
+    {
+        "type": "sound_effect",
+        "id" : "fire_gun",
+        "volume" : 30,
+        "variant" : "zsm_Book_of_Electric",
+        "files" : [
+            "melee/small_bash/weapon_attack_wooden_fire.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "reload",
+        "volume" : 30,
+        "variant" : "zsm_Book_of_Electric",
+        "files" : [
+            "melee/small_bash/weapon_attack_wooden.ogg"
+        ]
+    },
+
+
+    {
+        "type": "sound_effect",
+        "id" : "fire_gun",
+        "volume" : 30,
+        "variant" : "zsm_Book_of_Fire",
+        "files" : [
+            "melee/small_bash/weapon_attack_wooden_fire.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "reload",
+        "volume" : 30,
+        "variant" : "zsm_Book_of_Fire",
+        "files" : [
+            "melee/small_bash/weapon_attack_wooden.ogg"
+        ]
+    },
+
+
+    {
+        "type": "sound_effect",
+        "id" : "fire_gun",
+        "volume" : 30,
+        "variant" : "zsm_Book_of_Failed",
+        "files" : [
+            "melee/small_bash/weapon_attack_wooden_fire.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "reload",
+        "volume" : 30,
+        "variant" : "zsm_Book_of_Failed",
+        "files" : [
+            "melee/small_bash/weapon_attack_wooden.ogg"
+        ]
+    },
+
+
+    {
+        "type": "sound_effect",
+        "id" : "fire_gun",
+        "volume" : 30,
+        "variant" : "zsm_Book_of_Lightning",
+        "files" : [
+            "melee/small_bash/weapon_attack_wooden_fire.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "reload",
+        "volume" : 30,
+        "variant" : "zsm_Book_of_Lightning",
+        "files" : [
+            "melee/small_bash/weapon_attack_wooden.ogg"
+        ]
+    },
+
+
+    {
+        "type": "sound_effect",
+        "id" : "fire_gun",
+        "volume" : 30,
+        "variant" : "zsm_Book_of_Flare",
+        "files" : [
+            "melee/small_bash/weapon_attack_wooden_fire.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "reload",
+        "volume" : 30,
+        "variant" : "zsm_Book_of_Flare",
+        "files" : [
+            "melee/small_bash/weapon_attack_wooden.ogg"
+        ]
+    },
+
+
+    {
+        "type": "sound_effect",
+        "id" : "fire_gun",
+        "volume" : 30,
+        "variant" : "zsm_Book_of_Poison",
+        "files" : [
+            "melee/small_bash/weapon_attack_wooden_fire.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "reload",
+        "volume" : 30,
+        "variant" : "zsm_Book_of_Poison",
+        "files" : [
+            "melee/small_bash/weapon_attack_wooden.ogg"
+        ]
+    },
+
+
+    {
+        "type": "sound_effect",
+        "id" : "fire_gun",
+        "volume" : 30,
+        "variant" : "zsm_Book_of_The_Engage",
+        "files" : [
+            "melee/small_bash/weapon_attack_wooden_fire.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "reload",
+        "volume" : 30,
+        "variant" : "zsm_Book_of_The_Engage",
+        "files" : [
+            "melee/small_bash/weapon_attack_wooden.ogg"
+        ]
+    },
+
+
+    {
+        "type": "sound_effect",
+        "id" : "fire_gun",
+        "volume" : 30,
+        "variant" : "zsm_Ring_of_Blood",
+        "files" : [
+            "melee/small_bash/weapon_attack_wooden_fire.ogg"
+        ]
+    },
+    {
+        "type": "sound_effect",
+        "id" : "reload",
+        "volume" : 10,
+        "variant" : "zsm_Ring_of_Blood",
+        "files" : [
+            "player/death_m/death_3.ogg"
+        ]
+    }
+
+
+]

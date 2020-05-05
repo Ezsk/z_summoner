@@ -1,0 +1,240 @@
+[  
+  {
+    "result": "zsm_dress_shirt_violet",
+     "//": "■ドレスシャツ(スミレ色)",
+    "copy-from": "base_zsm_AB_Alice_r",
+
+    "type": "recipe",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "difficulty": 3,
+    "time": 120000,
+    "decomp_learn": 3,
+    "using": [ [ "filament", 25 ] ],
+    "qualities": [
+      { "id": "SEW", "level": 1 }
+    ],
+    "components": [ [ [ "rag", 20 ] ] ]
+  },
+  {
+    "result": "zsm_vest_purple",
+     "//": "■ベスト(紫色)",
+    "copy-from": "base_zsm_AB_Alice_r",
+
+    "type": "recipe",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "difficulty": 2,
+    "time": 38000,
+    "decomp_learn": 2,
+    "using": [ [ "filament", 4 ] ],
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "components": [ [ [ "rag", 5 ] ] ]
+  },
+  {
+    "result": "zsm_skirt_purple",
+     "//": "■スカート(紫色)レシピ　カーゴパンツのコピー",
+    "copy-from": "base_zsm_AB_Alice_r",
+
+    "type": "recipe",
+    "subcategory": "CSC_ARMOR_LEGS",
+    "difficulty": 2,
+    "time": 30000,
+    "decomp_learn": 2,
+    "using": [ [ "filament", 16 ] ],
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "components": [ [ [ "rag", 8 ] ] ]
+  },
+  {
+    "result": "zsm_tights_violet",
+     "//": "■タイツ(スミレ色)レシピ　ストッキングのコピー",
+    "copy-from": "base_zsm_AB_Alice_r",
+
+    "type": "recipe",
+    "subcategory": "CSC_ARMOR_FEET",
+    "difficulty": 1,
+    "time": 10000,
+    "decomp_learn": 1,
+    "using": [ [ "filament", 6 ] ],
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "components": [ [ [ "rag", 8 ] ] ]
+  },
+  {
+    "result": "zsm_brooch_tie_red",
+     "//": "■ブローチタイ(赤)レシピ",
+    "copy-from": "base_zsm_AB_Alice_r",
+
+    "type": "recipe",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "difficulty": 2,
+    "time": 5000,
+    "decomp_learn": 2,
+    "using": [ [ "filament", 2 ] ],
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "components": [ 
+        [ [ "rag", 2 ] ],
+        [ [ "jade_brooch", 1 ] ] 
+    ]
+  },
+
+  {
+    "result": "zsm_ankle_strap_shoes_red",
+     "//": "■アンクルストラップシューズ(赤)のレシピ",
+    "copy-from": "base_zsm_AB_Alice_r",
+
+    "type": "recipe",
+    "subcategory": "CSC_ARMOR_FEET",
+    "difficulty": 3,
+    "time": 66000,
+    "decomp_learn": 3,
+    "using": [ [ "filament", 10 ] ],
+    "qualities": [
+      { "id": "CUT", "level": 1 },
+      { "id": "SEW", "level": 1 }
+    ],
+    "components": [
+        [ [ "leather", 8 ], [ "tanned_hide", 1 ] ],
+        [ [ "steel_chunk", 1 ] ]
+     ]
+  },
+  
+  {
+    "result": "zsm_half_tanktop_violet",
+     "//": "■ハーフトップ(スミレ色)",
+    "copy-from": "base_zsm_AB_Alice_r",
+
+    "type": "recipe",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "difficulty": 2,
+    "time": 30000,
+    
+    "using": [ [ "filament", 15 ] ],
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "components": [
+      [ [ "rag", 2 ] ],
+      [ [ "wire", 1 ] ]
+    ]
+  },
+  {
+    "result": "zsm_bra_violet",
+     "//": "■ブラジャー(スミレ色)",
+    "type": "recipe",
+    "copy-from": "zsm_half_tanktop_violet",
+
+    "time": 35000
+  },
+  {
+    "result": "zsm_panties_violet",
+     "//": "■パンティー(スミレ色)",
+    "copy-from": "base_zsm_AB_Alice_r",
+
+    "type": "recipe",
+    "subcategory": "CSC_ARMOR_LEGS",
+    "difficulty": 2,
+    "time": 35000,
+    
+    "using": [ [ "filament", 15 ] ],
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "components": [ [ [ "rag", 2 ] ] ]
+  }
+
+
+
+  ,{
+    "result": "bone_tainted",
+     "//": "■汚染肉→汚染骨　変換（高効率）",
+    "copy-from": "base_zsm_AB_Alice_r",
+    "id_suffix": "z_meat_to_bone_AB",
+
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+
+    "skill_used": "speech",
+    "difficulty": 1,
+    "time": 600,
+    "reversible": false,
+
+    "qualities": [ { "id": "SUMMONING", "level": 3 } ],
+    "components": [
+      [ [ "cmp_zsm_z_meat", 2, "LIST" ] ]
+    ]
+  }
+
+
+
+	,{
+		"//": "■レシピ：スカルアッパー",
+		"type": "recipe",
+		"result": "zsm_charm_skull_upper_cut",
+		"copy-from": "base_zsm_charm_r",
+
+		"difficulty": 1,
+		"time": 5000,
+		"book_learn": [ [ "zsm_Book_of_The_Engage", 0 ] ],
+
+		"qualities": [ { "id": "SUMMONING", "level": 3 } ],
+		"components": [
+			[
+				[ "meat_tainted", 50 ],
+				[ "bone_tainted", 5 ]
+			]
+		]
+	}
+	,{
+		"//": "■レシピ：ハロースカル",
+		"type": "recipe",
+		"result": "zsm_charm_hello_skull",
+		"copy-from": "base_zsm_charm_r",
+
+		"difficulty": 1,
+		"time": 5000,
+		"book_learn": [ [ "zsm_Book_of_The_Engage", 0 ] ],
+
+		"qualities": [ { "id": "SUMMONING", "level": 3 } ],
+		"components": [
+			[
+				[ "meat_tainted", 50 ],
+				[ "bone_tainted", 5 ]
+			]
+		]
+	}
+	,{
+		"//": "■レシピ：メテオスカル",
+		"type": "recipe",
+		"result": "zsm_ammo_meteo_skull",
+		"copy-from": "zsm_ammo_magi_base",
+
+		"difficulty": 1,
+		"time": 5000,
+		"book_learn": [ [ "zsm_Book_of_The_Engage", 0 ] ],
+
+		"qualities": [ { "id": "SUMMONING", "level": 3 } ],
+		"components": [
+			[
+				[ "meat_tainted", 150 ],
+				[ "bone_tainted", 15 ]
+			]
+		]
+	}
+	,{
+		"//": "■レシピ：スカルフィールド",
+		"type": "recipe",
+		"result": "zsm_charm_skull_field",
+		"copy-from": "base_zsm_charm_r",
+
+		"difficulty": 1,
+		"time": 5000,
+		"book_learn": [ [ "zsm_Book_of_The_Engage", 0 ] ],
+
+		"qualities": [ { "id": "SUMMONING", "level": 3 } ],
+		"components": [
+			[
+				[ "meat_tainted", 150 ],
+				[ "bone_tainted", 15 ]
+			]
+		]
+	}
+
+
+
+
+]

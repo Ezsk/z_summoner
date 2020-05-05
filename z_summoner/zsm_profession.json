@@ -1,0 +1,43 @@
+[
+    {
+        "type": "profession",
+        "ident": "irregular_summoner",
+        "name": "イレギュラーな召喚主",
+        "description": "大変動で逃げている際、魔法使いのようなローブを着た人物の落とし物を拾いました。 \nその中には「実はみんなハロウィンの仮装ドッキリだったんだよ！」などと書かれた紙は無く、ゾンビの召喚がどうとか怪しいことが書かれた紙が入っていました……。",
+        "points": 1,
+        "traits": [
+        ],
+        "items": {
+            "both": [
+                "jeans",
+                "longshirt",
+                "socks",
+                "coat_winter",
+                "boots_winter",
+                "knit_scarf",
+                "leather_pouch",
+
+                "zsm_eerie_book_fragment_1",
+                "zsm_eerie_book_fragment_2",
+
+                "zsm_charm_zombie",
+                "zsm_charm_z_crawler",
+                "zsm_charm_z_acidic",
+                "zsm_charm_z_tough",
+                "zsm_charm_z_mancroc",
+                "zsm_charm_zolf",
+                "zsm_charm_z_grabber",
+
+                "zsm_charm_bone_wall",
+                "zsm_charm_bone_carpet"
+            ],
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "bra",
+                "panties"
+            ]
+        }
+    }
+]
