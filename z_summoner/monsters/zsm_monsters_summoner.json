@@ -2,82 +2,68 @@
   {
     "id": "mon_zsm_zombie_summoner",
     "type": "MONSTER",
-    "copy-from" : "mon_zombie_grenadier",
-    
+    "copy-from": "mon_zombie_cop",
     "name": "ゾンビ召喚士",
     "symbol": "S",
     "description": "得体の知れない技術によって死体を呼び出し、操る元人間です。",
-    
-    "starting_ammo": { "zsm_charm_z_fat": 1, "zsm_charm_z_tough": 1, "zsm_charm_z_dog_rot": 1, "zsm_charm_z_grabber": 1, "zsm_charm_z_runner": 1 },
-    "special_attacks": [ [ "GRENADIER", 6 ] ],
-    
-    "death_drops": {
-      "subtype": "collection",
-      "groups": [
-        [ "default_zombie_death_drops", 100 ],
-        [ "zsm_mon_z_summoner_drops", 100 ]
-      ]
+    "starting_ammo": {
+      "zsm_charm_z_fat": 1,
+      "zsm_charm_z_tough": 1,
+      "zsm_charm_z_dog_rot": 1,
+      "zsm_charm_z_grabber": 1,
+      "zsm_charm_z_runner": 1
     },
+    "special_attacks": [ [ "GRENADIER", 6 ] ],
+    "death_drops": { "subtype": "collection", "groups": [ [ "default_zombie_death_drops", 100 ], [ "zsm_mon_z_summoner_drops", 100 ] ] },
     "death_function": [ "NORMAL" ],
     "burn_into": "mon_zombie_scorched",
     "flags": [ "SEES", "HEARS", "BASHES", "GROUP_BASH", "POISON", "REVIVES", "BONES", "PUSH_MON", "INTERIOR_AMMO" ]
-  }
-
-
-
-  ,{
+  },
+  {
     "id": "mon_zsm_zombie_summoner_elite",
     "type": "MONSTER",
-    "copy-from" : "mon_zombie_grenadier_elite",
-    
+    "copy-from": "mon_zombie_soldier",
     "name": "上級ゾンビ召喚士",
     "symbol": "S",
     "description": "得体の知れない技術によって死体を呼び出し、操る元人間です。 \n自身のコレクションに加えるための犠牲者を探しているようです。",
-    
-    "starting_ammo": { "zsm_charm_zombear": 2, "zsm_charm_z_acidic": 2, "zsm_charm_boomer": 4, "zsm_charm_z_fiend": 3, "zsm_charm_z_survivor": 1 },
+    "starting_ammo": {
+      "zsm_charm_zombear": 2,
+      "zsm_charm_z_acidic": 2,
+      "zsm_charm_boomer": 4,
+      "zsm_charm_z_fiend": 3,
+      "zsm_charm_z_survivor": 1
+    },
     "special_attacks": [ [ "GRENADIER_ELITE", 3 ] ],
-    
     "death_drops": {
       "subtype": "collection",
-      "groups": [
-        [ "default_zombie_death_drops", 100 ],
-        [ "zsm_mon_z_summoner_elite_drops", 100 ]
-      ]
+      "groups": [ [ "default_zombie_death_drops", 100 ], [ "zsm_mon_z_summoner_elite_drops", 100 ] ]
     },
     "death_function": [ "NORMAL" ],
     "burn_into": "mon_zombie_scorched",
     "flags": [ "SEES", "HEARS", "BASHES", "GROUP_BASH", "POISON", "REVIVES", "BONES", "PUSH_MON", "INTERIOR_AMMO" ]
-  }
-
-
-
-  ,{
+  },
+  {
     "id": "mon_zsm_dead_summoner",
     "type": "MONSTER",
-    "copy-from" : "mon_zsm_zombie_summoner_elite",
-    
-    "name" : "屍召喚師",
+    "copy-from": "mon_zombie_soldier",
+    "name": "屍召喚師",
     "symbol": "S",
     "color": "white_magenta",
     "description": "魔法のように死者の軍団を呼び出す存在です。 \n……魔法と言えば簡単ですが、実際の所は我々の知らないテクノロジーによって起こされる現象のようです。",
-    
     "diff": 50,
     "hp": 150,
     "speed": 70,
-
     "aggression": 100,
-    "starting_ammo": { "zsm_charm_z_armored": 5, "zsm_charm_z_bio_op": 5, "zsm_charm_z_necro": 1, "zsm_charm_zoose": 5, "zsm_charm_s_hulk": 5 },
-    "special_attacks": [ [ "GRENADIER_ELITE", 3 ] ],
-    
-    "death_drops": {
-      "subtype": "collection",
-      "groups": [
-        [ "default_zombie_death_drops", 100 ],
-        [ "zsm_mon_dead_summoner_drops", 100 ]
-      ]
+    "starting_ammo": {
+      "zsm_charm_z_armored": 5,
+      "zsm_charm_z_bio_op": 5,
+      "zsm_charm_z_necro": 1,
+      "zsm_charm_zoose": 5,
+      "zsm_charm_s_hulk": 5
     },
+    "special_attacks": [ [ "GRENADIER_ELITE", 3 ] ],
+    "death_drops": { "subtype": "collection", "groups": [ [ "default_zombie_death_drops", 100 ], [ "zsm_mon_dead_summoner_drops", 100 ] ] },
     "death_function": [ "NORMAL" ],
     "flags": [ "SEES", "HEARS", "BASHES", "GROUP_BASH", "POISON", "REVIVES", "BONES", "PUSH_MON", "INTERIOR_AMMO" ]
   }
-
 ]

@@ -3,377 +3,305 @@
     "//": "■アイテム：不死者の国のアリス・レシピ本",
     "id": "zsm_Alice_in_Deadmans_Land",
     "type": "BOOK",
-
     "copy-from": "fairy_tales",
     "looks_like": "plays_book",
-
     "name": "本(一般/不死者の国のアリス)<color_green>[z_summon]</color>",
     "name_plural": "本(一般/不死者の国のアリス)<color_green>[z_summon]</color>",
     "description": "童話のようですが暗鬱で不気味な雰囲気の作品です。 \n死んだ主人公が死者達の国で蘇らされ、その生を妬んで襲い掛かる亡者達から逃げ回るというお話のようです。",
     "fun": -1,
-    
-    "artifact_data" : {
-        "effects_carried": ["AEP_PSYSHIELD" ]
-    },
+    "artifact_data": { "effects_carried": [ "AEP_PSYSHIELD" ] },
     "qualities": [ [ "SUMMONING", 3 ] ]
-  }
-
-
-
-  ,{
+  },
+  {
     "//": "■アイテム：燃えるトンボ(停止中)",
-      "id" : "zsm_sleep_dragonfly",
-      "type": "TOOL",
-      "name": "燃えるトンボ(停止中)<color_green>[z_summon]</color>",
-      "description": "目玉が燃えるトンボの人形です。 \n声を掛けてあげれば動き始めます。",
-      
-      "symbol": "m",
-      "material": [ "hflesh", "bone", "cotton" ],
-      "color": "cyan",
-
-      "weight": 1000,
-      "volume": 3,
-      "price": 5000,
-      
-      "use_action": {
-          "type": "place_monster",
-          "monster_id": "mon_zsm_dragonfly_the_snap",
-          "difficulty": 0,
-          "skill2": "speech",
-          "hostile_msg": "燃えるトンボはこちらに襲い掛かってきました！",
-          "friendly_msg": "燃えるトンボは軽やかに飛び立ちました。",
-          "place_randomly": true,
-          "moves": 60
-      },
-      "flags": [ "TRADER_AVOID" ]
-  }
-  ,{
+    "id": "zsm_sleep_dragonfly",
+    "type": "TOOL",
+    "name": "燃えるトンボ(停止中)<color_green>[z_summon]</color>",
+    "description": "目玉が燃えるトンボの人形です。 \n声を掛けてあげれば動き始めます。",
+    "symbol": "m",
+    "material": [ "hflesh", "bone", "cotton" ],
+    "color": "cyan",
+    "weight": 1000,
+    "volume": 3,
+    "price": 5000,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_zsm_dragonfly_the_snap",
+      "difficulty": 0,
+      "skill2": "speech",
+      "hostile_msg": "燃えるトンボはこちらに襲い掛かってきました！",
+      "friendly_msg": "燃えるトンボは軽やかに飛び立ちました。",
+      "place_randomly": true,
+      "moves": 60
+    },
+    "flags": [ "TRADER_AVOID" ]
+  },
+  {
     "//": "■アイテム：きらきらコウモリ(停止中)",
-      "id" : "zsm_sleep_bat",
-      "type": "TOOL",
-      "name": "きらきらコウモリ(停止中)<color_green>[z_summon]</color>",
-      "description": "きらきら光るコウモリの人形です。 \n声を掛けてあげれば動き始めます。",
-      
-      "copy-from": "zsm_sleep_dragonfly",
-      
-      "use_action": {
-          "type": "place_monster",
-          "monster_id": "mon_zsm_bat_the_twinkle",
-          "difficulty": 0,
-          "skill2": "speech",
-          "hostile_msg": "きらきらコウモリはこちらに襲い掛かってきました！",
-          "friendly_msg": "きらきらコウモリはバサバサと飛び立ちました。",
-          "place_randomly": true,
-          "moves": 60
-      }
-  }
-  ,{
+    "id": "zsm_sleep_bat",
+    "type": "TOOL",
+    "name": "きらきらコウモリ(停止中)<color_green>[z_summon]</color>",
+    "description": "きらきら光るコウモリの人形です。 \n声を掛けてあげれば動き始めます。",
+    "copy-from": "zsm_sleep_dragonfly",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_zsm_bat_the_twinkle",
+      "difficulty": 0,
+      "skill2": "speech",
+      "hostile_msg": "きらきらコウモリはこちらに襲い掛かってきました！",
+      "friendly_msg": "きらきらコウモリはバサバサと飛び立ちました。",
+      "place_randomly": true,
+      "moves": 60
+    }
+  },
+  {
     "//": "■アイテム：長尾のネズミ(停止中)",
-      "id" : "zsm_sleep_rat",
-      "type": "TOOL",
-      "name": "長尾のネズミ(停止中)<color_green>[z_summon]</color>",
-      "description": "長い尻尾を持つネズミの人形です。 \n声を掛けてあげれば動き始めます。",
-      
-      "copy-from": "zsm_sleep_dragonfly",
-      
-      "use_action": {
-          "type": "place_monster",
-          "monster_id": "mon_zsm_rat_the_longtail",
-          "difficulty": 0,
-          "skill2": "speech",
-          "hostile_msg": "長尾のネズミはこちらに襲い掛かってきました！",
-          "friendly_msg": "長尾のネズミはせわしなく動き始めました。",
-          "place_randomly": true,
-          "moves": 60
-      }
-  }
-
-
-
-  ,{
+    "id": "zsm_sleep_rat",
+    "type": "TOOL",
+    "name": "長尾のネズミ(停止中)<color_green>[z_summon]</color>",
+    "description": "長い尻尾を持つネズミの人形です。 \n声を掛けてあげれば動き始めます。",
+    "copy-from": "zsm_sleep_dragonfly",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_zsm_rat_the_longtail",
+      "difficulty": 0,
+      "skill2": "speech",
+      "hostile_msg": "長尾のネズミはこちらに襲い掛かってきました！",
+      "friendly_msg": "長尾のネズミはせわしなく動き始めました。",
+      "place_randomly": true,
+      "moves": 60
+    }
+  },
+  {
     "//": "■アイテム：ポーンの駒(停止中)",
-      "id" : "zsm_sleep_pawn",
-      "type": "TOOL",
-      "name": "ポーンの駒(停止中)<color_green>[z_summon]</color>",
-      "description": "チェスで使うポーンの駒を模した人形です。 \n呼びかけて放れば人並みの大きさに変化し、戦ってくれます。",
-      
-      "symbol": "p",
-      "material": [ "hflesh", "bone", "cotton" ],
-      "color": "cyan",
-
-      "weight": 1500,
-      "volume": 3,
-      "price": 8000,
-      
-      "use_action": {
-          "type": "place_monster",
-          "monster_id": "mon_zsm_piece_of_pawn",
-          "difficulty": 0,
-          "skill2": "speech",
-          "hostile_msg": "ポーンの駒はこちらに襲い掛かってきました！",
-          "friendly_msg": "ポーンの駒を放るとみるみる人並みの大きさになりました！",
-          "place_randomly": true,
-          "moves": 60
-      },
-      "flags": [ "TRADER_AVOID" ]
-  }
-  ,{
+    "id": "zsm_sleep_pawn",
+    "type": "TOOL",
+    "name": "ポーンの駒(停止中)<color_green>[z_summon]</color>",
+    "description": "チェスで使うポーンの駒を模した人形です。 \n呼びかけて放れば人並みの大きさに変化し、戦ってくれます。",
+    "symbol": "p",
+    "material": [ "hflesh", "bone", "cotton" ],
+    "color": "cyan",
+    "weight": 1500,
+    "volume": 3,
+    "price": 8000,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_zsm_piece_of_pawn",
+      "difficulty": 0,
+      "skill2": "speech",
+      "hostile_msg": "ポーンの駒はこちらに襲い掛かってきました！",
+      "friendly_msg": "ポーンの駒を放るとみるみる人並みの大きさになりました！",
+      "place_randomly": true,
+      "moves": 60
+    },
+    "flags": [ "TRADER_AVOID" ]
+  },
+  {
     "//": "■アイテム：ナイトの駒(停止中)",
-      "id" : "zsm_sleep_knight",
-      "type": "TOOL",
-      "name": "ナイトの駒(停止中)<color_green>[z_summon]</color>",
-      "description": "チェスで使うナイトの駒を模した人形です。 \n呼びかけて放れば人並みの大きさに変化し、戦ってくれます。",
-      
-      "copy-from": "zsm_sleep_pawn",
-
-      "price": 20000,
-
-      "use_action": {
-          "type": "place_monster",
-          "monster_id": "mon_zsm_piece_of_knight",
-          "difficulty": 0,
-          "skill2": "speech",
-          "hostile_msg": "ナイトの駒はこちらに襲い掛かってきました！",
-          "friendly_msg": "ナイトの駒を放るとみるみる人並みの大きさになりました！",
-          "place_randomly": true,
-          "moves": 60
-      }
-  }
-  ,{
+    "id": "zsm_sleep_knight",
+    "type": "TOOL",
+    "name": "ナイトの駒(停止中)<color_green>[z_summon]</color>",
+    "description": "チェスで使うナイトの駒を模した人形です。 \n呼びかけて放れば人並みの大きさに変化し、戦ってくれます。",
+    "copy-from": "zsm_sleep_pawn",
+    "price": 20000,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_zsm_piece_of_knight",
+      "difficulty": 0,
+      "skill2": "speech",
+      "hostile_msg": "ナイトの駒はこちらに襲い掛かってきました！",
+      "friendly_msg": "ナイトの駒を放るとみるみる人並みの大きさになりました！",
+      "place_randomly": true,
+      "moves": 60
+    }
+  },
+  {
     "//": "■アイテム：クイーンの駒(停止中)",
-      "id" : "zsm_sleep_queen",
-      "type": "TOOL",
-      "name": "クイーンの駒(停止中)<color_green>[z_summon]</color>",
-      "description": "チェスで使うクイーンの駒を模した人形です。 \n呼びかけて放れば人並みの大きさに変化し、戦ってくれます。",
-      
-      "copy-from": "zsm_sleep_pawn",
-
-      "price": 60000,
-
-      "use_action": {
-          "type": "place_monster",
-          "monster_id": "mon_zsm_piece_of_queen",
-          "difficulty": 0,
-          "skill2": "speech",
-          "hostile_msg": "クイーンの駒はこちらに襲い掛かってきました！",
-          "friendly_msg": "クイーンの駒を放るとみるみる人並みの大きさになりました！",
-          "place_randomly": true,
-          "moves": 60
-      }
-  }
-
-
-
-  ,{
+    "id": "zsm_sleep_queen",
+    "type": "TOOL",
+    "name": "クイーンの駒(停止中)<color_green>[z_summon]</color>",
+    "description": "チェスで使うクイーンの駒を模した人形です。 \n呼びかけて放れば人並みの大きさに変化し、戦ってくれます。",
+    "copy-from": "zsm_sleep_pawn",
+    "price": 60000,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_zsm_piece_of_queen",
+      "difficulty": 0,
+      "skill2": "speech",
+      "hostile_msg": "クイーンの駒はこちらに襲い掛かってきました！",
+      "friendly_msg": "クイーンの駒を放るとみるみる人並みの大きさになりました！",
+      "place_randomly": true,
+      "moves": 60
+    }
+  },
+  {
     "//": "■アイテム：ウサギさんLV1(停止中)",
-      "id" : "zsm_sleep_rabbit_bot_LV1",
-      "type": "TOOL",
-      "name": "ウサギさん(停止中)<color_green>[z_summon]</color>",
-      "description": "機械仕掛けのウサギの玩具です。 \n声を掛けてあげれば動き始めます。",
-
-      "symbol": "R",
-      "color": "magenta",
-      "material": [ "steel" ],
-      "weight": 1000,
-      "volume": 3,
-      "price": 5000,
-      
-      "use_action": {
-          "type": "place_monster",
-          "monster_id": "mon_zsm_rabbit_bot_LV1",
-          "difficulty": 0,
-          "skill2": "speech",
-          "hostile_msg": "「おはよう、アリス。」",
-          "friendly_msg": "「おはよう、アリス。」",
-          "place_randomly": true,
-          "moves": 60
-      },
-      "flags": [ "TRADER_AVOID", "SLEEP_AID" ]
-  }
-  ,{
+    "id": "zsm_sleep_rabbit_bot_LV1",
+    "type": "TOOL",
+    "name": "ウサギさん(停止中)<color_green>[z_summon]</color>",
+    "description": "機械仕掛けのウサギの玩具です。 \n声を掛けてあげれば動き始めます。",
+    "symbol": "R",
+    "color": "magenta",
+    "material": [ "steel" ],
+    "weight": 1000,
+    "volume": 3,
+    "price": 5000,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_zsm_rabbit_bot_LV1",
+      "difficulty": 0,
+      "skill2": "speech",
+      "hostile_msg": "「おはよう、アリス。」",
+      "friendly_msg": "「おはよう、アリス。」",
+      "place_randomly": true,
+      "moves": 60
+    },
+    "flags": [ "TRADER_AVOID", "SLEEP_AID" ]
+  },
+  {
     "//": "■アイテム：ウサギさんLV2(停止中)",
-      "id" : "zsm_sleep_rabbit_bot_LV2",
-      "type": "TOOL",
-      "name": "ウサギさん(停止中)<color_green>[z_summon]</color>",
-
-      "copy-from": "zsm_sleep_rabbit_bot_LV1",
-      
-      "price": 6000,
-      
-      "use_action": {
-          "type": "place_monster",
-          "monster_id": "mon_zsm_rabbit_bot_LV2",
-          "difficulty": 0,
-          "skill2": "speech",
-          "hostile_msg": "「おはよう、アリス。」",
-          "friendly_msg": "「おはよう、アリス。」",
-          "place_randomly": true,
-          "moves": 60
-      }
-  }
-  ,{
+    "id": "zsm_sleep_rabbit_bot_LV2",
+    "type": "TOOL",
+    "name": "ウサギさん(停止中)<color_green>[z_summon]</color>",
+    "copy-from": "zsm_sleep_rabbit_bot_LV1",
+    "price": 6000,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_zsm_rabbit_bot_LV2",
+      "difficulty": 0,
+      "skill2": "speech",
+      "hostile_msg": "「おはよう、アリス。」",
+      "friendly_msg": "「おはよう、アリス。」",
+      "place_randomly": true,
+      "moves": 60
+    }
+  },
+  {
     "//": "■アイテム：ウサギさんLV3(停止中)",
-      "id" : "zsm_sleep_rabbit_bot_LV3",
-      "type": "TOOL",
-      "name": "ウサギさん(停止中)<color_green>[z_summon]</color>",
-
-      "copy-from": "zsm_sleep_rabbit_bot_LV1",
-      
-      "price": 7000,
-      
-      "use_action": {
-          "type": "place_monster",
-          "monster_id": "mon_zsm_rabbit_bot_LV3",
-          "difficulty": 0,
-          "skill2": "speech",
-          "hostile_msg": "「おはよう、アリス。」",
-          "friendly_msg": "「おはよう、アリス。」",
-          "place_randomly": true,
-          "moves": 60
-      }
-  }
-  ,{
+    "id": "zsm_sleep_rabbit_bot_LV3",
+    "type": "TOOL",
+    "name": "ウサギさん(停止中)<color_green>[z_summon]</color>",
+    "copy-from": "zsm_sleep_rabbit_bot_LV1",
+    "price": 7000,
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_zsm_rabbit_bot_LV3",
+      "difficulty": 0,
+      "skill2": "speech",
+      "hostile_msg": "「おはよう、アリス。」",
+      "friendly_msg": "「おはよう、アリス。」",
+      "place_randomly": true,
+      "moves": 60
+    }
+  },
+  {
     "//": "■アイテム：ウサギさんLV1(修復中)",
-      "type": "GENERIC",
-      "category": "other",
-      "id": "zsm_repair_rabbit_bot_LV1",
-      "name": "ウサギさん(修復中)<color_green>[z_summon]</color>",
-      "description": "機械仕掛けのウサギの玩具です。 \n……ナノマシン技術ってやつでしょうか、傷ついた体が少しずつ修復されています。",
-
-      "symbol": "R",
-      "color": "magenta",
-      "material": [ "steel" ],
-      "weight": 1000,
-      "volume": 3,
-      "price": 5000,
-
-      "use_action": {
-          "type": "delayed_transform",
-          "transform_age": 400,
-          "not_ready_msg": "傷の修復が完璧ではないようです。",
-          "msg": "ウサギさんの状態を確認したところ傷の修復は完了しているようです！",
-          "moves": 60,
-          "target": "zsm_sleep_rabbit_bot_LV1"
-      },
-      "flags": [ "TRADER_AVOID", "SLEEP_AID" ]
-  }
-  ,{
+    "type": "GENERIC",
+    "category": "other",
+    "id": "zsm_repair_rabbit_bot_LV1",
+    "name": "ウサギさん(修復中)<color_green>[z_summon]</color>",
+    "description": "機械仕掛けのウサギの玩具です。 \n……ナノマシン技術ってやつでしょうか、傷ついた体が少しずつ修復されています。",
+    "symbol": "R",
+    "color": "magenta",
+    "material": [ "steel" ],
+    "weight": 1000,
+    "volume": 3,
+    "price": 5000,
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 400,
+      "not_ready_msg": "傷の修復が完璧ではないようです。",
+      "msg": "ウサギさんの状態を確認したところ傷の修復は完了しているようです！",
+      "moves": 60,
+      "target": "zsm_sleep_rabbit_bot_LV1"
+    },
+    "flags": [ "TRADER_AVOID", "SLEEP_AID" ]
+  },
+  {
     "//": "■アイテム：ウサギさんLV2(修復中)",
-      "type": "GENERIC",
-      "category": "other",
-      "id": "zsm_repair_rabbit_bot_LV2",
-      "name": "ウサギさん(修復中)<color_green>[z_summon]</color>",
-
-      "copy-from": "zsm_repair_rabbit_bot_LV1",
-      
-      "price": 6000,
-      
-      "use_action": {
-          "type": "delayed_transform",
-          "transform_age": 400,
-          "not_ready_msg": "傷の修復が完璧ではないようです。",
-          "msg": "ウサギさんの状態を確認したところ傷の修復は完了しているようです！",
-          "moves": 60,
-          "target": "zsm_sleep_rabbit_bot_LV2"
-      }
-  }
-  ,{
+    "type": "GENERIC",
+    "category": "other",
+    "id": "zsm_repair_rabbit_bot_LV2",
+    "name": "ウサギさん(修復中)<color_green>[z_summon]</color>",
+    "copy-from": "zsm_repair_rabbit_bot_LV1",
+    "price": 6000,
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 400,
+      "not_ready_msg": "傷の修復が完璧ではないようです。",
+      "msg": "ウサギさんの状態を確認したところ傷の修復は完了しているようです！",
+      "moves": 60,
+      "target": "zsm_sleep_rabbit_bot_LV2"
+    }
+  },
+  {
     "//": "■アイテム：ウサギさんLV3(修復中)",
-      "type": "GENERIC",
-      "category": "other",
-      "id": "zsm_repair_rabbit_bot_LV3",
-      "name": "ウサギさん(修復中)<color_green>[z_summon]</color>",
-
-      "copy-from": "zsm_repair_rabbit_bot_LV1",
-      
-      "price": 7000,
-      
-      "use_action": {
-          "type": "delayed_transform",
-          "transform_age": 400,
-          "not_ready_msg": "傷の修復が完璧ではないようです。",
-          "msg": "ウサギさんの状態を確認したところ傷の修復は完了しているようです！",
-          "moves": 60,
-          "target": "zsm_sleep_rabbit_bot_LV3"
-      }
-  }
-
-
-
-
-  ,{
+    "type": "GENERIC",
+    "category": "other",
+    "id": "zsm_repair_rabbit_bot_LV3",
+    "name": "ウサギさん(修復中)<color_green>[z_summon]</color>",
+    "copy-from": "zsm_repair_rabbit_bot_LV1",
+    "price": 7000,
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 400,
+      "not_ready_msg": "傷の修復が完璧ではないようです。",
+      "msg": "ウサギさんの状態を確認したところ傷の修復は完了しているようです！",
+      "moves": 60,
+      "target": "zsm_sleep_rabbit_bot_LV3"
+    }
+  },
+  {
     "//": "■アイテム：銃・燃えるトンボ用のダミー銃器、炎上付加",
     "id": "zsm_gun_snap_DragonFly",
     "type": "GUN",
     "name": "燃える目玉",
     "description": "<color_green>[z_summon]</color>※燃えるトンボ用射撃機、通常のプレイでは出現しないはず……？",
-
     "material": [ "hflesh" ],
     "symbol": "?",
     "color": "white",
-
     "skill": "throw",
     "durability": 10,
-
     "range": 1,
-    "ranged_damage" : {
-        "damage_type": "bash",
-        "amount": 6
-    },
+    "ranged_damage": { "damage_type": "bash", "amount": 6 },
     "dispersion": 100,
-
     "flags": [ "NEVER_JAMS" ],
     "ammo_effects": [ "INCENDIARY", "NO_ITEM_DAMAGE" ]
-  }
-  ,{
+  },
+  {
     "//": "■アイテム：銃・ナイトのダミー銃器",
     "id": "zsm_gun_piece_of_knight",
     "type": "GUN",
     "name": "ソードアロー",
     "description": "<color_green>[z_summon]</color>※ナイトの駒用射撃機、通常のプレイでは出現しないはず……？",
-
     "material": [ "hflesh" ],
     "symbol": "?",
     "color": "white",
-
     "skill": "throw",
     "durability": 10,
-
     "range": 3,
-    "ranged_damage" : {
-        "damage_type": "stab",
-        "amount": 35
-    },
+    "ranged_damage": { "damage_type": "stab", "amount": 35 },
     "pierce": 6,
     "dispersion": 20,
-
     "flags": [ "NEVER_JAMS" ],
     "ammo_effects": [ "WIDE", "NO_ITEM_DAMAGE" ]
-  }
-  ,{
+  },
+  {
     "//": "■アイテム：銃・クイーンの駒用のダミー銃器、レーザー、貫通付加",
     "id": "zsm_gun_piece_of_queen",
     "type": "GUN",
     "name": "レーザー",
     "description": "<color_green>[z_summon]</color>※クイーンの駒用射撃機、通常のプレイでは出現しないはず……？",
-
     "material": [ "hflesh" ],
     "symbol": "?",
     "color": "white",
-
     "skill": "rifle",
     "durability": 10,
-
     "range": 12,
-    "ranged_damage": 45,
+    "ranged_damage": { "damage_type": "bullet", "amount": 45 },
     "pierce": 10,
     "dispersion": 20,
-
     "flags": [ "NEVER_JAMS" ],
     "ammo_effects": [ "JET", "LASER" ]
   }
-
-
-
-
 ]

@@ -99,9 +99,7 @@
     "type": "ARMOR",
     "name": "リボン帯<color_green>[z_summon]</color>",
     "description": "リボン状に結んだ帯です。",
-
     "looks_like": "judo_belt_white",
-
     "weight": 50,
     "volume": 2,
     "price": 4000,
@@ -110,12 +108,18 @@
     "color": "white",
     "covers": [ "TORSO" ],
     "encumbrance" : 1,
-    "use_action" : {
-      "type": "holster",
-      "max_volume": 15,
-      "draw_cost": 150,
-      "skills": ["smg", "shotgun", "rifle", "launcher"]
-    },
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "holster": true,
+        "min_item_volume": "1250 ml",
+        "max_contains_volume": "8 L",
+        "max_contains_weight": "8200 g",
+        "max_item_length": "120 cm",
+        "moves": 50
+      }
+    ],
+    "use_action": { "type": "holster" },
      "//": "※ タイル表示で下側にしたいので苦肉の策として SKINTIGHT (肌着)フラグ付加",
     "flags": [ "VARSIZE", "BELTED", "FANCY", "WAIST", "NO_QUICKDRAW", "SKINTIGHT" ]
   },
