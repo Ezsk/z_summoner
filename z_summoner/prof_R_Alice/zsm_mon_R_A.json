@@ -5,18 +5,14 @@
     "type": "MONSTER",
     "name": "燃えるトンボ",
     "description": "目玉が燃えているトンボ、目玉を射出して攻撃します。目玉は直ぐに生えてくるようです……うーん。",
-
     "copy-from": "mon_dragonfly_giant",
-
     "default_faction": "player",
     "species": [ "HUMAN" ],
     "material": [ "hflesh" ],
     "color": "light_red",
-
     "aggression": 100,
     "morale": 100,
     "dodge": 8,
-
     "special_attacks": [
       {
         "type": "gun",
@@ -26,203 +22,163 @@
         "fake_skills": [ [ "throw", 5 ] ],
         "fake_dex": 5,
         "fake_per": 5,
-        "ranges": [
-          [ 0, 1, "DEFAULT" ]
-        ]
+        "ranges": [ [ 0, 1, "DEFAULT" ] ]
       }
     ],
-
-    "fear_triggers": [],
+    "fear_triggers": [  ],
     "revert_to_itype": "zsm_sleep_dragonfly",
-    "death_function": [ "DISAPPEAR" ],
-
+    "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" },
     "flags": [ "SEES", "SMELLS", "FLIES", "HIT_AND_RUN", "CHITIN", "FIREY" ]
-  }
-  ,{
+  },
+  {
     "//": "■モンスター：きらきらコウモリ、光る、明るい場所で視界が弱い",
     "id": "mon_zsm_bat_the_twinkle",
     "type": "MONSTER",
     "name": "きらきらコウモリ",
     "description": "きらきらと光るコウモリです。どうやって光っているのかは不明ですが……。",
-
     "copy-from": "mon_bat",
-
     "default_faction": "player",
     "species": [ "HUMAN" ],
     "material": [ "hflesh" ],
     "color": "white",
-
     "aggression": 100,
     "morale": 100,
-
     "melee_skill": 5,
     "melee_dice": 2,
     "dodge": 8,
-
     "luminance": 20,
     "vision_day": 10,
     "vision_night": 30,
-
-    "attack_effs": [
-      { "id": "glowing", "duration": 10, "chance": 20 }
-    ],
-
-    "fear_triggers": [],
+    "attack_effs": [ { "id": "glowing", "duration": 10, "chance": 20 } ],
+    "fear_triggers": [  ],
     "revert_to_itype": "zsm_sleep_bat",
-    "death_function": [ "DISAPPEAR" ],
-
+    "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" },
     "flags": [ "SEES", "SMELLS", "HEARS", "GOODHEARING", "WARM", "FLIES", "PATH_AVOID_DANGER_1" ]
-  }
-  ,{
+  },
+  {
     "//": "■特殊攻撃：長尾のネズミ、掴む100%発動",
     "type": "monster_attack",
     "attack_type": "melee",
     "id": "zsm_rat_bind",
     "cooldown": 10,
     "move_cost": 60,
-
-    "damage_max_instance": [
-      {
-        "damage_type": "bash",
-        "amount": 8,
-        "armor_penetration": 1,
-        "armor_multiplier": 0.1
-      }
+    "damage_max_instance": [ { "damage_type": "bash", "amount": 8, "armor_penetration": 1, "armor_multiplier": 0.1 } ],
+    "body_parts": [
+      [ "FOOT_L", 4 ],
+      [ "FOOT_R", 4 ],
+      [ "LEG_L", 3 ],
+      [ "LEG_R", 3 ],
+      [ "HAND_L", 2 ],
+      [ "HAND_R", 2 ],
+      [ "HEAD", 1 ],
+      [ "ARM_L", 1 ],
+      [ "ARM_R", 1 ],
+      [ "TORSO", 3 ]
     ],
-    "body_parts": [ [ "FOOT_L", 4 ],[ "FOOT_R", 4 ], [ "LEG_L", 3 ], [ "LEG_R", 3 ], [ "HAND_L", 2 ], [ "HAND_R", 2 ], [ "HEAD", 1 ], [ "ARM_L", 1 ], [ "ARM_R", 1 ], [ "TORSO", 3 ] ],
-    "effects": [
-      { "id": "grabbed", "duration": 100 }
-    ],
-
+    "effects": [ { "id": "grabbed", "duration": 100 } ],
     "hit_dmg_u": "%1$s の尻尾が巻き付く！",
     "hit_dmg_npc": "%1$s の尻尾が <npcname> に巻き付く！"
-  }
-  ,{
+  },
+  {
     "//": "■モンスター：長尾のネズミ、掴みやダウン攻撃有り",
     "id": "mon_zsm_rat_the_longtail",
     "type": "MONSTER",
     "name": "長尾のネズミ",
     "description": "とても長い尾をもったネズミです。長い尾がぐるぐる巻きになりそうです。",
-
     "copy-from": "mon_sewer_rat",
-
     "default_faction": "player",
     "species": [ "HUMAN" ],
     "material": [ "hflesh" ],
     "color": "white",
-
     "aggression": 100,
     "morale": 100,
-
     "melee_skill": 5,
     "melee_dice": 2,
     "melee_dice_sides": 2,
     "melee_cut": 1,
     "dodge": 8,
-
     "vision_day": 30,
     "vision_night": 10,
-
-    "special_attacks": [
-        { "type": "bite", "cooldown": 12 },
-        { "id": "zsm_rat_bind" }
-    ],
-
-    "attack_effs": [
-      { "id": "downed", "duration": 8, "chance": 20 }
-    ],
-
-    "fear_triggers": [],
+    "special_attacks": [ { "type": "bite", "cooldown": 12 }, { "id": "zsm_rat_bind" } ],
+    "attack_effs": [ { "id": "downed", "duration": 8, "chance": 20 } ],
+    "fear_triggers": [  ],
     "revert_to_itype": "zsm_sleep_rat",
-    "death_function": [ "DISAPPEAR" ],
-
+    "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" },
     "flags": [ "SEES", "SMELLS", "HEARS", "WARM", "SWIMS", "PATH_AVOID_DANGER_1", "HARDTOSHOOT" ]
-  }
-
-
-
-  ,{
+  },
+  {
     "//": "■モンスター：ポーンの駒",
     "id": "mon_zsm_piece_of_pawn",
     "type": "MONSTER",
     "name": "ポーンの駒",
     "description": "ポーンの役を持った大きな駒です。",
-
     "default_faction": "player",
     "species": [ "HUMAN" ],
     "material": [ "hflesh" ],
     "diff": 3,
-    "size": "MEDIUM",
+    "volume": "62500 ml",
+    "weight": "81500 g",
     "symbol": "P",
     "color": "white",
-
     "hp": 100,
     "speed": 100,
     "aggression": 100,
     "morale": 100,
-
     "melee_skill": 6,
     "melee_dice": 4,
     "melee_dice_sides": 4,
     "melee_cut": 3,
-
     "armor_bash": 7,
     "armor_cut": 7,
     "armor_stab": 7,
     "armor_fire": 3,
     "dodge": 1,
-
     "vision_day": 30,
     "vision_night": 5,
-
-	"harvest": "exempt",
-    "special_attacks": [
-      [ "LUNGE", 10 ]
-    ],
-
+    "harvest": "exempt",
+    "special_attacks": [ [ "LUNGE", 10 ] ],
     "revert_to_itype": "zsm_sleep_pawn",
-    "death_function": [ "DISAPPEAR" ],
-
+    "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" },
     "flags": [ "SEES", "HEARS", "PLASTIC", "PUSH_MON", "NO_BREATHE", "PATH_AVOID_DANGER_1" ]
-  }
-  ,{
+  },
+  {
     "//": "■モンスター：ナイトの駒",
     "id": "mon_zsm_piece_of_knight",
     "type": "MONSTER",
     "name": "ナイトの駒",
     "description": "ナイトの役を持った大きな駒です。鋭い刃が敵を貫きます。",
-
     "default_faction": "player",
     "species": [ "HUMAN" ],
     "material": [ "hflesh" ],
     "diff": 3,
-    "size": "MEDIUM",
+    "volume": "62500 ml",
+    "weight": "81500 g",
     "symbol": "N",
     "color": "white",
-
     "hp": 100,
     "speed": 100,
     "aggression": 100,
     "morale": 100,
-
     "melee_skill": 8,
     "melee_dice": 5,
     "melee_dice_sides": 5,
     "melee_cut": 7,
-
     "armor_bash": 10,
     "armor_cut": 10,
     "armor_stab": 10,
     "armor_fire": 5,
     "dodge": 1,
-
     "vision_day": 30,
     "vision_night": 8,
-
-	"harvest": "exempt",
+    "harvest": "exempt",
     "special_attacks": [
       [ "LUNGE", 12 ],
-      { "id": "impale", "cooldown": 20, "accuracy": 8, "damage_max_instance": [ { "damage_type": "cut", "amount": 50, "armor_multiplier": 0.7 } ] },
+      {
+        "id": "impale",
+        "cooldown": 20,
+        "accuracy": 8,
+        "damage_max_instance": [ { "damage_type": "cut", "amount": 50, "armor_multiplier": 0.7 } ]
+      },
       { "type": "leap", "cooldown": 10, "max_range": 3 },
       {
         "type": "gun",
@@ -231,51 +187,43 @@
         "fake_skills": [ [ "throw", 8 ] ],
         "fake_dex": 8,
         "fake_per": 8,
-        "range": 3,
         "ranges": [ [ 0, 3, "DEFAULT" ] ]
       }
     ],
-
     "revert_to_itype": "zsm_sleep_knight",
-    "death_function": [ "DISAPPEAR" ],
-
+    "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" },
     "flags": [ "SEES", "HEARS", "PLASTIC", "PUSH_MON", "NO_BREATHE", "PATH_AVOID_DANGER_1" ]
-  }
-  ,{
+  },
+  {
     "//": "■モンスター：クイーンの駒",
     "id": "mon_zsm_piece_of_queen",
     "type": "MONSTER",
     "name": "クイーンの駒",
     "description": "クイーンの役を持った大きな駒です。無慈悲な光線が敵も味方も区別なく貫きます。",
-
     "default_faction": "player",
     "species": [ "HUMAN" ],
     "material": [ "hflesh" ],
     "diff": 3,
-    "size": "MEDIUM",
+    "volume": "62500 ml",
+    "weight": "81500 g",
     "symbol": "Q",
     "color": "red",
-
     "hp": 100,
     "speed": 100,
     "aggression": 100,
     "morale": 100,
-
     "melee_skill": 3,
     "melee_dice": 1,
     "melee_dice_sides": 1,
     "melee_cut": 0,
-
     "armor_bash": 12,
     "armor_cut": 12,
     "armor_stab": 12,
     "armor_fire": 8,
     "dodge": 1,
-
     "vision_day": 30,
     "vision_night": 5,
-
-	"harvest": "exempt",
+    "harvest": "exempt",
     "special_attacks": [
       {
         "type": "gun",
@@ -284,120 +232,78 @@
         "fake_skills": [ [ "rifle", 5 ] ],
         "fake_dex": 8,
         "fake_per": 8,
-        "range": 20,
-        "ranges": [
-          [ 0, 1, "AUTO" ],
-          [ 2, 20, "DEFAULT" ]
-        ]
+        "ranges": [ [ 0, 1, "AUTO" ], [ 2, 20, "DEFAULT" ] ]
       },
-
       { "type": "leap", "cooldown": 20, "max_range": 7 }
     ],
-
-    "attack_effs": [
-      { "id": "fearparalyze", "duration": 6, "chance": 10 }
-      
-    ],
-
+    "attack_effs": [ { "id": "fearparalyze", "duration": 6, "chance": 10 } ],
     "revert_to_itype": "zsm_sleep_queen",
-    "death_function": [ "DISAPPEAR" ],
-
-    "flags": [ "SEES", "HEARS",  "IMMOBILE", "PLASTIC", "PUSH_MON", "NO_BREATHE", "PATH_AVOID_DANGER_1" ]
-  }
-
-
-
-  ,{
+    "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" },
+    "flags": [ "SEES", "HEARS", "IMMOBILE", "PLASTIC", "PUSH_MON", "NO_BREATHE", "PATH_AVOID_DANGER_1" ]
+  },
+  {
     "//": "■モンスター：ウサギさんLV1",
     "id": "mon_zsm_rabbit_bot_LV1",
     "type": "MONSTER",
     "name": "ウサギさん",
     "description": "機械仕掛けのウサギさんです。すばしっこいですがとても非力です。",
-
     "looks_like": "mon_rabbit",
-
     "default_faction": "player",
     "species": [ "HUMAN" ],
     "material": [ "steel", "cotton" ],
     "diff": 3,
-    "size": "TINY",
+    "volume": "1600 ml",
+    "weight": "1600 g",
     "symbol": "R",
     "color": "magenta",
-
     "hp": 100,
     "speed": 100,
     "aggression": 60,
     "morale": 100,
-
     "melee_skill": 1,
     "melee_dice": 1,
     "melee_dice_sides": 1,
     "melee_cut": 0,
-
     "armor_bash": 2,
     "armor_cut": 1,
     "armor_stab": 1,
     "dodge": 6,
-
     "vision_day": 20,
     "vision_night": 10,
-
-	"harvest": "exempt",
+    "harvest": "exempt",
     "special_when_hit": [ "ZAPBACK", 2 ],
-    "attack_effs": [
-      { "id": "downed", "duration": 5, "chance": 1 }
-    ],
-
+    "attack_effs": [ { "id": "downed", "duration": 5, "chance": 1 } ],
     "revert_to_itype": "zsm_sleep_rabbit_bot_LV1",
     "death_drops": "zsm_mon_rabbot_LV1_drops",
-    "death_function": [ "GUILT" ],
-
-    "flags": [ "SEES", "HEARS", "ELECTRONIC", "PATH_AVOID_DANGER_2", "HARDTOSHOOT" ]
-  }
-  ,{
+    "flags": [ "SEES", "HEARS", "ELECTRONIC", "PATH_AVOID_DANGER_2", "HARDTOSHOOT", "GUILT" ]
+  },
+  {
     "//": "■モンスター：ウサギさんLV2",
     "id": "mon_zsm_rabbit_bot_LV2",
     "type": "MONSTER",
     "name": "ウサギさん",
-
     "copy-from": "mon_zsm_rabbit_bot_LV1",
-
     "melee_skill": 2,
     "dodge": 8,
-
     "special_when_hit": [ "ZAPBACK", 2 ],
-    "attack_effs": [
-      { "id": "downed", "duration": 5, "chance": 3 }
-    ],
-
+    "attack_effs": [ { "id": "downed", "duration": 5, "chance": 3 } ],
     "revert_to_itype": "zsm_sleep_rabbit_bot_LV2",
     "death_drops": "zsm_mon_rabbot_LV2_drops",
-
     "flags": [ "SEES", "HEARS", "ELECTRIC", "ELECTRONIC", "PATH_AVOID_DANGER_2", "HARDTOSHOOT" ]
-  }
-  ,{
+  },
+  {
     "//": "■モンスター：ウサギさんLV3",
     "id": "mon_zsm_rabbit_bot_LV3",
     "type": "MONSTER",
     "name": "ウサギさん",
-
     "copy-from": "mon_zsm_rabbit_bot_LV2",
-
     "melee_skill": 3,
     "melee_damage": [ { "damage_type": "electric", "amount": 1 } ],
     "dodge": 10,
-
     "special_when_hit": [ "ZAPBACK", 4 ],
-    "attack_effs": [
-      { "id": "downed", "duration": 5, "chance": 5 }
-    ],
-
+    "attack_effs": [ { "id": "downed", "duration": 5, "chance": 5 } ],
     "revert_to_itype": "zsm_sleep_rabbit_bot_LV3",
     "death_drops": "zsm_mon_rabbot_LV3_drops",
-
     "flags": [ "SEES", "HEARS", "ELECTRIC", "ELECTRONIC", "FIREY", "PATH_AVOID_DANGER_2", "HARDTOSHOOT" ]
   }
-
-
-
 ]

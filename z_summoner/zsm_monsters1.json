@@ -4,6 +4,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_boomer",
     "name" : "(召喚)ブーマー",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_boomer",
     "death_drops": "summoning_monster_drops",
     "death_function": { "effect": { "id": "death_boomer", "hit_self": true }, "message": "A %s explode!", "corpse_type": "NO_CORPSE" }
@@ -13,6 +15,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_boomer_huge",
     "name" : "(召喚)巨体ブーマー",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_boomer_huge",
     "death_drops": "summoning_monster_drops",
     "death_function": {
@@ -26,6 +30,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_dog_skeleton",
     "name" : "(召喚)痩身犬",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_s_dog",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -35,6 +41,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_dog_zombie_cop",
     "name" : "(召喚)ゾンビ警察犬",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_dog_cop",
     "death_drops": "zsm_mon_copdog_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -44,6 +52,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_dog_zombie_rot",
     "name" : "(召喚)ロットワイラー",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_dog_rot",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -53,6 +63,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_flamer",
     "name" : "(召喚)火炎ゾンビ",
+    "species": [ "HUMAN" ],
+
     "death_drops": "summoning_monster_drops",
     "death_function": { "effect": { "id": "death_fireball", "hit_self": true } }
   },
@@ -61,6 +73,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_skeleton",
     "name" : "(召喚)スケルトン",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_skeleton",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -70,6 +84,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zolf",
     "name" : "(召喚)ゾンビオオカミ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_zolf",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -79,6 +95,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombear",
     "name" : "(召喚)ゾンビ熊",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_zombear",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -88,6 +106,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie",
     "name" : "(召喚)ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_zombie",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -97,6 +117,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_acidic",
     "name" : "(召喚)弱酸ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_acidic",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s's body leaks acid.", "effect": { "id": "death_acid", "hit_self": true }, "corpse_type": "NO_CORPSE" }
@@ -106,6 +128,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_armored",
     "name" : "(召喚)装甲ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_armored",
     "death_drops": "zsm_mon_z_armor_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -115,6 +139,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_bio_op",
     "name" : "(召喚)改造兵士ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_bio_op",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -124,6 +150,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_biter",
     "name" : "(召喚)涎垂ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_biter",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -133,6 +161,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_brute",
     "name" : "(召喚)凶暴ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_brute",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -142,6 +172,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_brute_grappler",
     "name" : "(召喚)格闘ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_brute_grappler",
     "death_drops": "zsm_mon_z_grappler_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -151,6 +183,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_brute_ninja",
     "name" : "(召喚)夜行ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_brute_ninja",
     "death_drops": "zsm_mon_z_ninja_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -160,6 +194,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_brute_shocker",
     "name" : "(召喚)放電凶獣",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_brute_shocker",
     "death_drops": "zsm_mon_z_electric_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -169,6 +205,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_child",
     "name" : "(召喚)子供ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_child",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -178,6 +216,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_cop",
     "name" : "(召喚)警官ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_cop",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -187,6 +227,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_corrosive",
     "name" : "(召喚)腐食ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_corrosive",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s's body leaks acid.", "effect": { "id": "death_acid", "hit_self": true }, "corpse_type": "NO_CORPSE" }
@@ -196,6 +238,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_crawler",
     "name" : "(召喚)爬行ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_crawler",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -205,6 +249,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_dancer",
     "name" : "(召喚)ダンサーゾンビ",
+    "species": [ "HUMAN" ],
+
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
   },
@@ -214,6 +260,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_dog",
     "name" : "(召喚)ゾンビ犬",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_dog",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -223,6 +271,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_electric",
     "name" : "(召喚)放電ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_electric",
     "death_drops": "zsm_mon_z_electric_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -232,6 +282,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_fat",
     "name" : "(召喚)肥満ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_fat",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -241,6 +293,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_fiend",
     "name" : "(召喚)悪鬼",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_fiend",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -250,6 +304,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_fireman",
     "name" : "(召喚)消防士ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_fireman",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -259,6 +315,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_gasbag",
     "name" : "(召喚)膨張ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_gasbag",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "A %s explodes!", "effect": { "id": "death_gas", "hit_self": true }, "corpse_type": "NO_CORPSE" }
@@ -268,6 +326,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_grabber",
     "name" : "(召喚)長腕ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_grabber",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -277,6 +337,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_grappler",
     "name" : "(召喚)組手ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_grappler",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -286,6 +348,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_hazmat",
     "name" : "(召喚)化学防護ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_hazmat",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -295,6 +359,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_hollow",
     "name" : "(召喚)空洞ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_hollow",
     "death_drops": "summoning_monster_drops",
     "death_function": {
@@ -308,6 +374,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_hulk",
     "name" : "(召喚)巨体ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_hulk",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -317,6 +385,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_hunter",
     "name" : "(召喚)フェラルハンター",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_hunter",
     "death_drops": "zsm_mon_z_hunter_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -326,6 +396,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_jackson",
     "name" : "(召喚)スリラー",
+    "species": [ "HUMAN" ],
+
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The music stops!", "effect": { "id": "death_jackson", "hit_self": true }, "corpse_type": "NO_CORPSE" }
   },
@@ -334,6 +406,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_mancroc",
     "name" : "(召喚)大顎ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_mancroc",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -343,6 +417,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_master",
     "name" : "(召喚)ゾンビマスター",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_master",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -352,6 +428,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_necro",
     "name" : "(召喚)ゾンビマンサー",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_necro",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -361,6 +439,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_pig",
     "name" : "(召喚)ゾンビイノシシ",
+    "species": [ "HUMAN" ],
+
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
   },
@@ -369,6 +449,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_predator",
     "name" : "(召喚)フェラルプレデター",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_predator",
     "death_drops": "zsm_mon_z_hunter_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -378,6 +460,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_rot",
     "name" : "(召喚)腐敗ゾンビ",
+    "species": [ "HUMAN" ],
+
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
   },
@@ -385,7 +469,9 @@
     "id": "mon_zsm_zombie_runner",
     "type": "MONSTER",
     "copy-from" : "mon_zombie_runner",
-    "name" : "(召喚)フェラルランナー",
+    "name" : "(召喚)ゾンビランナー",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_runner",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -395,6 +481,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_scientist",
     "name" : "(召喚)科学者ゾンビ",
+    "species": [ "HUMAN" ],
+
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
   },
@@ -403,6 +491,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_scorched",
     "name" : "(召喚)焼焦ゾンビ",
+    "species": [ "HUMAN" ],
+
     "death_drops": "summoning_monster_drops",
     "death_function": { "effect": { "id": "death_smokeburst", "hit_self": true }, "message": "A %s explodes!", "corpse_type": "NO_CORPSE" }
   },
@@ -411,6 +501,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_screecher",
     "name" : "(召喚)悲鳴ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_screecher",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -420,6 +512,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_shady",
     "name" : "(召喚)冥暗ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_shady",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -429,6 +523,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_shrieker",
     "name" : "(召喚)絶叫ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_shrieker",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -438,15 +534,19 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_smoker",
     "name" : "(召喚)煙幕ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_smoker",
     "death_drops": "summoning_monster_drops",
-    "death_function": { "effect": { "id": "death_smokeburst", "hit_self": true }, "message": "A %s explodes!" }
+    "death_function": { "effect": { "id": "death_smokeburst", "hit_self": true }, "message": "A %s explodes!", "corpse_type": "NO_CORPSE" }
   },
   {
     "id": "mon_zsm_zombie_soldier",
     "type": "MONSTER",
     "copy-from" : "mon_zombie_soldier",
     "name" : "(召喚)兵士ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_soldier",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -456,6 +556,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_spitter",
     "name" : "(召喚)強酸ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_spitter",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s's body leaks acid.", "effect": { "id": "death_acid", "hit_self": true }, "corpse_type": "NO_CORPSE" }
@@ -465,6 +567,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_survivor",
     "name" : "(召喚)サバイバーゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_survivor",
     "death_drops": "zsm_mon_z_survivor_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -474,6 +578,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_swimmer",
     "name" : "(召喚)水泳ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_swimmer",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -483,6 +589,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_technician",
     "name" : "(召喚)技術者ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_technician",
     "death_drops": "zsm_mon_z_technician_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -492,6 +600,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_tough",
     "name" : "(召喚)頑強ゾンビ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_z_tough",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -501,6 +611,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zoose",
     "name" : "(召喚)ゾンビヘラジカ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_zoose",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -510,6 +622,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zougar",
     "name" : "(召喚)ゾンビピューマ",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_zougar",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }
@@ -519,6 +633,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_skeleton_hulk",
     "name" : "(召喚)巨体スケルトン",
+    "species": [ "HUMAN" ],
+
     "revert_to_itype": "zsm_charm_s_hulk",
     "death_drops": "summoning_monster_drops",
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" }

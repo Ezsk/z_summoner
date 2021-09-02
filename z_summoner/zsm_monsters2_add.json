@@ -4,6 +4,8 @@
     "type": "MONSTER",
     "copy-from" : "mon_zombie_runner",
     "name": "(召喚)爆弾ランナー",
+    "species": [ "HUMAN" ],
+
     "description": "ピンが抜かれた手榴弾を握って走るゾンビです。 \nゴールはもうすぐです。",
     
     "special_attacks": [

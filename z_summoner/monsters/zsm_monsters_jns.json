@@ -4,19 +4,17 @@
     "type": "MONSTER",
     "name": "キョンシー",
     "description": "キョンシー……ゾンビや吸血鬼の一種です。 \nぴょんぴょん飛び跳ねています。",
-    
     "//": "※ほぼＨＰ等が増えた通常ゾンビ",
     "default_faction": "player",
     "species": [ "HUMAN" ],
     "diff": 6,
-    "size": "MEDIUM",
+    "volume": "62500 ml",
+    "weight": "81500 g",
     "material": [ "hflesh" ],
     "symbol": "Z",
     "color": "light_green",
-    
     "hp": 120,
     "speed": 80,
-
     "aggression": 80,
     "morale": 100,
     "melee_skill": 4,
@@ -25,34 +23,24 @@
     "melee_cut": 0,
     "vision_day": 20,
     "vision_night": 3,
-    "special_attacks": [
-        { "type": "bite", "cooldown": 5 },
-        [ "GRAB", 7 ],
-        [ "scratch", 20 ]
-    ],
-
-	"harvest": "exempt",
+    "special_attacks": [ { "type": "bite", "cooldown": 5 }, [ "GRAB", 7 ], [ "scratch", 20 ] ],
+    "harvest": "exempt",
     "revert_to_itype": "zsm_sleeping_jiangshi_LV1",
     "death_drops": "zsm_mon_jiangshi_LV1_drops",
-    "death_function": [ "GUILT" ],
+    "death_function": { "message": "%s は力尽きた！", "corpse_type": "NO_CORPSE" },
     "upgrades": { "half_life": 1, "into": "mon_zsm_jiangshi_LV2" },
-    
-    "flags": [
-      "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BLEED", "PUSH_MON", "DOGFOOD"
-    ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "PUSH_MON", "DOGFOOD", "GUILT" ]
   },
   {
     "id": "mon_zsm_jiangshi_LV2",
     "type": "MONSTER",
     "name": "キョンシー",
-    "copy-from" : "mon_zsm_jiangshi_LV1",
+    "copy-from": "mon_zsm_jiangshi_LV1",
     "description": "キョンシー……ゾンビや吸血鬼の一種です。 \n凄まじい跳躍力を持っています。",
     "//": "※近接能力をフェラルハンター準拠にし、special_attacks を変更。跳躍（leap）の付加など",
-    
     "hp": 160,
     "speed": 90,
     "color": "brown",
-    
     "aggression": 90,
     "melee_skill": 4,
     "melee_dice": 2,
@@ -61,32 +49,30 @@
     "dodge": 3,
     "vision_night": 5,
     "special_attacks": [
-        { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 12 } ] },
-        { "type": "leap", "cooldown": 5, "max_range": 5 },
-        { "type": "bite", "cooldown": 10, "damage_max_instance": [ { "damage_type": "stab", "amount": 12, "armor_multiplier": 0.7 } ] }
+      { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 12 } ] },
+      { "type": "leap", "cooldown": 5, "max_range": 5 },
+      {
+        "type": "bite",
+        "cooldown": 10,
+        "damage_max_instance": [ { "damage_type": "stab", "amount": 12, "armor_multiplier": 0.7 } ]
+      }
     ],
-    
     "revert_to_itype": "zsm_sleeping_jiangshi_LV2",
     "death_drops": "zsm_mon_jiangshi_LV2_drops",
-    "death_function": [ "GUILT" ],
+    "death_function": { "message": "%s は力尽きた！", "corpse_type": "NO_CORPSE" },
     "upgrades": { "half_life": 1, "into": "mon_zsm_jiangshi_LV3" },
-    
-    "flags": [
-      "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BLEED", "PUSH_MON", "DOGFOOD"
-    ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "PUSH_MON", "DOGFOOD", "GUILT" ]
   },
   {
     "id": "mon_zsm_jiangshi_LV3",
     "type": "MONSTER",
     "name": "キョンシー",
-    "copy-from" : "mon_zsm_jiangshi_LV2",
+    "copy-from": "mon_zsm_jiangshi_LV2",
     "description": "キョンシー……ゾンビや吸血鬼の一種です。 \n鋭い爪が獲物を切り裂きます。",
-    
     "//": "※近接能力をフェラルプレデター＋α程度に変更、飛行（FLIES）付加、スタン可能（STUMBLES）除外",
     "hp": 200,
     "speed": 100,
     "color": "brown_green",
-    
     "aggression": 100,
     "melee_skill": 5,
     "melee_dice": 4,
@@ -98,36 +84,38 @@
     "armor_fire": 6,
     "vision_night": 15,
     "special_attacks": [
-        { "type": "leap", "cooldown": 10, "max_range": 8, "min_consider_range": 3, "max_consider_range": 7, "allow_no_target": false },
-        { "type": "bite", "cooldown": 10, "damage_max_instance": [ { "damage_type": "stab", "amount": 10, "armor_multiplier": 0.2 } ] },
-        { "id": "impale" }
+      {
+        "type": "leap",
+        "cooldown": 10,
+        "max_range": 8,
+        "min_consider_range": 3,
+        "max_consider_range": 7,
+        "allow_no_target": false
+      },
+      {
+        "type": "bite",
+        "cooldown": 10,
+        "damage_max_instance": [ { "damage_type": "stab", "amount": 10, "armor_multiplier": 0.2 } ]
+      },
+      { "id": "impale" }
     ],
-    "attack_effs": [
-      { "id": "poison", "duration": 30, "chance": 20 }
-      
-    ],
-    
+    "attack_effs": [ { "id": "poison", "duration": 30, "chance": 20 } ],
     "revert_to_itype": "zsm_sleeping_jiangshi_LV3",
     "death_drops": "zsm_mon_jiangshi_LV3_drops",
-    "death_function": [ "GUILT" ],
+    "death_function": { "message": "%s は力尽きた！", "corpse_type": "NO_CORPSE" },
     "upgrades": { "half_life": 2, "into": "mon_zsm_jiangshi_LV4" },
-    
-    "flags": [
-      "SEES", "HEARS", "SMELLS", "FLIES", "WARM", "BLEED", "PUSH_MON", "DOGFOOD"
-    ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "FLIES", "WARM", "PUSH_MON", "DOGFOOD", "GUILT" ]
   },
   {
     "id": "mon_zsm_jiangshi_LV4",
     "type": "MONSTER",
     "name": "キョンシー",
-    "copy-from" : "mon_zsm_jiangshi_LV3",
+    "copy-from": "mon_zsm_jiangshi_LV3",
     "description": "キョンシー……ゾンビや吸血鬼の一種です。 \n恐ろしい回復力で傷が治っていきます。",
-    
     "//": "※近接能力を色々と上位ゾンビ級に調整、自動回復（REGENERATES_10）付加",
     "hp": 240,
     "speed": 110,
     "color": "red",
-    
     "melee_skill": 6,
     "melee_dice": 4,
     "melee_dice_sides": 7,
@@ -139,14 +127,10 @@
     "armor_acid": 3,
     "armor_fire": 12,
     "vision_night": 25,
-    "regenerates": 10,    
+    "regenerates": 10,
     "revert_to_itype": "zsm_sleeping_jiangshi_LV4",
     "death_drops": "zsm_mon_jiangshi_LV4_drops",
-    "death_function": [ "GUILT" ],
-    
-    "flags": [
-      "SEES", "HEARS", "SMELLS", "FLIES", "WARM", "BLEED", "PUSH_MON", "BADVENOM", "DOGFOOD"
-    ]
+    "death_function": { "message": "%s は力尽きた！", "corpse_type": "NO_CORPSE" },
+    "flags": [ "SEES", "HEARS", "SMELLS", "FLIES", "WARM", "PUSH_MON", "BADVENOM", "DOGFOOD", "GUILT" ]
   }
-
 ]

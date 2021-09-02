@@ -25,109 +25,112 @@
     "loudness": 40,
     "recoil": 60,
     "qualities": [ [ "SUMMONING", 1 ] ],
-    "artifact_data": {  }
+    "relic_data": {  },
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "zsm_ammo_magi": 10 } } ],
+    "flags": [ "MAGIC_FOCUS" ]
   },
   {
     "//": "■本：魔術書・雷の書　入門書みたいな？威力も射程も低いがデメリットも無し。",
     "id": "zsm_Book_of_Electric",
-    "type": "BOOK",
-    "name": "雷の書<color_green>[z_summon]</color>",
+    "type": "GUN",
+    "name": "雷の書",
     "description": "これは雷の魔法について書かれた本のようです。 \nこれを使えば魔法使い！……いやいや、そんなバカな。",
     "copy-from": "zsm_Book_of_Magic",
     "looks_like": "holybook_bible1",
     "min_intelligence": 7,
-    "gun_data": {
-      "range": 2,
-      "ranged_damage": { "damage_type": "bullet", "amount": 8 },
-      "pierce": 2,
-      "modes": [ [ "DEFAULT", "ボルト", 1 ] ]
-    }
+    "range": 2,
+    "ranged_damage": { "damage_type": "bullet", "amount": 8, "armor_penetration": 2 },
+    "modes": [ [ "DEFAULT", "ボルト", 1 ] ]
   },
   {
     "//": "■本：魔術書・炎の書　入門書みたいな？威力も射程も低いがデメリットも無し。",
     "id": "zsm_Book_of_Fire",
-    "type": "BOOK",
-    "name": "炎の書<color_green>[z_summon]</color>",
+    "type": "GUN",
+    "name": "炎の書",
     "description": "これは炎の魔法について書かれた本のようです。 \nわーい、マジカル！……いや、うん、落ち着きましょう。",
     "copy-from": "zsm_Book_of_Magic",
     "looks_like": "holybook_pastafarian",
     "min_intelligence": 7,
-    "gun_data": {
-      "range": 1,
-      "ranged_damage": { "damage_type": "bullet", "amount": 10 },
-      "modes": [ [ "DEFAULT", "ボルト", 1 ], [ "BURST", "ジャベリン", 3 ] ]
-    }
+    "range": 1,
+    "ranged_damage": { "damage_type": "bullet", "amount": 10 },
+    "modes": [ [ "DEFAULT", "ボルト", 1 ], [ "BURST", "ジャベリン", 3 ] ]
   },
   {
     "//": "■本：魔術書・失敗作の魔術書　一回の弾薬消費・高。",
     "id": "zsm_Book_of_Failed",
-    "type": "BOOK",
-    "name": "失敗作の魔術書<color_green>[z_summon]</color>",
+    "type": "GUN",
+    "name": "失敗作の魔術書",
     "description": "これは魔法の書のようですが……空白のページや書き誤りが目立ちます。どうやら失敗作のようですね。",
     "copy-from": "zsm_Book_of_Magic",
     "looks_like": "book_summoning",
     "min_intelligence": 8,
-    "gun_data": {
-      "reload": 100,
-      "clip_size": 30,
-      "range": -3,
-      "ranged_damage": { "damage_type": "bullet", "amount": 10 },
-      "dispersion": 200,
-      "ammo_effects": [ "SHOT" ],
-      "modes": [ [ "DEFAULT", "暴発", 10 ] ]
-    }
+    "reload": 100,
+    "clip_size": 30,
+    "range": -3,
+    "ranged_damage": { "damage_type": "bullet", "amount": 10 },
+    "dispersion": 200,
+    "ammo_effects": [ "SHOT" ],
+    "modes": [ [ "DEFAULT", "暴発", 10 ] ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "zsm_ammo_magi": 30 } } ]
   },
   {
     "//": "■本：魔術書・雷光の書　JETフラグで射撃貫通？、爆発系は当て辛い。電気耐性有り。能力低下などなど。",
     "id": "zsm_Book_of_Lightning",
-    "type": "BOOK",
-    "name": "雷光の書<color_green>[z_summon]</color>",
+    "type": "GUN",
+    "name": "雷光の書",
     "description": "信じがたい事ですが、これは驚異の力を秘めた魔法の書のようです。 \n……時折、獣の唸り声…いえ、雷のような音が鳴り出しついつい体が強張ってしまいます。",
     "copy-from": "zsm_Book_of_Magic",
     "looks_like": "holybook_granth",
-    "gun_data": {
-      "range": 8,
-      "ranged_damage": { "damage_type": "bullet", "amount": 15 },
-      "pierce": 10,
-      "ammo_effects": [ "LIGHTNING", "JET" ],
-      "modes": [ [ "DEFAULT", "ボルト", 1 ], [ "BURST", "ジャベリン", 3 ] ]
-    },
-    "artifact_data": {
-      "effects_carried": [ "AEP_BAD_WEATHER", "AEP_MOVEMENT_NOISE" ],
-      "effects_wielded": [ "AEP_RESIST_ELECTRICITY", "AEP_SPEED_UP", "AEP_ALL_DOWN" ]
-    }
+    "range": 8,
+    "ranged_damage": { "damage_type": "bullet", "amount": 15, "armor_penetration": 10 },
+    "ammo_effects": [ "LIGHTNING", "JET" ],
+    "modes": [ [ "DEFAULT", "ボルト", 1 ], [ "BURST", "ジャベリン", 3 ] ],
+    "extend": { "flags": [ "ELECTRIC_IMMUNE" ] },
+    "relic_data": { "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "values": [ { "value": "SPEED", "add": 5 } ] } ] }
   },
   {
     "//": "■本：魔術書・爆炎の書　ナパーム爆発あり、炎により火力はあるもののドロップ品焼失、火事や自爆などのリスク有り。",
     "id": "zsm_Book_of_Flare",
-    "type": "BOOK",
-    "name": "爆炎の書<color_green>[z_summon]</color>",
+    "type": "GUN",
+    "name": "爆炎の書",
     "description": "信じがたい事ですが、これは恐ろしい破壊の力を秘めた魔法の書のようです。 \n……なぜか無性に喉が渇く気がします。",
     "copy-from": "zsm_Book_of_Magic",
     "looks_like": "jewelry_book",
-    "gun_data": {
-      "range": 5,
-      "ranged_damage": { "damage_type": "bullet", "amount": 15 },
-      "ammo_effects": [ "STREAM_BIG", "NAPALM" ],
-      "modes": [ [ "DEFAULT", "ボルト", 1 ], [ "BURST", "ジャベリン", 3 ] ]
-    },
-    "artifact_data": { "effects_wielded": [ "AEP_DEX_DOWN", "AEP_DEX_DOWN", "AEP_THIRST", "AEP_THIRST", "AEP_INT_UP" ] }
+    "range": 5,
+    "ranged_damage": { "damage_type": "bullet", "amount": 15 },
+    "ammo_effects": [ "STREAM_BIG", "NAPALM" ],
+    "modes": [ [ "DEFAULT", "ボルト", 1 ], [ "BURST", "ジャベリン", 3 ] ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "values": [ { "value": "THIRST", "multiply": 0.5 }, { "value": "INTELLIGENCE", "add": 1 }, { "value": "DEXTERITY", "add": -2 } ]
+        }
+      ]
+    }
   },
   {
     "//": "■本：魔術書・毒風の書　STRと健康の低下有り。",
     "id": "zsm_Book_of_Poison",
-    "type": "BOOK",
-    "name": "毒風の書<color_green>[z_summon]</color>",
+    "type": "GUN",
+    "name": "毒風の書",
     "description": "信じがたい事ですが、これは生命を蝕む力を秘めた魔法の書のようです。 \n……なんだか気分が悪くなってきました。",
     "copy-from": "zsm_Book_of_Magic",
     "looks_like": "mag_comic",
-    "gun_data": {
-      "range": 10,
-      "ranged_damage": { "damage_type": "bullet", "amount": 5 },
-      "ammo_effects": [ "TRAIL" ],
-      "modes": [ [ "DEFAULT", "ボルト", 1 ], [ "BURST", "ストーム", 10 ] ]
-    },
-    "artifact_data": { "effects_wielded": [ "AEP_SICK", "AEP_STR_DOWN", "AEP_STR_DOWN" ] }
+    "range": 10,
+    "ranged_damage": { "damage_type": "bullet", "amount": 5 },
+    "ammo_effects": [ "TRAIL" ],
+    "modes": [ [ "DEFAULT", "ボルト", 1 ], [ "BURST", "ストーム", 10 ] ],
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "values": [ { "value": "MOD_HEALTH", "add": -2 }, { "value": "STRENGTH", "add": -2 } ]
+        }
+      ]
+    }
   },
   {
     "//": "■発生:精神緩和ガス（小規模） qtyで規模設定",
@@ -140,7 +143,7 @@
     "//": "■道具：精神緩和ガス玉、投げるか置くかするとガス発生（drop_action・countdownでアイテム稼働→countdown系処理へ）",
     "id": "zsm_relax_gas_ball",
     "type": "TOOL",
-    "name": "安らぎの玉<color_green>[z_summon]</color>",
+    "name": "安らぎの玉",
     "description": "なんだか力が抜ける匂いのする玉です。非常に不安定で地面に接触しただけでも破裂してしまいます。",
     "looks_like": "wool_staple",
     "weight": 800,
@@ -165,7 +168,7 @@
     "//": "■道具：クモの巣玉、クモの巣発生（drop_action 置く、投げる、敵のアイテムドロップ等で起動）",
     "id": "zsm_web_ball",
     "type": "TOOL",
-    "name": "クモの巣玉<color_green>[z_summon]</color>",
+    "name": "クモの巣玉",
     "description": "方法は不明ですがクモの巣を圧縮して丸めた物のようです。非常に不安定で地面に接触しただけでも破裂してしまいます。",
     "looks_like": "wool_staple",
     "weight": 500,
@@ -183,7 +186,7 @@
     "//": "■道具：電気玉、投げるか置くかすると雷雲発生",
     "id": "zsm_elesmoke_ball",
     "type": "TOOL",
-    "name": "電気玉<color_green>[z_summon]</color>",
+    "name": "電気玉",
     "description": "ごく小規模の雷雲を発生させる玉です。非常に不安定で地面に接触しただけでも破裂してしまいます。",
     "looks_like": "wool_staple",
     "weight": 1600,
@@ -202,7 +205,7 @@
     "//": "■変化武器「古びた戦斧」->「ベルセルクの戦斧」",
     "id": "zsm_old_battleaxe",
     "type": "TOOL",
-    "name": "古びた戦斧<color_green>[z_summon]</color>",
+    "name": "古びた戦斧",
     "description": "戦場での使用を目的に設計された大型の斧です。いくつかの傷や錆により少々ボロい……いえ、年代物な雰囲気が出ています。",
     "copy-from": "battleaxe",
     "looks_like": "battleaxe_fake",
@@ -220,14 +223,14 @@
       "need_charges_msg": "魔法力が足りない。",
       "moves": 60
     },
-    "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "TRADER_AVOID" ]
+    "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "TRADER_AVOID", "MAGIC_FOCUS" ]
   },
   {
     "//": "■STR上昇4*3、INT低下3*3、外せないが時間経過で「古びた戦斧」に戻る（countdown_interval:600 だいたい１時間程）",
     "id": "zsm_berserk_battleaxe",
     "type": "TOOL",
     "category": "weapons",
-    "name": "ベルセルクの戦斧<color_green>[z_summon]</color>",
+    "name": "ベルセルクの戦斧",
     "description": "手にした者に荒々しい力……そして破壊と破滅をもたらす戦斧です。<color_ltblue>………骨まで砕けろぉ！！</color>",
     "looks_like": "battleaxe",
     "weight": 2002,
@@ -247,18 +250,15 @@
       "target_charges": 0
     },
     "techniques": [ "zsm_tec_BRUTAL_WIDE", "zsm_tec_counter_extend" ],
-    "flags": [ "NO_UNWIELD", "DURABLE_MELEE", "NONCONDUCTIVE", "TRADER_AVOID" ],
-    "artifact_data": {
-      "effects_wielded": [
-        "AEP_EVIL",
-        "AEP_EVIL",
-        "AEP_EVIL",
-        "AEP_STR_UP",
-        "AEP_STR_UP",
-        "AEP_STR_UP",
-        "AEP_INT_DOWN",
-        "AEP_INT_DOWN",
-        "AEP_INT_DOWN"
+    "flags": [ "NO_UNWIELD", "DURABLE_MELEE", "NONCONDUCTIVE", "TRADER_AVOID", "MAGIC_FOCUS" ],
+    "relic_data": {
+      "passive_effects": [
+        { "id": "AEP_EVIL" },
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "values": [ { "value": "MOD_HEALTH", "add": -2 }, { "value": "STRENGTH", "add": 12 }, { "value": "INTELLIGENCE", "add": -9 } ]
+        }
       ]
     }
   },
@@ -268,7 +268,7 @@
     "id": "zsm_tec_counter_extend",
     "name": "執拗な反撃",
     "melee_allowed": true,
-    "min_melee": 3,
+    "skill_requirements": [ { "name": "melee", "level": 3 } ],
     "block_counter": true,
     "dodge_counter": true,
     "mult_bonuses": [ { "stat": "movecost", "scale": 0.0 } ],
@@ -282,7 +282,7 @@
     "id": "zsm_tec_BRUTAL_WIDE",
     "name": "殺戮の一撃",
     "melee_allowed": true,
-    "min_melee": 4,
+    "skill_requirements": [ { "name": "melee", "level": 4 } ],
     "crit_tec": true,
     "stun_dur": 1,
     "knockback_dist": 1,
@@ -292,70 +292,10 @@
     "description": "1ターン気絶・1タイル吹き飛ばし・2ターン転倒、会心攻撃時のみ発動(近接戦闘4)"
   },
   {
-    "//": "■怪しい指輪　鮮血の指輪への変換アイテム、HP消費チャージ",
-    "id": "zsm_to_BloodRing",
-    "type": "TOOL",
-    "name": "怪しい指輪<color_green>[z_summon]</color>",
-    "description": "金でできた指輪のようです……が、薄汚れている上に端々に何か赤黒い物がこびりついています。",
-    "looks_like": "copper_bracelet",
-    "weight": 10,
-    "volume": 0,
-    "price": 6000,
-    "material": [ "gold", "flesh" ],
-    "symbol": "[",
-    "color": "yellow",
-    "ammo": "zsm_ammo_magi",
-    "initial_charges": 0,
-    "max_charges": 666,
-    "use_action": {
-      "type": "transform",
-      "msg": "<color_red>指輪が輝きを取り戻しました！</color>",
-      "target": "zsm_Ring_of_Blood",
-      "need_charges": 13,
-      "need_charges_msg": "<color_red>（…血が……足りない）</color>",
-      "moves": 60
-    },
-    "flags": [ "NO_RELOAD", "NO_UNLOAD" ],
-    "artifact_data": { "charge_type": "ARTC_HP" }
-  },
-  {
-    "//": "■魔術・鮮血の指輪　変形直後は弾薬が空弾薬？アプデ次第ではエラー原因になるかも？",
-    "id": "zsm_Ring_of_Blood",
-    "type": "GUN",
-    "category": "weapons",
-    "name": "鮮血の指輪<color_green>[z_summon]</color>",
-    "description": "不思議な事にこの指輪を身に着けていると力が湧いてきます！これはすごい！！ \n \n \n<color_red>………あぁぁ…指輪が……血を…求めて！…いる！！！</color>",
-    "copy-from": "zsm_Book_of_Magic",
-    "looks_like": "copper_bracelet",
-    "weight": 10,
-    "volume": 0,
-    "material": [ "gold", "flesh" ],
-    "symbol": "[",
-    "color": "red",
-    "min_intelligence": 13,
-    "countdown_interval": 300,
-    "countdown_action": { "type": "transform", "msg": "<color_cyan>指輪が眠りにつきました。</color>", "target": "zsm_to_BloodRing" },
-    "range": 13,
-    "ranged_damage": { "damage_type": "bullet", "amount": 20 },
-    "dispersion": 50,
-    "recoil": 50,
-    "reload": 400,
-    "ammo": "zsm_ammo_magi",
-    "ammo_effects": [ "BOUNCE", "WIDE" ],
-    "max_charges": 666,
-    "clip_size": 666,
-    "modes": [ [ "DEFAULT", "魔弾", 1 ], [ "AUTO", "魔槍", 3 ], [ "BURST", "狂乱", 10 ] ],
-    "flags": [ "NO_UNLOAD", "UNARMED_WEAPON", "DURABLE_MELEE" ],
-    "artifact_data": {
-      "effects_wielded": [ "AEP_EVIL", "AEP_SCHIZO", "AEP_HUNGER", "AEP_SAP_LIFE", "AEP_INT_UP", "AEP_ALL_UP" ],
-      "effects_carried": [ "AEP_EVIL" ]
-    }
-  },
-  {
     "//": "■BOUNCEやWIDEを付加したフリントロックライフル、パラメータも調整、リロード時間をアホ長くして(ほぼ２倍)ウェイト付け。",
     "id": "zsm_rifle_magic_musket",
     "type": "GUN",
-    "name": "魔弾のマスケット銃<color_green>[z_summon]</color>",
+    "name": "魔弾のマスケット銃",
     "description": "今や博物館でしか見ないような紙製薬莢を使用するフリントロックライフルの一種のようです。 \nこの銃はなぜか銃身が異様に長く、弾の装填に非常に時間が掛かります……。",
     "copy-from": "rifle_flintlock",
     "min_intelligence": 8,
@@ -367,6 +307,6 @@
       "ranged_damage": { "damage_type": "bullet", "armor_penetration": 6 },
       "reload": 1400
     },
-    "extend": { "ammo_effects": [ "BOUNCE", "WIDE" ] }
+    "extend": { "ammo_effects": [ "BOUNCE", "WIDE" ], "flags": [ "MAGIC_FOCUS" ] }
   }
 ]

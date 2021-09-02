@@ -15,7 +15,6 @@
     },
     "special_attacks": [ [ "GRENADIER", 6 ] ],
     "death_drops": { "subtype": "collection", "groups": [ [ "default_zombie_death_drops", 100 ], [ "zsm_mon_z_summoner_drops", 100 ] ] },
-    "death_function": [ "NORMAL" ],
     "burn_into": "mon_zombie_scorched",
     "flags": [ "SEES", "HEARS", "BASHES", "GROUP_BASH", "POISON", "REVIVES", "BONES", "PUSH_MON", "INTERIOR_AMMO" ]
   },
@@ -38,7 +37,6 @@
       "subtype": "collection",
       "groups": [ [ "default_zombie_death_drops", 100 ], [ "zsm_mon_z_summoner_elite_drops", 100 ] ]
     },
-    "death_function": [ "NORMAL" ],
     "burn_into": "mon_zombie_scorched",
     "flags": [ "SEES", "HEARS", "BASHES", "GROUP_BASH", "POISON", "REVIVES", "BONES", "PUSH_MON", "INTERIOR_AMMO" ]
   },
@@ -63,7 +61,6 @@
     },
     "special_attacks": [ [ "GRENADIER_ELITE", 3 ] ],
     "death_drops": { "subtype": "collection", "groups": [ [ "default_zombie_death_drops", 100 ], [ "zsm_mon_dead_summoner_drops", 100 ] ] },
-    "death_function": [ "NORMAL" ],
     "flags": [ "SEES", "HEARS", "BASHES", "GROUP_BASH", "POISON", "REVIVES", "BONES", "PUSH_MON", "INTERIOR_AMMO" ]
   }
 ]

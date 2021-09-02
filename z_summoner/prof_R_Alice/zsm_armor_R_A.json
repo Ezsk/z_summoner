@@ -2,86 +2,71 @@
   {
     "id": "zsm_head_ribbon_blue",
     "type": "ARMOR",
-    "name": "ヘッドリボン（青）<color_green>[z_summon]</color>",
+    "name": "ヘッドリボン（青）",
     "description": "頭を飾る青色のかわいらしいリボンです。",
-
     "looks_like": "judo_belt_blue",
-
     "weight": 10,
     "volume": 1,
     "price": 2500,
     "material": [ "cotton" ],
     "symbol": "[",
     "color": "cyan",
-    "covers": [ "HEAD" ],
-    "coverage": 25,
-    "encumbrance": 10,
+    "armor": [ { "covers": [ "head" ], "coverage": 25, "encumbrance": 10 } ],
     "warmth": 10,
     "material_thickness": 1,
-     "//": "※ OVERSIZE フラグ付加で他の頭装備とも兼ねあえる？",
-    "flags": [ "VARSIZE", "FANCY", "OVERSIZE" ]
+    "//": "※ OVERSIZE フラグ付加で他の頭装備とも兼ねあえる？",
+    "flags": [ "VARSIZE", "FANCY", "OVERSIZE", "OUTER" ]
   },
   {
     "id": "zsm_head_ribbon_black",
     "type": "ARMOR",
-    "name": "ヘッドリボン（黒）<color_green>[z_summon]</color>",
+    "name": "ヘッドリボン（黒）",
     "description": "頭を飾る黒色のかわいらしいリボンです。",
-
     "copy-from": "zsm_head_ribbon_blue",
     "looks_like": "judo_belt_black",
-
     "color": "black"
   },
   {
     "id": "zsm_head_ribbon_white",
     "type": "ARMOR",
-    "name": "ヘッドリボン（白）<color_green>[z_summon]</color>",
+    "name": "ヘッドリボン（白）",
     "description": "頭を飾る白色のかわいらしいリボンです。",
-
     "copy-from": "zsm_head_ribbon_blue",
     "looks_like": "judo_belt_white",
-
     "color": "white"
   },
   {
     "id": "zsm_suspenders_skirt",
     "type": "ARMOR",
-    "name": "サスペンドスカート<color_green>[z_summon]</color>",
+    "name": "サスペンドスカート",
     "description": "吊り紐がついた綿のスカートです。",
-
     "looks_like": "dress_skirt",
-
     "weight": 75,
     "volume": 1,
     "price": 7000,
     "material": [ "cotton" ],
     "symbol": "[",
     "color": "cyan",
-    "covers": [ "LEGS" ],
-    "coverage": 52,
-    "storage": 4,
+    "armor": [ { "coverage": 52, "covers": [ "leg_l", "leg_r" ] } ],
+    "pocket_data": [ { "pocket_type": "CONTAINER", "max_contains_volume": "250 ml", "max_contains_weight": "1 kg", "moves": 80 } ],
     "warmth": 5,
-    "material_thickness": 1,
+    "material_thickness": 0.1,
     "flags": [ "VARSIZE" ]
   },
   {
     "id": "zsm_dress_blue",
     "type": "ARMOR",
-    "name": "青色のワンピース<color_green>[z_summon]</color>",
+    "name": "青色のワンピース",
     "description": "すっきりとしたシンプルな青色のワンピースです。",
-
     "copy-from": "sundress",
-
     "color": "blue"
   },
   {
     "id": "zsm_white_apron",
     "type": "ARMOR",
-    "name": "白いエプロン<color_green>[z_summon]</color>",
+    "name": "白いエプロン",
     "description": "真っ白なエプロンです。清潔な白さは見ているだけでも清々しい気分になりますね。",
-
     "looks_like": "undershirt",
-
     "weight": 30,
     "volume": 2,
     "price": 2000,
@@ -89,15 +74,33 @@
     "material": [ "cotton" ],
     "symbol": "[",
     "color": "white",
-    "covers": [ "TORSO" ],
-    "coverage": 65,
+    "armor": [
+      { "covers": [ "torso" ], "coverage": 70, "encumbrance": [ 0, 3 ] },
+      { "covers": [ "leg_l", "leg_r" ], "coverage": 70, "encumbrance": [ 1, 2 ] }
+    ],
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "3 kg",
+        "max_item_length": "21 cm",
+        "moves": 80
+      },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "3 kg",
+        "max_item_length": "21 cm",
+        "moves": 80
+      }
+    ],
     "material_thickness": 1,
     "flags": [ "VARSIZE", "FANCY" ]
   },
   {
     "id": "zsm_waist_ribbon_w",
     "type": "ARMOR",
-    "name": "リボン帯<color_green>[z_summon]</color>",
+    "name": "リボン帯",
     "description": "リボン状に結んだ帯です。",
     "looks_like": "judo_belt_white",
     "weight": 50,
@@ -106,30 +109,26 @@
     "material": [ "cotton" ],
     "symbol": "[",
     "color": "white",
-    "covers": [ "TORSO" ],
-    "encumbrance" : 1,
+    "armor": [ { "encumbrance": 1, "coverage": 5, "covers": [ "torso" ] } ],
     "pocket_data": [
       {
-        "pocket_type": "CONTAINER",
         "holster": true,
-        "min_item_volume": "1250 ml",
-        "max_contains_volume": "8 L",
-        "max_contains_weight": "8200 g",
-        "max_item_length": "120 cm",
-        "moves": 50
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "600 g",
+        "max_item_length": "70 cm",
+        "moves": 60,
+        "flag_restriction": [ "BELT_CLIP" ]
       }
     ],
-    "use_action": { "type": "holster" },
-     "//": "※ タイル表示で下側にしたいので苦肉の策として SKINTIGHT (肌着)フラグ付加",
+    "use_action": { "type": "holster", "holster_prompt": "リボン帯に入れる", "holster_msg": "You tuck your %s into your %s" },
+    "//": "※ タイル表示で下側にしたいので苦肉の策として SKINTIGHT (肌着)フラグ付加",
     "flags": [ "VARSIZE", "BELTED", "FANCY", "WAIST", "NO_QUICKDRAW", "SKINTIGHT" ]
   },
   {
     "id": "zsm_stockings_stripe_black",
     "type": "ARMOR",
-
     "copy-from": "stockings",
-
-    "name": "ストライプニーソックス(黒)<color_green>[z_summon]</color>",
+    "name": "ストライプニーソックス(黒)",
     "description": "膝上まである黒い縞々の靴下です。",
     "price": 1000,
     "color": "dark_gray",
@@ -138,10 +137,8 @@
   {
     "id": "zsm_stockings_stripe_blue",
     "type": "ARMOR",
-
     "copy-from": "stockings",
-
-    "name": "ストライプニーソックス(水色)<color_green>[z_summon]</color>",
+    "name": "ストライプニーソックス(水色)",
     "description": "膝上まである水色の縞々靴下です。",
     "price": 1000,
     "color": "cyan",
@@ -150,19 +147,16 @@
   {
     "id": "zsm_half_tanktop_cyan",
     "type": "ARMOR",
-    "name": "ハーフトップ(水色)<color_green>[z_summon]</color>",
+    "name": "ハーフトップ(水色)",
     "description": "タンクトップを上半分だけにしたような水色の下着です。",
-
     "looks_like": "bra",
-
     "weight": 36,
     "volume": 1,
     "price": 1000,
     "material": [ "cotton" ],
     "symbol": "[",
     "color": "cyan",
-    "covers": [ "TORSO" ],
-    "coverage": 17,
+    "armor": [ { "coverage": 17, "covers": [ "torso" ] } ],
     "warmth": 5,
     "material_thickness": 1,
     "flags": [ "VARSIZE", "SKINTIGHT" ]
@@ -170,41 +164,34 @@
   {
     "id": "zsm_bra_cyan",
     "type": "ARMOR",
-    "name": "ブラジャー(水色)<color_green>[z_summon]</color>",
+    "name": "ブラジャー(水色)",
     "color": "cyan",
-
     "copy-from": "bra"
   },
   {
     "id": "zsm_panties_cyan",
     "type": "ARMOR",
-    "name": "パンティー(水色)<color_green>[z_summon]</color>",
+    "name": "パンティー(水色)",
     "color": "cyan",
-
     "copy-from": "panties"
   },
   {
     "id": "zsm_strap_shoes",
     "type": "ARMOR",
-     "//": "（東方MODから拝借）",
-    "name": "ストラップシューズ<color_green>[z_summon]</color>",
+    "//": "（東方MODから拝借）",
+    "name": "ストラップシューズ",
     "description": "走り回ったりといった活動にはちょっと不向きな、女の子の靴です。",
-
     "looks_like": "dress_shoes",
-
     "weight": 840,
     "volume": 6,
     "price": 9000,
     "material": [ "leather" ],
     "symbol": "[",
     "color": "light_blue",
-    "covers": [ "FEET" ],
-    "coverage": 80,
-    "encumbrance": 16,
+    "armor": [ { "encumbrance": 16, "coverage": 80, "covers": [ "foot_l", "foot_r" ] } ],
     "warmth": 15,
     "material_thickness": 2,
     "environmental_protection": 1,
     "flags": [ "VARSIZE", "FANCY" ]
   }
-
 ]

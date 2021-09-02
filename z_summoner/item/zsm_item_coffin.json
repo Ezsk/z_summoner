@@ -5,35 +5,25 @@
     "type": "TOOL",
     "name": "封印された棺",
     "description": "得体の知れない封印らしきものが施された棺です。開けないほうが良いでしょう……。",
-
     "weight": 70000,
     "volume": 220,
     "price": 0,
     "material": [ "wood" ],
-    
     "symbol": "C",
     "color": "brown"
   },
-
-
-
-
-
   {
     "id": "zsm_sealed_coffin_zsummoner",
     "type": "TOOL",
-    "name": "封印された棺<color_green>[z_summon]</color>",
+    "name": "封印された棺",
     "copy-from": "zsm_base_sealed_coffin",
-    
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_zsm_zombie_summoner",
-      
-      "skill2": "speech",
+      "skills": [ "speech" ],
       "difficulty": 30,
       "friendly_msg": "なんと、棺の中には友好的なゾンビ召喚士が入っていました！",
       "hostile_msg": "棺から何者かが飛び出し襲い掛かってきました！！",
-      
       "moves": 160,
       "place_randomly": true
     }
@@ -41,18 +31,15 @@
   {
     "id": "zsm_sealed_coffin_zsummoner_e",
     "type": "TOOL",
-    "name": "封印された棺<color_green>[z_summon]</color>",
+    "name": "封印された棺",
     "copy-from": "zsm_base_sealed_coffin",
-    
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_zsm_zombie_summoner_elite",
-      
-      "skill2": "speech",
+      "skills": [ "speech" ],
       "difficulty": 30,
       "friendly_msg": "なんと、棺の中には友好的なゾンビ召喚士が入っていました！",
       "hostile_msg": "棺から何者かが飛び出し襲い掛かってきました！！",
-      
       "moves": 160,
       "place_randomly": true
     }
@@ -60,112 +47,84 @@
   {
     "id": "zsm_sealed_coffin_d_summoner",
     "type": "TOOL",
-    "name": "封印された棺<color_green>[z_summon]</color>",
+    "name": "封印された棺",
     "copy-from": "zsm_base_sealed_coffin",
-    
     "description": "厳重な封印が施された異様な棺です。邪悪な雰囲気とでも言うべき何かを発しており、見るだけで悪寒がします。",
-    
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_zsm_dead_summoner",
-      
-      "skill2": "speech",
+      "skills": [ "speech" ],
       "difficulty": 80,
       "friendly_msg": "なんと、棺の中には友好的なゾンビ召喚師が入っていました！",
       "hostile_msg": "棺から何者かが飛び出し襲い掛かってきました！！",
-      
       "moves": 160,
       "place_randomly": true
     }
-  }
-
-
-
-  ,{
+  },
+  {
     "id": "zsm_sealed_coffin_jiangshi",
     "type": "TOOL",
-    "name": "封印された棺<color_green>[z_summon]</color>",
+    "name": "封印された棺",
     "copy-from": "zsm_base_sealed_coffin",
-    
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_zsm_jiangshi_LV1",
-      
-      "skill2": "speech",
+      "skills": [ "speech" ],
       "difficulty": 6,
       "friendly_msg": "棺の中にいた者が起き上がり、ぴょんぴょんと跳び始めました。",
       "hostile_msg": "棺から何者かが飛び出し襲い掛かってきました！！",
-      
       "moves": 160,
       "place_randomly": true
     }
-  }
-  ,{
+  },
+  {
     "id": "zsm_sealed_coffin_salmon",
     "type": "TOOL",
-    "name": "封印された棺<color_green>[z_summon]</color>",
+    "name": "封印された棺",
     "copy-from": "zsm_base_sealed_coffin",
-    
     "weight": 20000,
-    
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_fish_salmon",
-      
-      "skill2": "speech",
+      "skills": [ "speech" ],
       "difficulty": 10,
       "friendly_msg": "なんと、棺の中には新鮮なサケが入っていました！？",
       "hostile_msg": "棺から何かが飛び出してきました！！",
-      
       "moves": 160,
       "place_randomly": true
     }
-  }
-
-
-
-  ,{
+  },
+  {
     "id": "zsm_sealed_coffin_amigara",
     "type": "TOOL",
-    "name": "封印された棺<color_green>[z_summon]</color>",
+    "name": "封印された棺",
     "copy-from": "zsm_base_sealed_coffin",
-    
     "weight": 80000,
-    
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_amigara_horror",
-      
-      "skill2": "speech",
+      "skills": [ "speech" ],
       "difficulty": 60,
       "friendly_msg": "棺の棺の中にはなんとも形容し難い存在が入っていました……",
       "hostile_msg": "棺から何者かが飛び出し………！……！？……！？",
-      
       "moves": 160,
       "place_randomly": true
     }
-  }
-  ,{
+  },
+  {
     "id": "zsm_sealed_coffin_b_ninja",
     "type": "TOOL",
-    "name": "封印された棺<color_green>[z_summon]</color>",
+    "name": "封印された棺",
     "copy-from": "zsm_base_sealed_coffin",
-    
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_zombie_brute_ninja",
-      
-      "skill2": "speech",
+      "skills": [ "speech" ],
       "difficulty": 10,
       "friendly_msg": "棺の中にはゾンビがいました……が不思議なことに襲い掛かってこないようです。",
       "hostile_msg": "棺から何者かが飛び出し襲い掛かってきました！！",
-      
       "moves": 160,
       "place_randomly": true
     }
   }
-
-
-
-
 ]

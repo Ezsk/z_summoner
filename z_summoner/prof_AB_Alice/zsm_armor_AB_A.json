@@ -1,57 +1,47 @@
 [
   {
     "id": "zsm_dress_shirt_violet",
+    "copy-from": "dress_shirt",
     "type": "ARMOR",
-    "name": "ドレスシャツ(スミレ色)<color_green>[z_summon]</color>",
-
-    "copy-from": "dress_shirt"
+    "name": "ドレスシャツ(スミレ色)"
   },
   {
     "id": "zsm_vest_purple",
     "type": "ARMOR",
-    "name": "ベスト(紫色)<color_green>[z_summon]</color>",
+    "name": "ベスト(紫色)",
     "description": "スミレ色の動きやすいベストです。",
-
     "looks_like": "vest_leather",
-
     "weight": 671,
     "volume": 3,
     "price": 8000,
     "material": [ "cotton" ],
     "symbol": "[",
     "color": "dark_gray",
-    "covers": [ "TORSO" ],
-    "coverage": 95,
-    "encumbrance": 1,
-    "storage": 0,
+    "armor": [ { "covers": [ "torso" ], "coverage": 95, "encumbrance": 1 } ],
     "warmth": 10,
     "material_thickness": 2,
     "flags": [ "VARSIZE", "FANCY" ]
   },
   {
     "id": "zsm_skirt_purple",
+    "copy-from": "skirt",
     "type": "ARMOR",
-    "name": "スカート(紫色)<color_green>[z_summon]</color>",
-
-    "copy-from": "skirt"
+    "name": "スカート(紫色)"
   },
   {
     "id": "zsm_tights_violet",
+    "copy-from": "tights",
     "type": "ARMOR",
-    "name": "タイツ(スミレ色)<color_green>[z_summon]</color>",
-
-    "copy-from": "tights"
+    "name": "タイツ(スミレ色)"
   },
   {
     "id": "zsm_brooch_tie_red",
     "type": "ARMOR",
-    "name": "ブローチタイ(赤)<color_green>[z_summon]</color>",
+    "name": "ブローチタイ(赤)",
     "description": "ブローチで止められた赤いネクタイです。",
-
     "looks_like": "holy_symbol",
-
-    "weight": 30,
-    "volume": 0,
+    "weight": "22 g",
+    "volume": "25 ml",
     "price": 90000,
     "material": [ "cotton", "stone" ],
     "symbol": "[",
@@ -61,61 +51,50 @@
   {
     "id": "zsm_ankle_strap_shoes_red",
     "type": "ARMOR",
-    "name": "アンクルストラップシューズ(赤)<color_green>[z_summon]</color>",
+    "name": "アンクルストラップシューズ(赤)",
     "description": "足首部分にベルトが付いたちょっぴりおしゃれな赤い靴です。 \n走り回ったりするのには向かないでしょうが……。",
-
     "looks_like": "heels",
-
     "weight": 850,
     "volume": 6,
     "price": 10000,
     "material": [ "leather" ],
     "symbol": "[",
     "color": "light_red",
-    "covers": [ "FEET" ],
-    "coverage": 82,
-    "encumbrance": 16,
+    "armor": [ { "covers": [ "feet_l", "feel_r" ], "coverage": 82, "encumbrance": 8 } ],
     "warmth": 15,
     "material_thickness": 2,
     "environmental_protection": 1,
     "flags": [ "VARSIZE", "FANCY" ]
   },
-  
   {
     "id": "zsm_half_tanktop_violet",
     "type": "ARMOR",
-    "name": "ハーフトップ(スミレ色)<color_green>[z_summon]</color>",
+    "name": "ハーフトップ(スミレ色)",
     "description": "タンクトップを上半分だけにしたようなスミレ色の下着です。",
-
     "looks_like": "bra",
-
     "weight": 36,
     "volume": 1,
     "price": 1000,
     "material": [ "cotton" ],
     "symbol": "[",
     "color": "pink",
-    "covers": [ "TORSO" ],
-    "coverage": 17,
+    "armor": [ { "covers": [ "torso" ], "coverage": 17, "encumbrance": 0 } ],
     "warmth": 5,
-    "material_thickness": 1,
+    "material_thickness": 0.1,
     "flags": [ "VARSIZE", "SKINTIGHT" ]
   },
   {
     "id": "zsm_bra_violet",
+    "copy-from": "bra",
     "type": "ARMOR",
-    "name": "ブラジャー(スミレ色)<color_green>[z_summon]</color>",
-    "color": "pink",
-
-    "copy-from": "bra"
+    "name": "ブラジャー(スミレ色)",
+    "color": "pink"
   },
   {
     "id": "zsm_panties_violet",
+    "copy-from": "panties",
     "type": "ARMOR",
-    "name": "パンティー(スミレ色)<color_green>[z_summon]</color>",
-    "color": "pink",
-
-    "copy-from": "panties"
+    "name": "パンティー(スミレ色)",
+    "color": "pink"
   }
-
 ]

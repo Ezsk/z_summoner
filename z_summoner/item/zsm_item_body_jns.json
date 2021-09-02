@@ -1,173 +1,150 @@
 [
   {
-    "id" : "zsm_sleeping_jiangshi_LV1",
+    "id": "zsm_sleeping_jiangshi_LV1",
     "type": "TOOL",
-    "name": "キョンシー(停止中)<color_green>[z_summon]</color>",
-    "description" : "これは………いわゆるキョンシーというやつでしょうか？ \nどうにかすると動き出してしまいそうです。",
-    
+    "name": { "str": "キョンシー(停止中)", "str_pl": "キョンシー(停止中)" },
+    "description": "これは………いわゆるキョンシーというやつでしょうか？ \nどうにかすると動き出してしまいそうです。",
     "symbol": "Z",
     "color": "blue",
     "material": [ "steel" ],
-    
     "price": 500000,
     "weight": 43420,
     "volume": 187,
-
     "use_action": {
-        "type": "place_monster",
-        "monster_id": "mon_zsm_jiangshi_LV1",
-        "difficulty": 1,
-        "skill2": "speech",
-        "hostile_msg": "キョンシーが跳ね起きこちらに襲い掛かってきました！",
-        "friendly_msg": "キョンシーが跳ね起きました……とりあえず襲ってはこないようです。",
-        "place_randomly": true,
-        "moves": 120
+      "type": "place_monster",
+      "monster_id": "mon_zsm_jiangshi_LV1",
+      "skills": [ "speech" ],
+      "difficulty": 1,
+      "hostile_msg": "キョンシーが跳ね起きこちらに襲い掛かってきました！",
+      "friendly_msg": "キョンシーが跳ね起きました……とりあえず襲ってはこないようです。",
+      "place_randomly": true,
+      "moves": 120
     },
     "flags": [ "TRADER_AVOID" ]
   },
   {
-    "id" : "zsm_sleeping_jiangshi_LV2",
+    "id": "zsm_sleeping_jiangshi_LV2",
     "copy-from": "zsm_sleeping_jiangshi_LV1",
     "type": "TOOL",
-    "name": "キョンシー(停止中)<color_green>[z_summon]</color>",
-    "description" : "今は眠っていますが、いわゆるキョンシーというやつです。",
-    
+    "name": { "str": "キョンシー(停止中)", "str_pl": "キョンシー(停止中)" },
+    "description": "今は眠っていますが、いわゆるキョンシーというやつです。",
     "price": 800000,
-
     "use_action": {
-        "type": "place_monster",
-        "monster_id": "mon_zsm_jiangshi_LV2",
-        "difficulty": 2,
-        "skill2": "speech",
-        "hostile_msg": "キョンシーが跳ね起きこちらに襲い掛かってきました！",
-        "friendly_msg": "キョンシーが跳ね起き、ぴょんぴょんと跳んでいます。",
-        "place_randomly": true,
-        "moves": 120
+      "type": "place_monster",
+      "monster_id": "mon_zsm_jiangshi_LV2",
+      "skills": [ "speech" ],
+      "difficulty": 2,
+      "hostile_msg": "キョンシーが跳ね起きこちらに襲い掛かってきました！",
+      "friendly_msg": "キョンシーが跳ね起き、ぴょんぴょんと跳んでいます。",
+      "place_randomly": true,
+      "moves": 120
     }
   },
   {
-    "id" : "zsm_sleeping_jiangshi_LV3",
+    "id": "zsm_sleeping_jiangshi_LV3",
     "copy-from": "zsm_sleeping_jiangshi_LV1",
     "type": "TOOL",
-    "name": "キョンシー(停止中)<color_green>[z_summon]</color>",
-    "description" : "今は眠っていますが、いわゆるキョンシーというやつです。 \n以前より爪や歯が鋭くなっているような気がします。",
-    
+    "name": { "str": "キョンシー(停止中)", "str_pl": "キョンシー(停止中)" },
+    "description": "今は眠っていますが、いわゆるキョンシーというやつです。 \n以前より爪や歯が鋭くなっているような気がします。",
     "price": 1200000,
-
     "use_action": {
-        "type": "place_monster",
-        "monster_id": "mon_zsm_jiangshi_LV3",
-        "difficulty": 3,
-        "skill2": "speech",
-        "hostile_msg": "キョンシーが跳ね起きこちらに襲い掛かってきました！",
-        "friendly_msg": "キョンシーが跳ね起き、ぴょんぴょんと跳んでいます。",
-        "place_randomly": true,
-        "moves": 120
+      "type": "place_monster",
+      "monster_id": "mon_zsm_jiangshi_LV3",
+      "skills": [ "speech" ],
+      "difficulty": 3,
+      "hostile_msg": "キョンシーが跳ね起きこちらに襲い掛かってきました！",
+      "friendly_msg": "キョンシーが跳ね起き、ぴょんぴょんと跳んでいます。",
+      "place_randomly": true,
+      "moves": 120
     }
   },
   {
-    "id" : "zsm_sleeping_jiangshi_LV4",
+    "id": "zsm_sleeping_jiangshi_LV4",
     "copy-from": "zsm_sleeping_jiangshi_LV1",
     "type": "TOOL",
-    "name": "キョンシー(停止中)<color_green>[z_summon]</color>",
-    "description" : "今は眠っていますが、いわゆるキョンシーというやつです。 \n以前見た時より血色が良くなっているような気がします。",
-    
+    "name": { "str": "キョンシー(停止中)", "str_pl": "キョンシー(停止中)" },
+    "description": "今は眠っていますが、いわゆるキョンシーというやつです。 \n以前見た時より血色が良くなっているような気がします。",
     "price": 2000000,
-    
     "use_action": {
-        "type": "place_monster",
-        "monster_id": "mon_zsm_jiangshi_LV4",
-        "difficulty": 4,
-        "skill2": "speech",
-        "hostile_msg": "キョンシーが跳ね起きこちらに襲い掛かってきました！",
-        "friendly_msg": "キョンシーが跳ね起き、少し嬉しそうにぴょんぴょんと跳んでいます。",
-        "place_randomly": true,
-        "moves": 120
+      "type": "place_monster",
+      "monster_id": "mon_zsm_jiangshi_LV4",
+      "skills": [ "speech" ],
+      "difficulty": 4,
+      "hostile_msg": "キョンシーが跳ね起きこちらに襲い掛かってきました！",
+      "friendly_msg": "キョンシーが跳ね起き、少し嬉しそうにぴょんぴょんと跳んでいます。",
+      "place_randomly": true,
+      "moves": 120
     }
   },
-
-
-
   {
-      "type": "GENERIC",
-      "category": "other",
-      "id": "zsm_repair_jiangshi_LV1",
-      "name": "キョンシー(修復中)",
-      "name_plural" : "キョンシー(修復中)<color_green>[z_summon]</color>",
-      "description": "キョンシーは静かに眠っています。 \n……少しずつ傷ついた体が修復されているようです。",
-      
-      "symbol": "Z",
-      "color": "blue",
-      "material": [ "steel" ],
-      
-      "price": 500000,
-      "weight": 43420,
-      "volume": 187,
-      
-      "use_action": {
-          "type": "delayed_transform",
-          "transform_age": 2500,
-          "not_ready_msg": "傷の修復が完璧でないのか眠ったままです。",
-          "msg": "キョンシーの傷の修復が完了しました！",
-          "moves": 60,
-          "target": "zsm_sleeping_jiangshi_LV1"
-      },
-      "flags": [ "TRADER_AVOID" ]
+    "type": "GENERIC",
+    "category": "other",
+    "id": "zsm_repair_jiangshi_LV1",
+    "name": { "str": "キョンシー(停止中)", "str_pl": "キョンシー(停止中)" },
+    "description": "キョンシーは静かに眠っています。 \n……少しずつ傷ついた体が修復されているようです。",
+    "symbol": "Z",
+    "color": "blue",
+    "material": [ "steel" ],
+    "price": 500000,
+    "weight": 43420,
+    "volume": 187,
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 2500,
+      "not_ready_msg": "傷の修復が完璧でないのか眠ったままです。",
+      "msg": "キョンシーの傷の修復が完了しました！",
+      "moves": 60,
+      "target": "zsm_sleeping_jiangshi_LV1"
+    },
+    "flags": [ "TRADER_AVOID" ]
   },
   {
-      "type": "GENERIC",
-      "category": "other",
-      "id": "zsm_repair_jiangshi_LV2",
-      "copy-from": "zsm_repair_jiangshi_LV1",
-      "name": "キョンシー(修復中)<color_green>[z_summon]</color>",
-      
-      "price": 800000,
-      
-      "use_action": {
-          "type": "delayed_transform",
-          "transform_age": 2300,
-          "not_ready_msg": "傷の修復が完璧でないのか眠ったままです。",
-          "msg": "キョンシーの傷の修復が完了しました！",
-          "moves": 60,
-          "target": "zsm_sleeping_jiangshi_LV2"
-      }
+    "type": "GENERIC",
+    "category": "other",
+    "id": "zsm_repair_jiangshi_LV2",
+    "copy-from": "zsm_repair_jiangshi_LV1",
+    "name": { "str": "キョンシー(停止中)", "str_pl": "キョンシー(停止中)" },
+    "price": 800000,
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 2300,
+      "not_ready_msg": "傷の修復が完璧でないのか眠ったままです。",
+      "msg": "キョンシーの傷の修復が完了しました！",
+      "moves": 60,
+      "target": "zsm_sleeping_jiangshi_LV2"
+    }
   },
   {
-      "type": "GENERIC",
-      "category": "other",
-      "id": "zsm_repair_jiangshi_LV3",
-      "copy-from": "zsm_repair_jiangshi_LV1",
-      "name": "キョンシー(修復中)<color_green>[z_summon]</color>",
-      
-      "price": 1200000,
-      
-      "use_action": {
-          "type": "delayed_transform",
-          "transform_age": 2200,
-          "not_ready_msg": "傷の修復が完璧でないのか眠ったままです。",
-          "msg": "キョンシーの傷の修復が完了しました！",
-          "moves": 60,
-          "target": "zsm_sleeping_jiangshi_LV3"
-      }
+    "type": "GENERIC",
+    "category": "other",
+    "id": "zsm_repair_jiangshi_LV3",
+    "copy-from": "zsm_repair_jiangshi_LV1",
+    "name": { "str": "キョンシー(停止中)", "str_pl": "キョンシー(停止中)" },
+    "price": 1200000,
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 2200,
+      "not_ready_msg": "傷の修復が完璧でないのか眠ったままです。",
+      "msg": "キョンシーの傷の修復が完了しました！",
+      "moves": 60,
+      "target": "zsm_sleeping_jiangshi_LV3"
+    }
   },
   {
-      "type": "GENERIC",
-      "category": "other",
-      "id": "zsm_repair_jiangshi_LV4",
-      "copy-from": "zsm_repair_jiangshi_LV1",
-      "name": "キョンシー(修復中)<color_green>[z_summon]</color>",
-      "description": "キョンシーは静かに眠っています。 \n傷ついた体が見る間に修復されているようです。",
-      
-      "price": 2000000,
-      
-      "use_action": {
-          "type": "delayed_transform",
-          "transform_age": 2000,
-          "not_ready_msg": "傷の修復が完璧でないのか眠ったままです。",
-          "msg": "キョンシーの傷の修復が完了しました！",
-          "moves": 60,
-          "target": "zsm_sleeping_jiangshi_LV4"
-      }
+    "type": "GENERIC",
+    "category": "other",
+    "id": "zsm_repair_jiangshi_LV4",
+    "copy-from": "zsm_repair_jiangshi_LV1",
+    "name": { "str": "キョンシー(停止中)", "str_pl": "キョンシー(停止中)" },
+    "description": "キョンシーは静かに眠っています。 \n傷ついた体が見る間に修復されているようです。",
+    "price": 2000000,
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 2000,
+      "not_ready_msg": "傷の修復が完璧でないのか眠ったままです。",
+      "msg": "キョンシーの傷の修復が完了しました！",
+      "moves": 60,
+      "target": "zsm_sleeping_jiangshi_LV4"
+    }
   }
-  
 ]

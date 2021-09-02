@@ -1,0 +1,9 @@
+[
+  {
+    "id": "pen",
+    "type": "TOOL",
+    "name": { "str": "pen" },
+    "copy-from": "pen",
+    "flags": [ "STAB", "FRAGILE_MELEE", "WRITE_MESSAGE" ]
+  }
+]

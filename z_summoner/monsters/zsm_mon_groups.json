@@ -1,26 +1,18 @@
 [
-
   {
-    "type":"monstergroup",
-    "//": "刑務所　　※モンスターグループTips１：デフォで override(上書き)フラグが false(無効)なので、特に意識せず既存のグループを利用する場合は「追加」となる・・・らしい！",
-    "name" : "GROUP_ZOMBIE_PRISON",
-    "default" : "mon_zombie",
-    "copy-from": "GROUP_ZOMBIE_PRISON",
-    "monsters" : [
-      { "monster" : "mon_zsm_zombie_summoner", "freq" : 10, "cost_multiplier" : 0 },
-      { "monster" : "mon_zsm_zombie_summoner_elite", "freq" : 10, "cost_multiplier" : 0 }
+    "type": "monstergroup",
+    "name": "GROUP_ZOMBIE_PRISON",
+    "monsters": [
+      { "monster": "mon_zsm_zombie_summoner", "freq": 10, "cost_multiplier": 0 },
+      { "monster": "mon_zsm_zombie_summoner_elite", "freq": 10, "cost_multiplier": 0 }
     ]
   },
   {
-    "//": "※モンスターグループTips２：ただし、replace_monster_group、new_monster_group_id、replacement_time の３つの値については書いておかないとデフォ値になるから注意！・・・らしい！",
-    "type":"monstergroup",
-    "name" : "GROUP_ZOMBIE_MID",
-    "default" : "mon_zombie_tough",
-    "monsters" : [
-      { "monster" : "mon_zsm_zombie_summoner", "freq" : 5, "cost_multiplier" : 25 },
-      { "monster" : "mon_zsm_zombie_summoner_elite", "freq" : 1, "cost_multiplier" : 30 }
+    "type": "monstergroup",
+    "name": "GROUP_ZOMBIE_MID",
+    "monsters": [
+      { "monster": "mon_zsm_zombie_summoner", "freq": 5, "cost_multiplier": 25 },
+      { "monster": "mon_zsm_zombie_summoner_elite", "freq": 1, "cost_multiplier": 30 }
     ]
   }
-
 ]
-

@@ -1,43 +1,30 @@
 [
   {
     "//": "キョンシーLV1のドロップアイテム",
-    "type" : "item_group",
+    "type": "item_group",
     "subtype": "collection",
     "id": "zsm_mon_jiangshi_LV1_drops",
-    "entries":
-    [
-        { "item": "zsm_repair_jiangshi_LV1" }
-    ]
+    "entries": [ { "item": "zsm_repair_jiangshi_LV1" } ]
   },
   {
     "//": "キョンシーLV2のドロップアイテム",
-    "type" : "item_group",
+    "type": "item_group",
     "subtype": "collection",
     "id": "zsm_mon_jiangshi_LV2_drops",
-    "entries":
-    [
-        { "item": "zsm_repair_jiangshi_LV2" }
-    ]
+    "entries": [ { "item": "zsm_repair_jiangshi_LV2" } ]
   },
   {
     "//": "キョンシーLV3のドロップアイテム",
-    "type" : "item_group",
+    "type": "item_group",
     "subtype": "collection",
     "id": "zsm_mon_jiangshi_LV3_drops",
-    "entries":
-    [
-        { "item": "zsm_repair_jiangshi_LV3" }
-    ]
+    "entries": [ { "item": "zsm_repair_jiangshi_LV3" } ]
   },
   {
     "//": "キョンシーLV4のドロップアイテム",
-    "type" : "item_group",
+    "type": "item_group",
     "subtype": "collection",
     "id": "zsm_mon_jiangshi_LV4_drops",
-    "entries":
-    [
-        { "item": "zsm_repair_jiangshi_LV4" }
-    ]
+    "entries": [ { "item": "zsm_repair_jiangshi_LV4" } ]
   }
-  
 ]

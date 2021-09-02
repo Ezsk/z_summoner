@@ -2,65 +2,51 @@
   {
     "id": "zsm_eerie_book_fragment_1",
     "type": "BOOK",
-    "name": "不気味な本の断片(1/3)<color_green>[z_summon]</color>",
-    "name_plural": "不気味な本の断片(1/3)<color_green>[z_summon]</color>",
+    "name": { "str": "不気味な本の断片(1/3)", "str_pl": "不気味な本の断片(1/3)" },
     "description": "本の断片のようで全容は分かりませんが不気味な感じがします。 \n……この断片自体から異様な力を感じます。",
-
-    "looks_like": "note",
-
+    "looks_like": "newest_newspaper",
     "weight": 300,
     "volume": 1,
     "price": 0,
     "material": [ "paper", "leather" ],
     "symbol": "?",
     "color": "green",
-    
     "qualities": [ [ "SUMMONING", 1 ] ]
   },
   {
     "id": "zsm_eerie_book_fragment_2",
     "type": "BOOK",
-    "name": "不気味な本の断片(2/3)<color_green>[z_summon]</color>",
-    "name_plural": "不気味な本の断片(2/3)<color_green>[z_summon]</color>",
+    "name": { "str": "不気味な本の断片(2/3)", "str_pl": "不気味な本の断片(2/3)" },
     "description": "本の断片のようで全容は分かりませんが不気味な感じがします。 \n……この断片自体から異様な力を感じます。",
-
-    "looks_like": "note",
-
+    "looks_like": "newest_newspaper",
     "weight": 600,
     "volume": 2,
     "price": 0,
     "material": [ "paper", "leather" ],
     "symbol": "?",
     "color": "green",
-    
     "qualities": [ [ "SUMMONING", 1 ] ]
   },
   {
     "id": "zsm_eerie_book_fragment_3",
     "type": "BOOK",
-    "name": "不気味な本の断片(3/3)<color_green>[z_summon]</color>",
-    "name_plural": "不気味な本の断片(3/3)<color_green>[z_summon]</color>",
+    "name": { "str": "不気味な本の断片(3/3)", "str_pl": "不気味な本の断片(3/3)" },
     "description": "本の断片のようで全容は分かりませんが不気味な感じがします。 \n……この断片自体から異様な力を感じます。",
-
-    "looks_like": "note",
-
+    "looks_like": "newest_newspaper",
     "weight": 600,
     "volume": 2,
     "price": 0,
     "material": [ "paper", "leather" ],
     "symbol": "?",
     "color": "green",
-    
     "qualities": [ [ "SUMMONING", 1 ] ]
   },
   {
     "id": "zsm_book_of_desecration",
     "type": "BOOK",
-    "name": "本(学習/冒涜の書)<color_green>[z_summon]</color>",
+    "name": { "str": "本(学習/冒涜の書)", "str_pl": "本(学習/冒涜の書)" },
     "description": "死肉を繋ぎ合わせ使役する方法やポータル技術の応用云々などと突拍子もない内容が書かれています。 \nこの本を持っているとなぜか何者かに覗き見られているような……妙な話ですが、この本は*生きて*いてこちらを監視している………そんな気がします。",
-
-    "looks_like": "abdul_necro",
-
+    "looks_like": "holybook_satanic",
     "weight": 1500,
     "volume": 5,
     "price": 10000,
@@ -71,113 +57,88 @@
     "skill": "electronics",
     "max_level": 2,
     "intelligence": 9,
-
     "time": 35,
     "fun": -1,
-    "techniques": ["WBLOCK_1"],
-    "artifact_data" : {
-        "effects_carried": ["AEP_SCHIZO", "AEP_ATTENTION" ]
-    },
-    
-    "qualities": [ [ "SUMMONING", 2 ] ]
+    "techniques": [ "WBLOCK_1" ],
+    "qualities": [ [ "SUMMONING", 2 ] ],
+    "flags": [ "MAGIC_FOCUS" ]
   },
   {
-    "type" : "AMMO",
-    "id" : "zsm_bone_arrow_curse",
-    "price" : 20,
-    "name": "呪いの骨矢<color_green>[z_summon]</color>",
-    "symbol" : "=",
-    "color" : "green",
-    "description" : "特殊な製法で作られた異様な骨の矢です。 \nなにか怨念めいたものを感じます……。 \n放った矢が低確率で地面に残ります。",
-
+    "type": "AMMO",
+    "id": "zsm_bone_arrow_curse",
+    "price": 20,
+    "name": { "str": "呪いの骨矢", "str_pl": "呪いの骨矢" },
+    "symbol": "=",
+    "color": "green",
+    "description": "特殊な製法で作られた異様な骨の矢です。 \nなにか怨念めいたものを感じます……。 \n放った矢が低確率で地面に残ります。",
     "looks_like": "arrow_field_point_fletched",
-
-    "material" : "bone",
-    "volume" : 1,
-    "weight" : 60,
-    "bashing" : 2,
-    "cutting" : 1,
-    "ammo_type" : "arrow",
+    "material": "bone",
+    "volume": 1,
+    "weight": 60,
+    "bashing": 2,
+    "cutting": 1,
+    "ammo_type": "arrow",
     "damage": { "damage_type": "stab", "amount": 9, "armor_penetration": 3 },
-    "range" : 6,
+    "range": 6,
     "dispersion": 140,
     "loudness": 0,
-    "count" : 10,
-    "effects": ["RECOVER_5", "BEANBAG"]
-  }
-
-
-
-  ,{
-    "id" : "zsm_summoner_staff",
+    "count": 10,
+    "effects": [ "RECOVER_5", "BEANBAG" ]
+  },
+  {
+    "id": "zsm_summoner_staff",
     "copy-from": "q_staff",
     "type": "GENERIC",
-    "name": "ゾンビ召喚士の杖<color_green>[z_summon]</color>",
+    "name": { "str": "ゾンビ召喚士の杖", "str_pl": "ゾンビ召喚士の杖" },
     "description": "一見するとただの木の杖のように見えます…… \nが、その実態はポータル発生器などを高度な技術で組み上げた召喚デバイスのようです。 \n（難易度：5）",
-
     "looks_like": "q_staff",
-
     "material": [ "wood", "plastic" ],
     "weight": 3200,
-    "flags": [],
-
+    "flags": [ "SHEATH_SPEAR", "ALWAYS_TWOHAND", "FRAGILE_MELEE", "MAGIC_FOCUS" ],
     "use_action": {
-        "type": "place_monster",
-        "monster_id": "mon_zsm_zombie",
-        "difficulty": 5,
-        "skill2": "speech",
-        "hostile_msg": "失敗！このゾンビとはお友達になれそうにありません！",
-        "friendly_msg": "召喚されたゾンビはあなたの命令を受けヨロヨロと動き始めました。",
-
-        "place_randomly": true,
-        "moves": 12000
+      "type": "place_monster",
+      "monster_id": "mon_zsm_zombie",
+      "skills": [ "speech" ],
+      "difficulty": 5,
+      "hostile_msg": "失敗！このゾンビとはお友達になれそうにありません！",
+      "friendly_msg": "召喚されたゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+      "place_randomly": true,
+      "moves": 12000
     }
-  }
-  ,{
-    "id" : "zsm_d_summoner_staff",
+  },
+  {
+    "id": "zsm_d_summoner_staff",
     "copy-from": "q_staff",
     "type": "GENERIC",
-    "name": "屍召喚師の杖<color_green>[z_summon]</color>",
+    "name": { "str": "屍召喚師の杖", "str_pl": "屍召喚師の杖" },
     "description": "一見するとただの木の杖のように見えます…… \nが、その実態はポータル発生器などを高度な技術で組み上げた召喚デバイスのようです。 \n（難易度：7）",
-
     "looks_like": "q_staff",
-
     "material": [ "wood", "plastic" ],
     "weight": 3200,
-    "flags": [],
-
+    "flags": [ "SHEATH_SPEAR", "ALWAYS_TWOHAND", "FRAGILE_MELEE", "MAGIC_FOCUS" ],
     "use_action": {
-        "type": "place_monster",
-        "monster_id": "mon_zsm_zombie_hollow",
-        "difficulty": 7,
-        "skill2": "speech",
-        "hostile_msg": "失敗！空洞ゾンビはゆらゆらと揺れています……こちらの言う事を聞く気はないようです！",
-        "friendly_msg": "召喚された空洞ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
-
-        "place_randomly": true,
-        "moves": 16000
+      "type": "place_monster",
+      "monster_id": "mon_zsm_zombie_hollow",
+      "skills": [ "speech" ],
+      "difficulty": 7,
+      "hostile_msg": "失敗！空洞ゾンビはゆらゆらと揺れています……こちらの言う事を聞く気はないようです！",
+      "friendly_msg": "召喚された空洞ゾンビはあなたの命令を受けヨロヨロと動き始めました。",
+      "place_randomly": true,
+      "moves": 16000
     }
-  }
-
-
-  ,{
+  },
+  {
     "//": "■道具：ドロップすると即時稼働状態になる手榴弾",
     "id": "zsm_active_grenade",
     "type": "TOOL",
     "copy-from": "grenade",
-    "name": "爆弾ランナーの手榴弾",
-
-	"drop_action": {
+    "name": { "str": "爆弾ランナーの手榴弾", "str_pl": "爆弾ランナーの手榴弾" },
+    "drop_action": {
       "target": "grenade_act",
       "msg": "爆弾ランナーの手から手榴弾が落ちました！",
       "target_charges": 1,
       "active": true,
       "type": "transform"
-	}
+    }
   }
-
-
-
-
-
 ]

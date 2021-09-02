@@ -1,73 +1,61 @@
 [
-    {
-        "type" : "furniture",
-        "id" : "f_zsm_bone_carpet",
-        "name": "粗骨の絨毯",
-        "symbol": "w",
-        "description": "あちこち尖った骨が連なって出来た危険な絨毯です。",
-        "color": "dark_gray",
-        "move_cost_mod": 2,
-        "required_str": 5,
-        "flags": ["FLAMMABLE_HARD", "PLACE_ITEM", "TRANSPARENT", "THIN_OBSTACLE", "PERMEABLE", "SHARP" ],
-        "deconstruct": {
-            "items": [
-                { "item": "bone_tainted", "count": [5, 10] }
-            ]
-        }
-    },
-    {
-        "type" : "furniture",
-        "id" : "f_zsm_bone_fence",
-        "name": "骨の障壁",
-        "symbol": "|",
-        "description": "骨で出来た悪趣味なフェンスです。",
-        "color": "dark_gray",
-        "move_cost_mod": -1,
-        "required_str": 8,
-        "flags": ["FLAMMABLE_HARD", "TRANSPARENT", "NOITEM", "THIN_OBSTACLE", "PERMEABLE", "UNSTABLE", "CLIMBABLE", "BLOCKSDOOR" ],
-        "deconstruct": {
-            "items": [
-                { "item": "bone_tainted", "count": [10, 20] }
-            ]
-        },
-        "examine_action": "chainfence",
-        "bash": {
-            "str_min": 10, "str_max": 60,
-            "sound": "crunch!",
-            "sound_fail": "whump!",
-            "ter_set": "t_null",
-            "items": [
-                { "item": "bone_tainted", "count": [5, 10] }
-            ]
-        }
-    },
-    {
-        "type" : "furniture",
-        "id" : "f_zsm_flesh_wall",
-        "name": "肉の壁",
-        "symbol": "{",
-        "description": "何かの肉で出来た気味の悪い壁です。",
-        "color": "green",
-        "move_cost_mod": -1,
-        "required_str": -1,
-        "flags": ["FLAMMABLE", "NOITEM", "THIN_OBSTACLE", "UNSTABLE", "WALL", "CLIMBABLE", "BLOCKSDOOR"],
-        "deconstruct": {
-            "items": [
-                { "item": "meat_tainted", "count": [10, 20] },
-                { "item": "bone_tainted", "count": [10, 20] }
-            ]
-        },
-        "examine_action": "chainfence",
-        "bash": {
-            "str_min": 15, "str_max": 150,
-            "sound": "crunch!",
-            "sound_fail": "whump.",
-            "ter_set": "t_null",
-            "items": [
-                { "item": "meat_tainted", "count": [5, 10] },
-                { "item": "bone_tainted", "count": [5, 10] }
-            ]
-        }
+  {
+    "type": "furniture",
+    "id": "f_zsm_bone_carpet",
+    "name": "粗骨の絨毯",
+    "symbol": "w",
+    "description": "あちこち尖った骨が連なって出来た危険な絨毯です。",
+    "color": "dark_gray",
+    "move_cost_mod": 6,
+    "required_str": 5,
+    "flags": [ "FLAMMABLE_HARD", "PLACE_ITEM", "TRANSPARENT", "THIN_OBSTACLE", "PERMEABLE", "SHARP" ],
+    "deconstruct": { "items": [ { "item": "bone_tainted", "count": [ 5, 10 ] } ] },
+    "bash": {
+      "str_min": 6,
+      "str_max": 15,
+      "sound": "crunch!",
+      "sound_fail": "whump!",
+      "items": [ { "item": "bone_tainted", "count": [ 5, 10 ] } ]
     }
-
+  },
+  {
+    "type": "furniture",
+    "id": "f_zsm_bone_fence",
+    "name": "骨の障壁",
+    "symbol": "|",
+    "description": "骨で出来た悪趣味なフェンスです。",
+    "color": "dark_gray",
+    "move_cost_mod": -1,
+    "required_str": 8,
+    "flags": [ "FLAMMABLE_HARD", "TRANSPARENT", "NOITEM", "THIN_OBSTACLE", "PERMEABLE", "UNSTABLE", "CLIMBABLE", "BLOCKSDOOR" ],
+    "deconstruct": { "items": [ { "item": "bone_tainted", "count": [ 5, 10 ] } ] },
+    "examine_action": "chainfence",
+    "bash": {
+      "str_min": 10,
+      "str_max": 60,
+      "sound": "crunch!",
+      "sound_fail": "whump!",
+      "items": [ { "item": "bone_tainted", "count": [ 5, 10 ] } ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_zsm_flesh_wall",
+    "name": "肉の壁",
+    "symbol": "{",
+    "description": "何かの肉で出来た気味の悪い壁です。",
+    "color": "green",
+    "move_cost_mod": -1,
+    "required_str": -1,
+    "flags": [ "FLAMMABLE", "NOITEM", "THIN_OBSTACLE", "UNSTABLE", "WALL", "CLIMBABLE", "BLOCKSDOOR" ],
+    "deconstruct": { "items": [ { "item": "meat_tainted", "count": [ 0, 20 ] } ] },
+    "examine_action": "chainfence",
+    "bash": {
+      "str_min": 15,
+      "str_max": 150,
+      "sound": "crunch!",
+      "sound_fail": "whump.",
+      "items": [ { "item": "meat_tainted", "count": [ 10, 20 ] } ]
+    }
+  }
 ]
