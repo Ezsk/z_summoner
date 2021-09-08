@@ -9,7 +9,7 @@
     "id": "cmp_zsm_meat",
     "type": "requirement",
     "//": "製作時の肉素材、ver1_3 にて1加算。",
-    "components": [ [ [ "meat", 2 ], [ "human_flesh", 2 ], [ "meat_tainted", 3 ] ] ]
+    "components": [ [ [ "meat", 2 ], [ "human_flesh", 2 ], [ "meat_tainted", 3 ], ["mutant_meat", 3] ] ]
   },
   {
     "id": "cmp_zsm_z_meat",

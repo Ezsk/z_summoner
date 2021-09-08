@@ -9,7 +9,7 @@
     "species": [ "HUMAN" ],
     "diff": 6,
     "volume": "62500 ml",
-    "weight": "81500 g",
+    "weight": "32500 g",
     "material": [ "hflesh" ],
     "symbol": "Z",
     "color": "light_green",
@@ -29,7 +29,12 @@
     "death_drops": "zsm_mon_jiangshi_LV1_drops",
     "death_function": { "message": "%s は力尽きた！", "corpse_type": "NO_CORPSE" },
     "upgrades": { "half_life": 1, "into": "mon_zsm_jiangshi_LV2" },
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "PUSH_MON", "DOGFOOD", "GUILT" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "PUSH_MON", "CANPLAY", "GUILT" ],
+    "petfood": {
+      "food": [ "DOGFOOD" ],
+      "feed": "%s にドッグフードを与えてみると、彼女は夢中でそれを食べ始めた。大変お気に召した様子だ。",
+      "pet": "%s は貴方の周りをぴょんぴょん飛び跳ねている、表情は変わらないがどことなく嬉しげだ。"
+    }
   },
   {
     "id": "mon_zsm_jiangshi_LV2",
@@ -61,7 +66,12 @@
     "death_drops": "zsm_mon_jiangshi_LV2_drops",
     "death_function": { "message": "%s は力尽きた！", "corpse_type": "NO_CORPSE" },
     "upgrades": { "half_life": 1, "into": "mon_zsm_jiangshi_LV3" },
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "PUSH_MON", "DOGFOOD", "GUILT" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "PUSH_MON", "CANPLAY", "GUILT" ],
+    "petfood": {
+      "food": [ "DOGFOOD" ],
+      "feed": "%s にドッグフードを与えてみると、彼女は夢中でそれを食べ始めた。大変お気に召した様子だ。",
+      "pet": "%s は貴方の周りをぴょんぴょん飛び跳ねている、表情は変わらないがどことなく嬉しげだ。"
+    }
   },
   {
     "id": "mon_zsm_jiangshi_LV3",
@@ -104,7 +114,12 @@
     "death_drops": "zsm_mon_jiangshi_LV3_drops",
     "death_function": { "message": "%s は力尽きた！", "corpse_type": "NO_CORPSE" },
     "upgrades": { "half_life": 2, "into": "mon_zsm_jiangshi_LV4" },
-    "flags": [ "SEES", "HEARS", "SMELLS", "FLIES", "WARM", "PUSH_MON", "DOGFOOD", "GUILT" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "FLIES", "WARM", "PUSH_MON", "CANPLAY", "GUILT" ],
+    "petfood": {
+      "food": [ "DOGFOOD" ],
+      "feed": "%s にドッグフードを与えてみると、彼女は夢中でそれを食べ始めた。大変お気に召した様子だ。",
+      "pet": "%s は貴方の周りをぴょんぴょん飛び跳ねている、表情は変わらないがどことなく嬉しげだ。"
+    }
   },
   {
     "id": "mon_zsm_jiangshi_LV4",
@@ -131,6 +146,11 @@
     "revert_to_itype": "zsm_sleeping_jiangshi_LV4",
     "death_drops": "zsm_mon_jiangshi_LV4_drops",
     "death_function": { "message": "%s は力尽きた！", "corpse_type": "NO_CORPSE" },
-    "flags": [ "SEES", "HEARS", "SMELLS", "FLIES", "WARM", "PUSH_MON", "BADVENOM", "DOGFOOD", "GUILT" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "FLIES", "WARM", "PUSH_MON", "BADVENOM", "CANPLAY", "GUILT" ],
+    "petfood": {
+      "food": [ "DOGFOOD" ],
+      "feed": "%s にドッグフードを与えてみると、彼女は夢中でそれを食べ始めた。大変お気に召した様子だ。",
+      "pet": "%s は貴方の周りをぴょんぴょん飛び跳ねている、表情は変わらないがどことなく嬉しげだ。"
+    }
   }
 ]
