@@ -209,11 +209,8 @@
     "description": "戦場での使用を目的に設計された大型の斧です。いくつかの傷や錆により少々ボロい……いえ、年代物な雰囲気が出ています。",
     "copy-from": "battleaxe",
     "looks_like": "battleaxe_fake",
-    "price": 30000,
     "cutting": 24,
-    "ammo": "zsm_ammo_magi",
-    "initial_charges": 0,
-    "max_charges": 60,
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "zsm_ammo_magi": 60 } } ],
     "use_action": {
       "type": "transform",
       "active": true,
@@ -223,20 +220,17 @@
       "need_charges_msg": "魔法力が足りない。",
       "moves": 60
     },
-    "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "TRADER_AVOID", "MAGIC_FOCUS" ]
+    "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "TRADER_AVOID", "SHEATH_AXE", "MAGIC_FOCUS" ]
   },
   {
     "//": "■STR上昇4*3、INT低下3*3、外せないが時間経過で「古びた戦斧」に戻る（countdown_interval:600 だいたい１時間程）",
+    "copy-from": "zsm_old_battleaxe",
     "id": "zsm_berserk_battleaxe",
     "type": "TOOL",
     "category": "weapons",
     "name": "ベルセルクの戦斧",
     "description": "手にした者に荒々しい力……そして破壊と破滅をもたらす戦斧です。<color_ltblue>………骨まで砕けろぉ！！</color>",
     "looks_like": "battleaxe",
-    "weight": 2002,
-    "volume": 10,
-    "price": 0,
-    "material": [ "steel", "wood" ],
     "symbol": "/",
     "color": "red",
     "to_hit": 1,
