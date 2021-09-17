@@ -60,7 +60,7 @@
     "material": [ "leather" ],
     "symbol": "[",
     "color": "light_red",
-    "armor": [ { "covers": [ "feet_l", "feel_r" ], "coverage": 82, "encumbrance": 8 } ],
+    "armor": [ { "covers": [ "foot_l", "foot_r" ], "coverage": 82, "encumbrance": 8 } ],
     "warmth": 15,
     "material_thickness": 2,
     "environmental_protection": 1,

@@ -26,7 +26,8 @@
                   "ear_plugs",
                   "zsm_charm_skull_upper_cut",
                   "zsm_charm_hello_skull",
-                  "zsm_charm_skull_field"
+                  "zsm_charm_skull_field",
+                  "slingpack"
                 ],
                 "entries": [
                     { "item": "zsm_Book_of_The_Engage"},

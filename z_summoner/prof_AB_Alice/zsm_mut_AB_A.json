@@ -1,25 +1,28 @@
 [
-	{
-        "type" : "mutation",
-        "id" : "PURPLE_EYE",
-        "name" : "目(紫色)",
-        "points" : 0,
-        "description" : "紫色の目をしています。",
-        "starting_trait" : true,
-        "valid": false,
-        "purifiable": false,
-        "profession": true
-    },
-	{
-        "type" : "mutation",
-        "id" : "PURPLE_HAIR",
-        "name" : "ショートヘア(紫色)",
-        "points" : 0,
-        "description" : "髪が紫色です。",
-        "starting_trait" : true,
-        "valid": false,
-        "purifiable": false,
-        "profession": true
-    }
-
+  {
+    "type": "mutation",
+    "id": "PURPLE_EYE",
+    "name": "目(紫色)",
+    "points": 0,
+    "description": "紫色の目をしています。",
+    "starting_trait": true,
+    "vanity": true,
+    "valid": false,
+    "purifiable": false,
+    "profession": true,
+    "types": [ "eye_color" ]
+  },
+  {
+    "type": "mutation",
+    "id": "PURPLE_HAIR",
+    "name": "ショートヘア(紫色)",
+    "points": 0,
+    "description": "髪が紫色です。",
+    "starting_trait": true,
+    "vanity": true,
+    "valid": false,
+    "purifiable": false,
+    "profession": true,
+    "types": [ "hair_style" ]
+  }
 ]
