@@ -22,7 +22,8 @@
                   "zsm_suspenders_skirt",
                   "sewing_kit",
                   "zsm_sleep_rabbit_bot_LV1",
-                  "slingpack"
+                  "slingpack",
+                  { "item": "pen", "charges": 100 }
                 ],
                 "entries": [
                     { "item": "zsm_Alice_in_Deadmans_Land"}

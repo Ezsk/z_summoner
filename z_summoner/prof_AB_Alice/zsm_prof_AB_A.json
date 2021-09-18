@@ -27,7 +27,8 @@
                   "zsm_charm_skull_upper_cut",
                   "zsm_charm_hello_skull",
                   "zsm_charm_skull_field",
-                  "slingpack"
+                  "slingpack",
+                  { "item": "pen", "charges": 100 }
                 ],
                 "entries": [
                     { "item": "zsm_Book_of_The_Engage"},
