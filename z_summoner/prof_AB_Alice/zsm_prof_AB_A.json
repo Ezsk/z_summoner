@@ -14,6 +14,7 @@
             "PURPLE_EYE",
             "PURPLE_HAIR"
         ],
+        "skills": [ { "level": 1, "name": "dodge" }, { "level": 3, "name": "speech" } ],
         "items": {
             "both" : {
                 "items": [
@@ -23,7 +24,7 @@
                   "zsm_skirt_purple",
                   "zsm_vest_purple",
                   "zsm_brooch_tie_red",
-                  "ear_plugs",
+                  "attached_ear_plugs_off",
                   "zsm_charm_skull_upper_cut",
                   "zsm_charm_hello_skull",
                   "zsm_charm_skull_field",
