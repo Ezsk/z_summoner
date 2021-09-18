@@ -52,63 +52,41 @@
     "effects": [ "EXPLOSIVE_zsm_ammo_meteo_skull", "TRAIL" ]
   },
   {
-    "//": "■アイテム：スカルアッパー召喚、5ターン消費（30秒）",
+    "copy-from": "zsm_charm_blank",
     "id": "zsm_charm_skull_upper_cut",
     "type": "GENERIC",
     "name": "■ 召喚スカルアッパー",
-    "description": "使用する事でスカルアッパーを召喚します。 \n（約30秒後に完了）",
+    "description": "使用する事でスカルアッパーを召喚します",
     "symbol": ",",
     "color": "black",
-    "price": 0,
     "material": "paper",
-    "volume": "40 ml",
-    "longest_side": "3 cm",
-    "weight": "50 g",
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_zsm_skull_upper",
-      "difficulty": 0,
+      "difficulty": 1,
       "skills": [ "speech" ],
       "hostile_msg": "召喚・スカルアッパー！………？",
       "friendly_msg": "召喚・スカルアッパー！",
       "place_randomly": false,
-      "moves": 500
+      "moves": 120
     }
   },
   {
-    "//": "■アイテム：ハロースカル召喚、8ターン消費（48秒）",
     "id": "zsm_charm_hello_skull",
     "type": "GENERIC",
     "name": "■ 召喚ハロースカル",
-    "description": "使用する事でハロースカルを召喚します。 \n（約48秒後に完了）",
+    "description": "使用する事でハロースカルを召喚します。",
     "copy-from": "zsm_charm_skull_upper_cut",
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_zsm_hello_skull",
-      "difficulty": 0,
+      "difficulty": 1,
       "skills": [ "speech" ],
       "hostile_msg": "召喚・ハロースカル！………？",
       "friendly_msg": "召喚・ハロースカル！",
       "place_randomly": false,
-      "moves": 800
+      "moves": 120
     }
-  },
-  {
-    "//": "■銃・ハロースカル用、つぶて投擲、朦朧付加",
-    "id": "zsm_gun_HSkull",
-    "type": "GUN",
-    "name": "頭蓋骨",
-    "description": "※ハロースカル用射撃機、通常のプレイでは出現しないはず……？",
-    "material": [ "bone" ],
-    "symbol": "?",
-    "color": "white",
-    "skill": "throw",
-    "durability": 10,
-    "range": 6,
-    "ranged_damage": { "damage_type": "bullet", "amount": 1 },
-    "dispersion": 200,
-    "flags": [ "NEVER_JAMS", "ZERO_WEIGHT" ],
-    "ammo_effects": [ "NEVER_MISFIRES", "BEANBAG", "NO_DAMAGE_SCALING" ]
   },
   {
     "//": "■トラップ・マキビシの改変",

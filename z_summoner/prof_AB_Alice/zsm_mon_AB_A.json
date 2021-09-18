@@ -13,7 +13,7 @@
     "material": [ "bone" ],
     "symbol": "S",
     "color": "white",
-    "hp": 30,
+    "hp": 300,
     "speed": 100,
     "aggression": 100,
     "morale": 100,
@@ -27,7 +27,7 @@
     "vision_day": 30,
     "vision_night": 3,
     "harvest": "exempt",
-    "special_attacks": [ [ "SMASH", 1 ], [ "DISAPPEAR", 80 ] ],
+    "special_attacks": [ [ "SMASH", 1 ], [ "DISAPPEAR", 600 ] ],
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" },
     "flags": [ "SEES", "HEARS", "BONES", "HARDTOSHOOT", "IMMOBILE", "PUSH_MON" ]
   },
@@ -45,7 +45,7 @@
     "material": [ "bone" ],
     "symbol": "S",
     "color": "white",
-    "hp": 10,
+    "hp": 300,
     "speed": 60,
     "aggression": 100,
     "morale": 100,
@@ -61,17 +61,32 @@
     "harvest": "exempt",
     "special_attacks": [
       {
-        "type": "gun",
-        "cooldown": 6,
-        "gun_type": "zsm_gun_HSkull",
-        "fake_skills": [ [ "throw", 5 ] ],
-        "fake_dex": 5,
-        "fake_per": 5,
-        "ranges": [ [ 0, 6, "DEFAULT" ] ]
+        "type": "spell",
+        "spell_data": { "id": "zsm_throwskull", "min_level": 5 },
+        "cooldown": 5,
+        "monster_message": "ハロースカルは%3$sに頭蓋骨を投げつけた！"
       },
-      [ "DISAPPEAR", 90 ]
+      [ "DISAPPEAR", 600 ]
     ],
     "death_function": { "message": "The %s disappears.", "corpse_type": "NO_CORPSE" },
     "flags": [ "SEES", "HEARS", "BONES", "HARDTOSHOOT", "IMMOBILE", "PUSH_MON" ]
+  },
+  {
+    "id": "zsm_throwskull",
+    "type": "SPELL",
+    "name": "Throw skull",
+    "description": "Hello! Skull!",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "NO_LEGS" ],
+    "damage_type": "bash",
+    "min_damage": 15,
+    "max_damage": 20,
+    "damage_increment": 2.0,
+    "max_level": 5,
+    "min_range": 1,
+    "max_range": 8,
+    "range_increment": 0.2,
+    "shape": "blast",
+    "effect": "attack"
   }
 ]
