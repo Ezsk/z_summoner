@@ -8,7 +8,7 @@
     "time": 5000,
     "book_learn": [ [ "zsm_book_of_desecration", 0 ], [ "zsm_eerie_book_fragment_1", 2 ] ],
     "qualities": [ { "id": "SUMMONING", "level": 1 } ],
-    "using": [ [ "ink_standard", 5 ] ],
+    "using": [ [ "zsm_ink_standard", 5 ] ],
     "components": [ [ [ "cmp_zsm_meat", 10, "LIST" ] ], [ [ "cmp_zsm_bone", 10, "LIST" ] ], [ [ "cmp_zsm_paper", 1, "LIST" ] ] ]
   },
   {

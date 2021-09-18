@@ -14,7 +14,7 @@
     "skill_used": "speech",
     "autolearn": false,
     "reversible": false,
-    "using": [ [ "ink_standard", 5 ] ]
+    "using": [ [ "zsm_ink_standard", 5 ] ]
   },
   {
     "abstract": "base_zsm_AB_Alice_r",

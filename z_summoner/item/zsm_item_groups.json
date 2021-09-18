@@ -213,5 +213,12 @@
     "type": "item_group",
     "subtype": "collection",
     "entries": [ { "group": "zsm_sealed_coffin_drops", "damage": [ 0, 1 ], "prob": 10 } ]
+  },
+  {
+    "id": "zsm_ink_standard",
+    "type": "requirement",
+    "tools": [
+      [ [ "pen", 1 ], [ "black_pen", 1 ], [ "blue_pen", 1 ], [ "green_pen", 1 ], [ "red_pen", 1 ], [ "permanent_marker", 1 ] ]
+    ]
   }
 ]
