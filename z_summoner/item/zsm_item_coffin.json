@@ -55,7 +55,7 @@
       "monster_id": "mon_zsm_dead_summoner",
       "skills": [ "speech" ],
       "difficulty": 80,
-      "friendly_msg": "なんと、棺の中には友好的なゾンビ召喚師が入っていました！",
+      "friendly_msg": "なんと、棺の中には友好的な屍召喚師が入っていました！",
       "hostile_msg": "棺から何者かが飛び出し襲い掛かってきました！！",
       "moves": 160,
       "place_randomly": true
