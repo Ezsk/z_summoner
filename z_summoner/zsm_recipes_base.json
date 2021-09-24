@@ -2,6 +2,8 @@
   {
     "abstract": "base_zsm_item_r",
     "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_OTHER",
     "//": "■ アイテムレシピ_共通事項  autolearn:false 自動習得の無効",
     "autolearn": false
   },
@@ -21,6 +23,7 @@
     "type": "recipe",
     "//": "■ ＡＢアリス・アイテムレシピ_共通事項  autolearn:false 自動習得の無効",
     "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
     "skill_used": "tailor",
     "autolearn": false,
     "book_learn": [ [ "zsm_Book_of_The_Engage_copy", 0 ] ],
@@ -31,6 +34,7 @@
     "type": "recipe",
     "//": "■ Ｒアリス・アイテムレシピ_共通事項  autolearn:false 自動習得の無効",
     "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
     "skill_used": "tailor",
     "autolearn": false,
     "book_learn": [ [ "zsm_Alice_in_Deadmans_Land", 0 ] ],
